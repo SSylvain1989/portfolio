@@ -1,0 +1,9 @@
+.Header{
+  width: 100%;
+  &__buttons{
+    color: white !important;
+  }
+  &__buttons:hover{
+    background-color: grey !important;
+  }
+}
