@@ -10,7 +10,7 @@ import './styles.scss';
 const Footer = () => (
   <div className="Footer">
     <button type="button">Footer</button>
-    <p>je suis dans le composant Footer</p>
+    <p>Free code source here</p>
   </div>
 );
 
