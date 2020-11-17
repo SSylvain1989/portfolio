@@ -3,12 +3,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // == Import
-import Counter from 'src/containers/Counter';
+// import Counter from 'src/containers/Counter';
 import Header from 'src/components/Header';
 import Landing from 'src/components/Landing';
 import Projects from 'src/components/Projects';
 import About from 'src/components/About';
 import Footer from 'src/components/Footer';
+import Contact from 'src/components/Contact';
 import './styles.scss';
 
 // == Composant
@@ -19,6 +20,7 @@ const App = () => (
     <Landing />
     <Projects />
     <About />
+    <Contact />
     <Footer />
   </div>
 );
