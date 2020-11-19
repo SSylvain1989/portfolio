@@ -4,11 +4,12 @@ import {
 } from '../actions/field';
 
 export const initialState = {
-  isLoged: false,
+
   contact: {
     email: '',
     message: '',
   },
+
 };
 
 const field = (state = initialState, action = {}) => {

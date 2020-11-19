@@ -1,0 +1,28 @@
+.contact{
+     width: 100%;
+     background-color: white;
+     border-radius: 5px;
+     color: black;
+&__form{
+     display: flex;
+     flex-direction: column;
+     padding: 1rem 3rem;
+}&__title{
+     margin: 1rem auto;
+     font-size: 1.5rem;
+     font-weight: 900;
+}&__email{
+     padding: 0.5rem;
+     text-align: center;
+     margin: 1rem auto;
+     width: 100%;
+}&__message{
+     padding: 0.5rem;
+     text-align: center;
+     margin: 1rem auto;
+     height: 5rem;
+     width: 100%;
+}&__button{
+     margin: 1rem auto;
+}
+}

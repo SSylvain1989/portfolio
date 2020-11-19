@@ -2,7 +2,6 @@
 import { connect } from 'react-redux';
 
 // == Import : actions
-import { contact } from '../actions/contact';
 import { changeContactFieldValue, resetFields } from '../actions/field';
 import Contact from '../components/Contact';
 
@@ -18,9 +17,7 @@ const mapDispatchToProps = (dispatch) => ({
     // je fais appel à l'action changeContactFieldValue
     // dans action qui va changer la valeur du state
     dispatch(changeContactFieldValue(value, name));
-  },
-  handleContact: () => {
-    dispatch(contact());
+    console.log(value, name);
   },
   resetFields: () => {
     dispatch(resetFields());

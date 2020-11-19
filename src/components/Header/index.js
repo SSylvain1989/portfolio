@@ -1,5 +1,6 @@
 // == Import npm
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // == Import
 
@@ -11,7 +12,8 @@ const Header = () => (
     <p>Sylvain Sigonnez web dev</p>
     <button type="button" className="Header__buttons">Projects</button>
     <button type="button" className="Header__buttons">About</button>
-    <button type="button" className="Header__buttons">Contct</button>
+    <Link to="/Contact">  <button type="button" className="Header__buttons">Contact</button></Link>
+  
   </div>
 );
 

@@ -12,14 +12,8 @@ const Contact = ({
   email,
   message,
   changeField,
-  response,
   resetFields,
 }) => {
-  console.log('je suis là');
-  // useEffect(() => {
-  //   resetFields();
-  // }, []);
-
   const onSubmit = (e) => {
     e.preventDefault();// Prevents default refresh by the browser
     const form = {
@@ -61,7 +55,7 @@ const Contact = ({
             type="text"
             className="contact__message"
           />
-          <button type="submit" className="contact__button" onClick={resetFields}>Envoyer</button>
+          <button className="contact__button" onClick={resetFields} >Envoyer</button>
         </form>
       </div>
     </div>
@@ -73,8 +67,6 @@ Contact.propTypes = ({
   email: PropTypes.string,
   message: PropTypes.string,
   changeField: PropTypes.func.isRequired,
-  handleContact: PropTypes.func.isRequired,
-  response: PropTypes.object,
   resetFields: PropTypes.func.isRequired,
 });
 

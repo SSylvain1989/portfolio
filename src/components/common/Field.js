@@ -13,6 +13,8 @@ const Field = ({
 }) => {
   // == Handlers
   const handleChange = (evt) => {
+    console.log('je suis là field custom');
+    console.log(evt.target.value, name);
     onChange(evt.target.value, name);
   };
 
