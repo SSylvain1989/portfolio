@@ -5,7 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 
 // == Import
 // import Counter from 'src/containers/Counter';
-import Header from 'src/components/Header';
+import Header from 'src/containers/Header';
 import Landing from 'src/components/Landing';
 import Projects from 'src/components/Projects';
 import About from 'src/components/About';
