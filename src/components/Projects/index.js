@@ -14,7 +14,7 @@ const Projects = () => (
     {
     projects.map((oneProjet) => (
       <Project
-        key={oneProjet.FullName}
+        key={oneProjet.description}
         {...oneProjet}
       />
     ))

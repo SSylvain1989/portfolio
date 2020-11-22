@@ -4,6 +4,7 @@ import Header from '../components/Header';
 
 const mapStateToProps = (state) => ({
   showMenuBoolean: state.header.showMenuBoolean,
+  test : state.header.test,
 });
 
 const mapDispatchToProps = (dispatch) => ({
@@ -17,7 +18,8 @@ const mapDispatchToProps = (dispatch) => ({
 const HeaderContainer = connect(
   mapStateToProps,
   mapDispatchToProps,
-)(Header);
+)( Header );
+
 
 // == Export
 export default HeaderContainer;

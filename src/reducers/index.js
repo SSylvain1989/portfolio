@@ -4,7 +4,7 @@ import field from './field';
 import header from './header';
 
 export default combineReducers({
-  // counter,
   field,
   header,
+  // counter,
 });

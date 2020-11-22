@@ -9,9 +9,6 @@ const headerMiddleware = (store) => (next) => (action) => {
   switch (action.type) {
     case HANDLE_MENU_DISPLAY:
       let { showMenuBoolean } = state.header;
-      console.log('je suis là dans le headerMiddleware');
-      console.log(showMenuBoolean);
-      console.log(state.header);
       showMenuBoolean = !showMenuBoolean;
       store.dispatch(toggleMenu(showMenuBoolean));
       break;
