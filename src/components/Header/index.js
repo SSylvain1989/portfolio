@@ -23,7 +23,7 @@ const Header = ({
   return (
     <div className="header">
 
-        <Icon id="hamburger__menu__icon" name="list" size="huge" onClick={menuClick} />
+        <Icon id="hamburger__menu__icon" name="list" size="big" onClick={menuClick} />
         {/* changement de la valeur fait en passant par la
         fonction menulClick ligne 15 qui déclenche
       handleMenuClick dans le container qui elle déclenche handleMenuDisplay dans le container
