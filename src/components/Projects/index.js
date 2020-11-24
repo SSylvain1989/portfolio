@@ -9,7 +9,7 @@ import './styles.scss';
 
 // == Composant
 const Projects = () => (
-  <div className="Projects">
+  <div className="Projects" id="Projects">
     <p className="Projects__title">My projects ...</p>
     {
     projects.map((oneProjet) => (
