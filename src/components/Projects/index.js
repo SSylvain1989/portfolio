@@ -9,9 +9,7 @@ import './styles.scss';
 
 // == Composant
 const Projects = () => (
-  <div className="body_projetc">
   <div className="container" id="Projects">
-    {/* <p className="Projects__title">My projects ...</p> */}
     {
     projects.map((oneProjet) => (
       <Project
@@ -21,7 +19,6 @@ const Projects = () => (
     ))
 }
 {/* <p className="Projects__end">More to come ...</p> */}
-  </div>
   </div>
 );
 
