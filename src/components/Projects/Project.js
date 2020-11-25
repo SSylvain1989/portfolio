@@ -22,18 +22,18 @@ const Project = ({
   //     </div>
   //   </div>
   // </div>
-  <div className="card__recipes">
-  <div className="card__recipes__face face1">
-  <div className="card__recipes__content">
-    <img className="recipes__picture" src={image} alt="hero" />
-    <h3 className="recipes__subtitle">{fullName}</h3>
+  <div className="card">
+  <div className="face face1">
+  <div className="content">
+    <img className="picture" src={image} alt="hero" />
+
   </div>
 </div>
 <div className="face face2">
-  <div className="content">
-    <h3 className="recipes__second__subtitle"> {fullName}</h3>
-    <p className="recipes__infos"> Stack : {stack}  <br /> Description : {description}</p>
-    <p className="recipes__button" id={github} title={github}><a href={github}>github</a></p>
+  <div className="content__face2">
+
+    <p className="infos"> Stack : {stack}  <br /> Description : {description}</p>
+    <a className="button" href={github}>github</a>
   </div>
 </div>
 </div>

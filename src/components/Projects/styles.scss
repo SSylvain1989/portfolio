@@ -1,28 +1,29 @@
 // css pour le container complet de tous les projets
 //container recipes
-.Projects{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
-  margin : 0 auto;
-  background-color: white;
-  padding-bottom: 100px;
-  height: 100vh;
-  &__title{
-    padding-top: 5rem;
-    width: 100%;
-    text-align: start;
-    margin: 1rem 1rem 1rem 1.2rem;
-    font-size: 1rem;
-  }&__end{
-    width: 100%;
-    text-align: right;
-    font-size: 1rem;
-    margin: 1rem 2rem 1rem 1rem;
-  }
 
-}
+// .Projects{
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-around;
+//   width: 100%;
+//   margin : 0 auto;
+//   background-color: white;
+//   padding-bottom: 100px;
+//   height: 100vh;
+//   &__title{
+//     padding-top: 5rem;
+//     width: 100%;
+//     text-align: start;
+//     margin: 1rem 1rem 1rem 1.2rem;
+//     font-size: 1rem;
+//   }&__end{
+//     width: 100%;
+//     text-align: right;
+//     font-size: 1rem;
+//     margin: 1rem 2rem 1rem 1rem;
+//   }
+
+// }
 // css pour un seul projet
 // .Project{
 
@@ -66,25 +67,42 @@
 //   }
 // }
 
+.body_project{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.container__recipes {
+.container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: space-between;
+  width: 1000px;
   margin : 0 auto;
   background-color: white;
   padding-bottom: 100px;
+  position: relative;
 }
-.card__recipes .card__recipes__face {
-  width: 400px;
-  height: 200px;
-  transition: 0.9s;
+.card{
+  border:black 1px solid;
+  position: relative;
 }
-.card__recipes__face.face1 {
-  width: 400px;
+.container .card:hover .face.face2{
+  transform: translateY(0);
+}
+// .face {
+//   border:yellow 30px solid;
+//   width: 300px;
+//   height: 200px;
+//   transition: 0.5s;
+// }
+.face1 {
+  width: 300px;
   height: 200px;
-  transition:1.5s;
+  transition: 0.5s;
   position: relative;
   display: flex;
   justify-content: center;
@@ -92,75 +110,82 @@
   z-index: 1;
   background: white;
   transform: translateY(100px);
+
+
 }
-.container__recipes .card__recipes:hover .card__recipes__face.face1 {
+.container .card:hover .face.face1 {
   transform: translateY(0);
-  color : white;
+
 }
-.container__recipes .card__recipes .card__recipes__face.face1 .card__recipes__content {
-  opacity: 1;
+.content {
+  border: slateblue solid 2px;
+  opacity: 0.8;
   transition: 0.8s;
-  padding: 0;
-  color : #fff;
-  text-align: center;
-  font-size: 1.5em;
-  max-height: 100%;
+  // padding: 0;
+  // color : #fff;
+  // text-align: center;
+  // font-size: 1.5em;
+  // max-height: 100%;
 }
-.card__recipes .face2 {
-  width: 400px;
+.content:hover {
+  border: blue solid 3px;
+  opacity: 1;
+
+}
+
+// p de la vidéo
+.button {
+  display: inline-block;
+  background-color : #d8cfc9;
+  border-radius: 5px;
+  color : white;
+  padding : 1rem 0.5rem;
+  border: solid 1px white;
+  text-decoration: none;
+}
+.button:hover {
+  background-color :#1E1E1E;
+
+}
+.face2 {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #d8cfc9;
   color : white;
   padding: 20px;
   border-radius: 0px 0px 10px 10px;
-  height: 600px;
   box-sizing: border-box;
-  box-shadow: 0 20px 50px rgba(0,0,0, 0.2);
-  transform: translateY(-50px);
+  box-shadow: 0 20px 50px rgba(0,0,0, 0.8);
+  transform: translateY(-100px);
+
+
+  
 }
-.container__recipes .card__recipes:hover .face2 {
-  transform: translateY(100px);
-}
-.recipes__subtitle{
-  color : #3f6149;
-  padding : 10px;
-  border-radius: 10px;
-}
-.card__recipes:hover .recipes__subtitle{
-  display : none;
-}
-.recipes__second__subtitle {
-  color : #3f6149
-}
-#recipes__icons {
-  color : white;
-}
-.recipes__picture{
-  width: 400px;
-  height: 300px;
+// .face2:hover{
+//   transform: translateY(0);
+// }
+
+
+.picture{
+  max-width: 100px;
+  width: 280px;
+  height: 180px;
   border-radius: 10px 10px 10px 10px;
   object-fit:cover;
   object-position:50% 50%;
   box-sizing: border-box;
 }
-.recipes__picture:hover{
-  border-radius: 10px 10px 0px 0;
-}
-.card__recipes {
-  margin: 10px 20px 50px 20px;
-}
-.recipes__button {
-  background-color : #d8cfc9;
-  border-radius: 15px;
-  color : white;
-  padding : 1rem 0.5rem;
-  border: solid 1px white;
-}
-.recipes__button:hover {
-  background-color : white;
-  border: solid 1px #d8cfc9;
-  color :#d8cfc9;
+.picture:hover{
+  // border-radius: 10px 10px 0px 0;
 }
 
+//h3
+.infos{
+margin: 10px 0 0;
+padding: 0;
+}
