@@ -14,6 +14,9 @@ const Contact = ({
   changeField,
   resetFields,
 }) => {
+
+// gestion du modification de la photo avec onMouseOver 
+
   const onSubmit = (e) => {
     e.preventDefault();// Prevents default refresh by the browser
     const form = {
@@ -29,14 +32,9 @@ const Contact = ({
         alert('Une erreur est apparue, retentez votre envoi s\'il-vous-plait', error.text);
       });
   };
-  console.log('je suis là');
 
-  console.log('test');
   return (
-
     <div className="container__contact">
-
-
     <div className="about">
       <p>Hi , </p>
       <p>My Name is Sylvain , i have 31 yers old , 168cm of good humeur and humour ( maybe a little dark)
@@ -85,11 +83,8 @@ const Contact = ({
         </form>
       </div>
       </div>
-      {/* gros container div */}
       </div>
-
   );
-  // }
 };
 
 Contact.propTypes = ({
