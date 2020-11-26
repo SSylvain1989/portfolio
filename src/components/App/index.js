@@ -24,13 +24,12 @@ const App = () => (
     <Route exact path="/">
     <Projects />
     </Route>
-    <Route exact path="/">
+    {/* <Route exact path="/">
     <About />
-    </Route>
+    </Route> */}
     <Route exact path="/">
     <Contact />
     </Route>
-
     <Footer />
   </div>
 );

@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 // == Import
 
 import './styles.scss';
@@ -24,7 +25,7 @@ const About = () => (
       <p>Before i learn how to code , i was in logistics</p>
       <p>Looking for a dev or just chat with me ? Just write me down below </p>
     </div>
-    <div className="Skill">
+
       <div className="Skill__hard">
         <h3>Hard skills</h3>
         <p>React</p>
@@ -34,7 +35,7 @@ const About = () => (
         <p>chieur</p>
       </div>
     </div>
-  </div>
+
 );
 
 // == Export

@@ -1,8 +1,22 @@
-.contact{
+.container__contact{
      width: 100%;
-     background-color: white;
+     height: 100%;
+     border: seashell 2px solid;
+     display: flex;
+     flex-wrap: wrap;
+     padding: 0.2rem;
+     position: relative;
+}
+
+// partie formulaire contact
+.contact{
+     border: solid 1px red;
+     width: 50%;
+     height: 25rem;
+     background-color:#1E1E1E;
      border-radius: 5px;
-     color: black;
+     transition: 0.4s;
+     border-radius: 5px;
 &__form{
      display: flex;
      flex-direction: column;
@@ -26,3 +40,70 @@
      margin: 1rem auto;
 }
 }
+
+.contact:hover{
+     background-color: #2A2A2A;
+     box-shadow: 0 10px 15px rgba(143, 135, 135, 0.8);
+     transform: scale(1.01);
+     transition: 0.4s;
+     }
+
+.about{
+     width: 50%;
+     height: 25rem;
+     border: solid 1px salmon;
+     transition: 0.4s;
+     border-radius: 5px;
+}
+
+.about:hover{
+     background-color: #2A2A2A;
+     box-shadow: 0 10px 15px rgba(143, 135, 135, 0.8);
+     transform: scale(1.01);
+     transition: 0.4s;
+     }
+
+.Skill__hard{
+     width: 50%;
+     height: 25rem;
+     border: solid 1px rgb(114, 250, 159);
+     transition: 0.4s;
+     border-radius: 5px;
+}
+
+.Skill__hard:hover{
+background-color: #2A2A2A;
+box-shadow: 0 10px 15px rgba(143, 135, 135, 0.8);
+transform: scale(1.01);
+transition: 0.4s;
+}
+
+.Skill__soft{
+     width: 50%;
+     height: 25rem;
+     border: solid 1px rgb(143, 114, 250);
+     transition: 0.4s;
+     border-radius: 5px;
+}
+.Skill__soft:hover{
+     background-color: #2A2A2A;
+     box-shadow: 0 10px 15px rgba(143, 135, 135, 0.8);
+     transform: scale(1.01);
+     transition: 0.4s;
+     }
+
+.Picture{
+     position: absolute;
+     top: calc(50%-8rem);
+     left: calc(50%-8rem);
+     z-index: 999;
+     transition: 0.4s;
+     border-radius: 5px;
+}
+
+.Picture:hover{
+     background-color: #2A2A2A;
+     box-shadow: 0 10px 15px rgba(143, 135, 135, 0.8);
+     transform: scale(1.01);
+     transition: 0.4s;
+     }
