@@ -1,8 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import emailjs from 'emailjs-com';
 import apiKeys from './apikey';
 import Field from '../common/Field';
+import hautDroite from '../../images/1.jpg';
+import basDroite from '../../images/2.jpg';
+import hautGauche from '../../images/3.jpg';
+import basGauche from '../../images/4.jpg';
+
 
 import './styles.scss';
 
@@ -14,11 +19,15 @@ const Contact = ({
   changeField,
   resetFields,
 }) => {
+// gestion du modification de la photo avec onMouseOver et useState
+  const [isShown1, setIsShown1] = useState(false);
+  const [isShown2, setIsShown2] = useState(false);
+  const [isShown3, setIsShown3] = useState(false);
+  const [isShown4, setIsShown4] = useState(false);
 
-// gestion du modification de la photo avec onMouseOver 
-
-  const onSubmit = (e) => {
-    e.preventDefault();// Prevents default refresh by the browser
+  // gestion du formulaire de contact
+  const onSubmit = (event) => {
+    event.preventDefault();// 
     const form = {
       // les attributs name & message sont identiques aux attributs du template du mail de emailJs
       name: email, message,
@@ -34,8 +43,9 @@ const Contact = ({
   };
 
   return (
-    <div className="container__contact">
-    <div className="about">
+    <div className="container__contact" >
+    <div className="about" onMouseEnter={() => setIsShown1(true)}
+       onMouseLeave={() => setIsShown1(false)} >
       <p>Hi , </p>
       <p>My Name is Sylvain , i have 31 yers old , 168cm of good humeur and humour ( maybe a little dark)
         french dude who live in south of France , Toulouse ( Occitanie ).
@@ -49,17 +59,32 @@ const Contact = ({
       <p>Before i learn how to code , i was in logistics</p>
       <p>Looking for a dev or just chat with me ? Just write me down below </p>
     </div>
-      <div className="Skill__hard">
+      <div className="Skill__hard" onMouseEnter={() => setIsShown2(true)}
+        onMouseLeave={() => setIsShown2(false)}>
         <h3>Hard skills</h3>
         <p>React</p>
       </div>
-      <div className="Skill__soft">
+      <div className="Skill__soft" onMouseEnter={() => setIsShown3(true)}
+        onMouseLeave={() => setIsShown3(false)}>
         <h3>Soft skills</h3>
         <p>chieur</p>
       </div>
       {/* image centrale */}
-        <img className="Picture"src="https://picsum.photos/id/237/200/300" alt="dog"/>
-      <div className="contact">
+      <img className="Picture"src={hautDroite} alt="dg"/>
+      {isShown1 && (
+        <img className="Picture"src={basDroite} alt="dog"/>
+        )}
+      {isShown2 && (
+        <img className="Picture"src={hautGauche} alt="d"/>
+        )}
+      {isShown3 && (
+        <img className="Picture"src={basGauche} alt="c"/>
+        )}
+      {isShown4 && (
+      <img className="Picture"src="" alt="g"/>
+      )}
+      <div className="contact" onMouseEnter={() => setIsShown4(true)}
+        onMouseLeave={() => setIsShown4(false)}>
       <div className="contact__wrap">
         <form className="contact__form" onSubmit={onSubmit}>
           <h1 className="contact__title">Write me down below</h1>
