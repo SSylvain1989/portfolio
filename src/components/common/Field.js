@@ -20,8 +20,8 @@ const Field = ({
 
   return (
     <input
-      value={value}
-      onChange={handleChange}
+      // value={value}
+      // onChange={handleChange}
       placeholder={placeholder}
       name={name}
       type={type}

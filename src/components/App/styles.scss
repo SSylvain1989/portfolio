@@ -1,11 +1,14 @@
+// body{width:100%;}
 .app {
-  width: 100wh;
+  width:100%;
+  min-height : 300vh;
+  box-sizing: border-box;
   color: white;
-  background-color:#1E1E1E;
   padding-left: 7%;
   padding-right: 7%;
   // position: relative;
   letter-spacing: 0.1rem;
-
+  font-family: 'Roboto Slab';
+  background-color:#1E1E1E;
 }
 
