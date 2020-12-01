@@ -7,10 +7,10 @@ import {Icon} from 'semantic-ui-react';
 
 // == Import
 import Field from '../common/Field';
-import hautDroite from '../../images/1.jpg';
-import basDroite from '../../images/2.jpg';
-import hautGauche from '../../images/3.jpg';
-import basGauche from '../../images/4.jpg';
+import hautDroite from '../../images/1.png';
+import basDroite from '../../images/2.png';
+import hautGauche from '../../images/3.png';
+import basGauche from '../../images/4.png';
 
 import 'react-toastify/dist/ReactToastify.css';
 import './styles.scss';

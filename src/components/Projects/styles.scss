@@ -7,21 +7,21 @@
   max-height: 100%;
   margin : 0 auto;
   background-color: #1E1E1E;
-  padding-bottom: 100px;
+  padding-bottom: 220px;
   // position: relative;
 }
 .card{
-  height: 300px;
-  max-height: 300px;
+  height: 500px;
+  max-height: 500px;
 // 
 }
 .container .card:hover .face2{
-  transform: translateY(0);
+  transform: translateY(15px);
 }
 
 .face1 {
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 300px;
   transition: 0.5s;
   position: relative;
   display: flex;
@@ -39,7 +39,7 @@
 
 }
 .content {
-  opacity: 0.8;
+  opacity: 1;
   transition: 0.8s;
   max-height: 100%;
 }
@@ -63,8 +63,8 @@
   color: white;
  }
 .face2 {
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 300px;
   transition: 0.5s;
   position: relative;
   display: flex;
@@ -79,9 +79,9 @@
 }
 
 .picture{
-  max-width: 400px;
-  width: 300px;
-  height: 200px;
+  max-width: 500px;
+  width: 500px;
+  height: 400px;
   border-radius: 10px 10px 10px 10px;
   object-fit:cover;
   object-position:50% 50%;
