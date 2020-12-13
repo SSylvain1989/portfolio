@@ -1,5 +1,6 @@
-.Header{
-
+.header{
+padding: 5px;
+background-color: #1E1E1E;
 }
 
 #hamburger__menu__icon {
@@ -47,5 +48,16 @@
   }
 }
 
+#navbar_menu{
+  background-color: #1E1E1E;
+  font-size: 1.5rem;
+  border: none;
+  color: white;
+  .item{
+    padding: 0 4.5rem;
+    border: none;
+    color: white;
+  }
+}
 
 
