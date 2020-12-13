@@ -25,13 +25,12 @@ const Header = ({
 
         <Icon id="hamburger__menu__icon" name="list" size="big" onClick={menuClick} />
         {/* changement de la valeur fait en passant par la
-        fonction menulClick ligne 15 qui déclenche
+        fonction menulClick ligne 20 qui déclenche
       handleMenuClick dans le container qui elle déclenche handleMenuDisplay dans le container
       de Header qui appel dans le HeaderMiddleware le valeur */}
         {showMenuBoolean === true && (
           <Menu vertical id="hamburger__menu">
             <Menu.Item>
-              {/* pourquoi menu.item */}
               <Icon id="close__modal__icon" name="close" size="big" color="white" onClick={menuClick} />
             </Menu.Item>
             <Menu.Item>
@@ -43,11 +42,25 @@ const Header = ({
             <Menu.Item>
               <Link to="/" onClick={menuClick}> Contact </Link>
             </Menu.Item>
-            {/* <Menu.Item>
-            <Link to="/" onClick={menuClick}> Sylvain.sigonnez@gmail.com </Link>
-            </Menu.Item> */}
+            <Menu.Item>
+              <p>Un projet ou un brin de causette ?</p><br/>
+            <Link to="/" onClick={menuClick}> Sylvain.sigonnez </Link>
+            </Menu.Item>
           </Menu>
         )}
+            <Menu>
+              <Menu.Item>
+              </Menu.Item>
+              <Menu.Item>
+                <Link to="/" onClick={menuClick}> Projects </Link>
+              </Menu.Item>
+              <Menu.Item>
+                <Link to="/" onClick={menuClick}> About </Link>
+              </Menu.Item>
+              <Menu.Item>
+                <Link to="/" onClick={menuClick}> Contact </Link>
+              </Menu.Item>
+            </Menu>
       </div>
 
   );
