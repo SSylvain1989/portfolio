@@ -9,11 +9,11 @@
   padding-bottom: 220px;
   // position: relative;
 }
-// .card{
-//   height: 500px;
-//   max-height: 500px;
-// // 
-// }
+.card{
+  height: 10px;
+  max-height: 10px;
+// 
+}
 .container .card:hover .face2{
   transform: translateY(15px);
 }
@@ -116,11 +116,11 @@ padding: 0;
     background-color: #1E1E1E;
     padding-bottom: 1px;
   }
-  // .card{
-  //   height: 300px;
-  //   max-height: 500px;
-  // // 
-  // }
+  .card{
+    height: 10px;
+    max-height: 20px;
+  // 
+  }
   
 
  }
