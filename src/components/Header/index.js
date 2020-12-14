@@ -10,6 +10,8 @@ import {
 // == Import
 
 import './styles.scss';
+import logo from '../../images/cv.png';
+
 
 // == Composant
 const Header = ({
@@ -22,7 +24,9 @@ const Header = ({
   };
   return (
     <div className="header">
-
+      <div className="header__logo">
+        <img className="header__img" src={logo} alt="home"/>
+      </div>
         <Icon id="hamburger__menu__icon" name="list" size="big" onClick={menuClick} />
         {/* changement de la valeur fait en passant par la
         fonction menulClick ligne 20 qui déclenche
@@ -52,13 +56,13 @@ const Header = ({
               <Menu.Item>
               </Menu.Item>
               <Menu.Item>
-                <Link to="/" onClick={menuClick}> Projects </Link>
+                <Link to="/" > Projects </Link>
               </Menu.Item>
               <Menu.Item>
-                <Link to="/" onClick={menuClick}> About </Link>
+                <Link to="/" > About </Link>
               </Menu.Item>
               <Menu.Item>
-                <Link to="/" onClick={menuClick}> Contact </Link>
+                <Link to="/" > Contact </Link>
               </Menu.Item>
             </Menu>
       </div>

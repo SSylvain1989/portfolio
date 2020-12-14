@@ -16,7 +16,7 @@ const Landing = () => (
   <div className="Landing">
 
     <div className="Landing__container">
-    <Link className="Landing__logo">SS</Link>
+    {/* <Link className="Landing__logo"></Link> */}
       <div className="Landing__title">
       <p>SYLVAIN  SIGONNEZ</p>
       </div>
