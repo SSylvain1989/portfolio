@@ -4,6 +4,9 @@ import PropTypes from 'prop-types';
 import emailjs from 'emailjs-com';
 import { toast, ToastContainer } from 'react-toastify';
 import {Icon} from 'semantic-ui-react';
+import { SiRedux, SiJavascript, SiHtml5 , SiCss3, SiTailwindcss, SiNodeDotJs, SiPostgresql, SiMysql} from 'react-icons/si';
+
+
 
 // == Import
 import Field from '../common/Field';
@@ -55,7 +58,7 @@ const Contact = ({
     <div className="container__contact" >
     <div className="about" onMouseEnter={() => setIsShown('one')}
        onMouseLeave={() => setIsShown('one')} >
-      <p>Hi , </p>
+      {/* <p>Hi , </p>
       <p>My Name is Sylvain , i have 31 yers old , 168cm of good humeur and humour ( maybe a little dark)
         french dude who live in south of France , Toulouse ( Occitanie ).
       </p>
@@ -66,17 +69,42 @@ const Contact = ({
       <p>Before i became a dev , i was in transport and logistics , with a master 1 , for 8 years</p>
       <p>I speack & write in French , i have and advanced level in English</p>
       <p>Before i learn how to code , i was in logistics</p>
-      <p>Looking for a dev or just chat with me ? Just write me down below </p>
+      <p>Looking for a dev or just chat with me ? Just write me down below </p> */}
+            <p>Bonjour 🖐️, </p>
+      <p>Sylvain 31 ans et 168 cm de bonne humeur 😄. Basé dans le sud de la France à Toulouse la ville Rose.
+      </p>
+      <p>En 2020 je décide de faire de mes centres d'intérêts mon activité professionnelle.Je sors donc en novembre 2020 d'une formation développeur web - Fullstack Javascript : Spécialité ReactJS ⚛️ (735 heures) </p>
+
+      <p>Avant d'être développeur, je suis resté 8 dans le secteur des transports et logistics avec un master 1 en poche</p>
+      <p>Je suis à la recherche aujourd'hui d'un poste ou d'un stage </p>
     </div>
       <div className="Skill__hard" onMouseEnter={() => setIsShown('two')}
         onMouseLeave={() => setIsShown('two')}>
         <h3>Hard skills</h3>
-        <p>React</p>
+        <li>Javascript   <SiJavascript/></li>
+        <li>ReactJS ⚛️ / Redux  <SiRedux/></li>
+        <li>Html  <SiHtml5/></li>
+        <li>CSS / Sass (SCSS) / Tailwind  <SiCss3/><SiTailwindcss/></li>
+        <li>NodeJS   <SiNodeDotJs/></li>
+        <li>Express</li>
+        <li>SQL/PostgreSQL/Sequelize   <SiPostgresql/>    <SiMysql/></li>
+        <li>Typescript</li>
+        <li>RESTful APIs design & implementation</li>
+        <li>Mocha/Chai/Enzyme</li>
       </div>
       <div className="Skill__soft" onMouseEnter={() => setIsShown('three')}
         onMouseLeave={() => setIsShown('three')}>
         <h3>Soft skills</h3>
-        <p>chieur</p>
+       <li>Bonne humeure</li>
+       <li>Esprit d'initiative</li>
+       <li>Forte connaissance en transport et logistics</li>
+       <li>Gestion du stress</li>
+       <li>Empathie</li>
+       <li>Esprit d'équipe</li>
+       <li>Remise en question</li>
+       <li>Négociation</li>
+
+
       </div>
       {isShown==="one" && (
         <img className="Picture"src={basDroite} alt="dog"/>
@@ -92,9 +120,11 @@ const Contact = ({
       )}
       <div className="contact" onMouseEnter={() => setIsShown('for')}
         onMouseLeave={() => setIsShown('for')}>
-      <div className="contact__wrap">
+      {/* <div className="contact__wrap"> */}
         <form className="contact__form" onSubmit={onSubmit} >
-          <h1 className="contact__title">Un brin de causette ?</h1>
+          <h1 className="contact__title">Contact <Icon name="linkedin" size="large"/><Icon name="github" size="large"/>
+          </h1>
+
           <Field
             name="name"
             placeholder="Votre nom"
@@ -127,14 +157,13 @@ const Contact = ({
           />
           <button className="contact__button" type="submit" >Envoyer</button>
         </form>
-      </div>
-      <div className="contact__social">
+      {/* </div> */}
+      {/* <div className="contact__social">
           <h2>Mail</h2>
           <p>sylvain.sigonnez@gmail.com</p>
           <h2>Social</h2>
-          <Icon name="github" size="large"/>
-          <Icon name="linkedin" size="large"/>
-          </div>
+
+          </div> */}
       </div>
         <ToastContainer />
 {/* // ce composant représente en front la bulle pop pup success ou error */}
