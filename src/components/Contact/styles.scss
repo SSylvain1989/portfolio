@@ -85,7 +85,6 @@ position: relative;
      padding: 1rem;
      width: 50%;
      height: 28rem;
-     // border: solid 1px rgb(114, 250, 159);
      transition: 0.4s;
      border-radius: 5px;
      font-size: 1.4rem;
@@ -110,7 +109,7 @@ transition: 0.4s;
 
 .Skill__soft{
      padding: 1rem;
-     width: 50%;
+     width: 87%;
      height: 28rem;
      // border: solid 1px rgb(114, 250, 159);
      transition: 0.4s;
@@ -157,7 +156,7 @@ transition: 0.4s;
      font-size: 1.2rem;
 }
 
-//media
+//***** media*****//
 
 // desktop
 @media(min-width: 1389px)
@@ -167,8 +166,153 @@ transition: 0.4s;
 
 // tablette
 @media(min-width: 768px) and (max-width: 1388px)
- {
- }
+{
+     .container__contact{
+          margin: 9rem auto;
+          width: 97%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: relative;
+          }
+     .Picture{
+          display: none;
+     }
+     .contact{
+          margin-bottom: 1rem;
+          background-color: #1E1E1E;
+          padding: 0.8rem;
+          width: 87%;
+          height: 42rem;
+          border-radius: 5px;
+          transition: 0.4s;
+          border-radius: 5px;
+          display: flex;
+          justify-content: space-around;
+     &__form{
+          margin-left: 1.5rem;
+          width: 95%;    
+          display: flex;
+          flex-direction: column;
+     }&__title{
+          font-size: 2.2rem;
+          margin: 1.5rem auto;
+          padding-top: 1.5rem;
+          font-weight: 900;
+     }&__email{
+          font-size: 2.1rem;
+          height: 6rem;
+          border-radius: 5px;
+          padding: 0.7rem;
+          text-align: center;
+          margin: 1rem auto;
+          width: 85%;
+     }&__message{
+          font-size: 2.1rem;
+          border-radius: 5px;
+          padding: 2rem;
+          text-align: center;
+          margin: 1rem auto;
+          height: 10rem;
+          width: 85%;
+     }&__button{
+          border-radius: 5px;
+          margin: 1rem auto 0.6rem auto;
+          padding: 0.5rem 2rem;
+          font-size: 1.2rem;
+          font-weight: bold;
+          height: 6rem;
+          width: 14rem;
+     }&__social{
+       padding-top: 6.5rem;
+     }
+     }
+     
+     .contact:hover{
+          background-color: #2A2A2A;
+          transform: scale(1.01);
+          transition: 0.4s;
+          }
+     
+     .about{
+          margin-bottom: 2rem;
+          padding: 2.3rem;
+          background-color: #222121;
+          width: 87%;
+          height: 42rem;
+          // border: solid 1px salmon;
+          transition: 0.4s;
+          border-radius: 5px;
+          font-size: 2.1rem;
+          font-weight: bold;
+     
+     }
+     
+     .about:hover{
+          
+          background-color: #2A2A2A;
+          transform: scale(1.01);
+          transition: 0.4s;
+          }
+     
+     .Skill__hard{
+          margin-bottom: 2rem;
+          padding: 1rem;
+          width: 87%;
+          height: 42rem;
+          transition: 0.4s;
+          border-radius: 5px;
+          list-style: none;
+          h3{
+          text-align: center;
+          font-size: 2.2rem;
+          padding-bottom: 1rem;
+          }
+          li{
+          padding: 1rem 1.2rem;
+          font-weight: 500;
+          font-size: 2.1rem;
+          font-weight: bold;
+          }
+     }
+     
+     .Skill__hard:hover{
+     background-color: #2A2A2A;
+     transform: scale(1.01);
+     transition: 0.4s;
+     }
+     
+     .Skill__soft{
+          margin-bottom: 2rem;
+          background-color: #222121;
+          padding: 1rem;
+          width: 87%;
+          height: 42rem;
+          transition: 0.4s;
+          border-radius: 5px;
+          list-style: none;
+          h3{
+          text-align: center;
+          font-size: 2.2rem;
+          padding: 1rem;
+          }
+          li{
+          padding: 1rem 1.2rem;
+          font-weight: 500;
+          font-size: 2.1rem;
+          font-weight: bold;
+
+          }
+     }
+     .Skill__soft:hover{
+          background-color: #2A2A2A;
+          transform: scale(1.01);
+          transition: 0.1s;
+          }
+
+     
+}
 
  // smartphone
 @media(max-width: 767px)

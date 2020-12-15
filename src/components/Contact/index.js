@@ -90,12 +90,12 @@ const Contact = ({
         <li>SQL/PostgreSQL/Sequelize   <SiPostgresql/>    <SiMysql/></li>
         <li>Typescript</li>
         <li>RESTful APIs design & implementation</li>
-        <li>Mocha/Chai/Enzyme</li>
+        {/* <li>Mocha/Chai/Enzyme</li> */}
       </div>
       <div className="Skill__soft" onMouseEnter={() => setIsShown('three')}
         onMouseLeave={() => setIsShown('three')}>
         <h3>Soft skills</h3>
-       <li>Bonne humeure</li>
+       <li>Bonne humeur</li>
        <li>Esprit d'initiative</li>
        <li>Forte connaissance en transport et logistics</li>
        <li>Gestion du stress</li>
