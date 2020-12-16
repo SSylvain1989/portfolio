@@ -66,29 +66,27 @@ h1:hover:after {
 #hamburger__menu {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #327EA5 ;
   position: absolute;
-  right: 10;
-  top: 10;
-  height: 100vh;
+  left: 32rem;
+  top: 50px;
+  height: 200px ;
+  width: 390px ;
   z-index: 999;
-  width: 100%;
   .item {
     border: solid 1px white;
   }
   a{
-    color:red;
+    color:white;
     font-size: 2.2rem;
   }
   .item:hover {
-    background-color: black;
     font-size: 1.2em;
   }
   p{
     width: 250px;
     color: white;
     font-size: 2rem;
-    border-bottom: 1px solid white;
   }
 }
 
@@ -162,29 +160,27 @@ display: none;
   #hamburger__menu {
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 1);
-    position: absolute;
-    right: 10;
-    top: 10;
-    height: 100vh;
+    background-color: #327EA5;
+    position: relative;
+    right: 34rem;
+    top: 50px;
+    height: 100%;
     z-index: 999;
-    width: 100%;
+    width: 390px;
     .item {
       border: solid 1px white;
     }
     a{
-      color:red;
+      color: white;
       font-size: 2.2rem;
     }
     .item:hover {
-      background-color: black;
       font-size: 1.2em;
     }
     p{
       width: 250px;
       color: white;
       font-size: 2rem;
-      border-bottom: 1px solid white;
     }
   }
   #navbar_menu{
