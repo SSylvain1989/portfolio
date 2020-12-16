@@ -6,6 +6,8 @@ import PropTypes from 'prop-types';
 import projects from '../../data/projects';
 import Project from './Project';
 import './styles.scss';
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 // == Composant
 const Projects = () => (

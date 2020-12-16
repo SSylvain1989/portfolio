@@ -1,48 +1,94 @@
 .Landing{
   width: 100%;
   display: flex;
-  p {
-    font-size: 2rem;
-    display: inline-block;
-    margin: 1rem;
-  }&__container{
+  &__container{
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }&__logo{
-      position: fixed;
-      top: 0;
-      left: 0;
-      font-size: 2.6rem;
   }&__title{
     text-align: center;
     margin: 12rem auto 1.5rem auto;
-  p{
-    font-size: 3.5rem;
-    line-height: 1.5;
   }
-  }&__text{
-
+  h2{
+    margin-top:8rem;
+    font-size: 6.2rem;
+    width: 61rem;
+    line-height: 0.96em !important;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  &__rotate:before{
+	text-transform: uppercase;
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: 6.2rem;
+    line-height: 0;
+    content:'';
+    animation: landing linear infinite 6s;
+    transition: 0.6s;
+  }
+  @keyframes landing {
+    0%{
+      content: ' Front-End.';
+    }
+    35%{
+      content: ' Back-End.';
+    }
+    55%{
+      content: ' FullStack Js.';
+    }
+    77%{
+      content: ' de bonne humeur.';
+    }
+    100%{
+      content: ' Front-End.';
+    }    
+  }  
+  &__text{
     margin: 2rem auto 6rem auto;
-  span{
-    font-size: 3.2rem;
-    line-height: 1.5;
-  }
+    p{
+      font-size: 4.2rem;
+      font-style: italic;
+      background: -webkit-linear-gradient(#eee, #333);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }&__scroll{
     position: absolute;
     bottom: 15px;
     margin: auto;
-    // margin: 6rem auto 1.5rem auto;
     text-align: center;
-  p{
+    color: white;
+    padding-bottom: 40px;
+    }
+  &__footer{
+    padding-bottom: 20px;
     font-size: 2rem;
-    line-height: 1.5;
+    line-height: 0;
     display: flex;
     flex-direction: column;
-  }
+    font-weight: bolder;
+  }&__footer{
+    transform: scale(1.01);
+    transition: 0.1s;
+    color: white;
+  }a:hover{
+    transform: scale(1.01);
+    transition: 0.1s;
+    color: white;
+  }&__scroll:hover{
+    color: white;
+    transform: scale(1.01);
+    letter-spacing: 0.1rem;
 }
+}
+#icon:hover{
+  transform: scale(1.01);
+  transition: 0.1s;
+  color: white;
 }
 
 //media

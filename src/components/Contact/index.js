@@ -5,6 +5,7 @@ import emailjs from 'emailjs-com';
 import { toast, ToastContainer } from 'react-toastify';
 import {Icon} from 'semantic-ui-react';
 import { SiRedux, SiJavascript, SiHtml5 , SiCss3, SiTailwindcss, SiNodeDotJs, SiPostgresql, SiMysql} from 'react-icons/si';
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 
@@ -122,8 +123,8 @@ const Contact = ({
         onMouseLeave={() => setIsShown('for')}>
       {/* <div className="contact__wrap"> */}
         <form className="contact__form" onSubmit={onSubmit} >
-          <h1 className="contact__title">Contact <Icon name="linkedin" size="large"/><Icon name="github" size="large"/>
-          </h1>
+          <h3 className="contact__title">Contact <Icon name="linkedin" size="large"/><Icon name="github" size="large"/>
+          </h3>
 
           <Field
             name="name"

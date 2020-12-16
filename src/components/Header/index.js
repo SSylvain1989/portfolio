@@ -6,6 +6,8 @@ import {
   Menu,
 
 } from 'semantic-ui-react';
+import { HashLink } from 'react-router-hash-link';
+
 
 // == Import
 
@@ -23,9 +25,11 @@ const Header = ({
     handleMenuClick();
   };
   return (
-    <div className="header">
+    <div className="header" >
       <div className="header__logo">
-        <img className="header__img" src={logo} alt="home"/>
+      <HashLink to="/#"><img className="header__img" src={logo} alt="home__logo"/>
+        <h1><strong>Sylvain  SIGONNEZ</strong></h1> </HashLink>
+
       </div>
         <Icon id="hamburger__menu__icon" name="list" size="big" onClick={menuClick} />
         {/* changement de la valeur fait en passant par la
