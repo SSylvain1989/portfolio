@@ -18,7 +18,7 @@ const Footer = () => (
     {/* <Icon name="github" size="large"/>
     <Icon name="linkedin" size="large"/> */}
     <div className="Footer__infos">
-      <h2>Sylvain Sigonnez</h2>
+      <h1>Sylvain Sigonnez</h1>
       <p>sylvain.sigonnez@gmail.com</p>
       <p>06 08 88 77 72</p>
       <span className="Footer__copyright">Copyright © 2020 Sylvain Sigonnez - Tous droits réservés</span>

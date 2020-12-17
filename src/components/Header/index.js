@@ -26,11 +26,11 @@ const Header = ({
   };
   return (
     <div className="header" >
-      <div className="header__logo">
+      {/* <div className="header__logo">
       <HashLink to="/#"><img className="header__img" src={logo} alt="home__logo"/>
         <h1><strong>Sylvain  SIGONNEZ</strong></h1> </HashLink>
 
-      </div>
+      </div> */}
         <Icon id="hamburger__menu__icon" name="list" size="big" onClick={menuClick} />
         {/* changement de la valeur fait en passant par la
         fonction menulClick ligne 20 qui déclenche
@@ -42,31 +42,34 @@ const Header = ({
               {/* <Icon id="close__modal__icon" name="close" size="big" color="white" onClick={menuClick} /> */}
             </Menu.Item>
             <Menu.Item>
-              <Link to="/" onClick={menuClick}> Projects </Link>
+              <Link to="/" onClick={menuClick}> Projets </Link>
             </Menu.Item>
             <Menu.Item>
-              <Link to="/" onClick={menuClick}> About </Link>
+              <Link to="/" onClick={menuClick}> à propos </Link>
             </Menu.Item>
             <Menu.Item>
-              <Link to="/" onClick={menuClick}> Contact </Link>
+              <Link to="/" onClick={menuClick}> skills </Link>
             </Menu.Item>
             <Menu.Item>
               <p>Un projet ou un brin de causette ?</p><br/>
-            <Link to="/" onClick={menuClick}> Sylvain.sigonnez@gmail.com </Link>
+              <a href="mailto:sylvain.sigonnez@gmail.com" className="hamburger__contact">sylvain.sigonnez@gmail.com<br/></a>
+              <a href="tel:+33608887772" className="hamburger__contact">+33 6 08 88 77 72</a>
             </Menu.Item>
           </Menu>
         )}
             <Menu id="navbar_menu">
+              {/* <Menu.item> */}
+              <HashLink to="/#"><img className="header__img" src={logo} alt="home__logo"/>
+        <h1><strong>Sylvain  SIGONNEZ</strong></h1> </HashLink>
+              {/* </Menu.item> */}
               <Menu.Item>
+                <Link to="/" > Projets </Link>
               </Menu.Item>
               <Menu.Item>
-                <Link to="/" > Projects </Link>
+                <Link to="/" > à propos </Link>
               </Menu.Item>
               <Menu.Item>
-                <Link to="/" > About </Link>
-              </Menu.Item>
-              <Menu.Item>
-                <Link to="/" > Contact </Link>
+                <Link to="/" > skills </Link>
               </Menu.Item>
             </Menu>
       </div>

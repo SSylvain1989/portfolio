@@ -15,7 +15,7 @@
           margin: 2rem 4rem;
      }&__copyright{
           font-size: 0.9rem; 
-     }h2{
+     }h1{
           padding-bottom: 1rem;
      }li{
           font-weight: bold;
@@ -47,6 +47,45 @@
 @media(max-width: 767px)
 
 {
+     .Footer{
+          background-color:#1E1E1E;
+          width: 100%;
+          margin-top: 6rem;
+          margin: auto;
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          
+          // margin-left:auto ;
+          &__infos{
+               margin: auto;
+
+               // margin: 0.5rem 0.6rem;
+          }&__menu{
+               margin: auto;
+               padding-right: 15px;
+               // margin: 0.5rem 1rem;
+          }&__social{
+               margin: auto;
+
+               // margin: 0.5rem 1rem;
+          }&__copyright{
+               font-size: 0.5rem; 
+          }h1{
+               padding-bottom: 1rem;
+               font-size: 1rem;
+          }h2{
+               font-size: 1rem;
+          }li{
+               font-weight: bold;
+               padding-bottom: 10px;
+               font-size: 0.9rem;
+          }p{
+               font-weight: bold;
+               padding-bottom: 2px;
+               font-size: 1rem; 
+          }
+     }
 
 
 }

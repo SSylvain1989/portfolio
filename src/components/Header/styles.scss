@@ -163,6 +163,8 @@ display: none;
       margin: 0 0rem;
       font-size: 2.2rem;
       color: white;
+      text-transform: uppercase;
+
     }
   }
 
@@ -237,7 +239,7 @@ display: none;
     display: none;
   }
   #hamburger__menu__icon {
-    color:white;
+    color: white;
     position: fixed;
     right: 0;
     top: 0;
@@ -265,24 +267,27 @@ display: none;
     background: black;
     position: relative;
     left: -3rem;
-    top: -19px;
+    top: -22px;
     height: 98rem;
     z-index: 997;
-    width: 84rem;
+    width: 31.5rem;
     text-align: center;
     border-radius: 9px;
     align-items: center;
     border: none;
     transform: translateZ(200px);
     transition : all 1s ease ;
-    opacity: 0.9;
+    opacity: 0.92;
+    padding: 1.5rem;
 
     .item {
       border: none;
+      padding-top: 1.8rem;
     }
     a{
       color: white;
-      font-size: 2.2rem;
+      font-size: 4.2rem;
+      text-transform: uppercase;
     }
     .item:hover {
       font-size: 1.2em;
@@ -291,8 +296,12 @@ display: none;
       margin: auto;
       width: 250px;
       color: white;
-      font-size: 2rem;
+      font-size: 2.3rem;
     }
+  }
+  .hamburger__contact{
+    font-size: 1.6rem !important;
+    text-transform: none !important;
   }
 
   .header{
