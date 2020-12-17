@@ -143,66 +143,90 @@ display: none;
 // tablette
 @media(min-width: 768px) and (max-width: 1388px)
 {
-  #hamburger__menu__icon {
-    color:white;
-    position: fixed;
-    right: 0;
-    top: 0;
-    margin: 3rem;
-    z-index: 999;
-  }
-  #hamburger__menu__icon:active ~#hamburger__menu{
-   left:55rem;
- 
-  }
-  #close__modal__icon
-  {
-    display: none;
-    color:white;
-    position: fixed;
-    right: 0;
-    top: 0;
-    margin: 2rem;
-  }
-  
-  #hamburger__menu {
-    display: flex;
-    flex-direction: column;
-    background: black;
-    position: relative;
-    left: 37rem;
-    top: -19px;
-    height: 98rem;
-    z-index: 997;
-    width: 34rem;
-    text-align: center;
-    border-radius: 9px;
-    align-items: center;
+
+  #navbar_menu{
+    background-color: #1E1E1E;
     border: none;
-    transform: translateZ(200px);
-    transition : all 1s ease ;
-    opacity: 0.9;
-
-
-    .item {
+    position: fixed;
+    top: 5px;
+    right: 0;
+    margin: 2rem 10rem;
+    .item{
       border: none;
+      
     }
     a{
-      color: white;
+      display: inline;
+      position: relative;
+      text-decoration: none;
+      padding-top:1.1rem ;
+      margin: 0 0rem;
       font-size: 2.2rem;
-    }
-    .item:hover {
-      font-size: 1.2em;
-    }
-    p{
-      width: 250px;
       color: white;
-      font-size: 2rem;
     }
   }
-  #navbar_menu{
+
+
+  #hamburger__menu__icon {
     display: none;
+    // color:white;
+    // position: fixed;
+    // right: 0;
+    // top: 0;
+    // margin: 3rem;
+    // z-index: 999;
   }
+  // avant il est comme ça , apres il est comme définit par défaut
+  // #hamburger__menu__icon:active ~#hamburger__menu{
+  //  left:55rem;
+  //  filter: blur(1rem);
+  // }
+  // #close__modal__icon
+  // {
+  //   display: none;
+  //   color:white;
+  //   position: fixed;
+  //   right: 0;
+  //   top: 0;
+  //   margin: 2rem;
+  // }
+  
+  // #hamburger__menu {
+  //   display: flex;
+  //   flex-direction: column;
+  //   background: black;
+  //   position: relative;
+  //   left: -3rem;
+  //   top: -19px;
+  //   height: 98rem;
+  //   z-index: 997;
+  //   width: 84rem;
+  //   text-align: center;
+  //   border-radius: 9px;
+  //   align-items: center;
+  //   border: none;
+  //   transform: translateZ(200px);
+  //   transition : all 1s ease ;
+  //   opacity: 0.9;
+
+  //   .item {
+  //     border: none;
+  //   }
+  //   a{
+  //     color: white;
+  //     font-size: 2.2rem;
+  //   }
+  //   .item:hover {
+  //     font-size: 1.2em;
+  //   }
+  //   p{
+  //     margin: auto;
+  //     width: 250px;
+  //     color: white;
+  //     font-size: 2rem;
+  //   }
+  // }
+
 }
 
  // smartphone
@@ -217,46 +241,86 @@ display: none;
     position: fixed;
     right: 0;
     top: 0;
-    margin: 2rem;
+    margin: 3rem;
+    z-index: 999;
   }
-  #close__modal__icon
-  {
-    color:white;
-    position: fixed;
-    right: 0;
-    top: 0;
-    margin: 2rem;
+  // avant il est comme ça , apres il est comme définit par défaut
+  #hamburger__menu__icon:active ~#hamburger__menu{
+   left:55rem;
+   filter: blur(0.8rem);
   }
+  // #close__modal__icon
+  // {
+  //   display: none;
+  //   color:white;
+  //   position: fixed;
+  //   right: 0;
+  //   top: 0;
+  //   margin: 2rem;
+  // }
   
   #hamburger__menu {
     display: flex;
     flex-direction: column;
-    background: linear-gradient( #30CFD0 0%, #330867 100%);
-    position: fixed;
-    right: 10;
-    top: 10;
-    height: 100vh;
-    z-index: 999;
-    width: 100%;
-    transform: translateZ(100px);
-    transition : all 1.9s ease-in-out ;
+    background: black;
+    position: relative;
+    left: -3rem;
+    top: -19px;
+    height: 98rem;
+    z-index: 997;
+    width: 84rem;
+    text-align: center;
+    border-radius: 9px;
+    align-items: center;
+    border: none;
+    transform: translateZ(200px);
+    transition : all 1s ease ;
+    opacity: 0.9;
+
     .item {
-      border: solid 1px white;
+      border: none;
     }
     a{
-      color:red;
+      color: white;
       font-size: 2.2rem;
     }
     .item:hover {
-      background-color: black;
       font-size: 1.2em;
     }
     p{
+      margin: auto;
       width: 250px;
       color: white;
       font-size: 2rem;
-      border-bottom: 1px solid white;
     }
   }
 
+  .header{
+    z-index: 999;
+    padding: 5px;
+    margin-bottom: 2rem;
+    height: 10rem;
+    background-color: #1E1E1E;
+    width: 365px;
+    position: fixed;
+    top: 0;
+    &__logo{
+      margin: 1.6rem 4rem;
+      position: fixed;
+      left: -30px;
+      top: 0;
+    }  h1{
+      display: inline;
+      position: relative;
+      top: -30px;
+      text-decoration: none;
+      padding-top:1.1rem ;
+      margin: 0 2rem;
+      font-size: 1.2rem;
+      color: white;
+    }&__img{
+      height: 70px;
+      width: 70px;
+    }
+  }
 }

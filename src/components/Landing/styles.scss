@@ -13,8 +13,8 @@
   }
   h2{
     margin-top:8rem;
-    font-size: 6.2rem;
-    width: 61rem;
+    font-size: 2.5rem;
+    width: 22rem;
     line-height: 0.96em !important;
     font-weight: bolder;
     text-transform: uppercase;
@@ -24,7 +24,7 @@
 	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-    font-size: 6.2rem;
+    font-size: 2.5rem;
     line-height: 0;
     content:'';
     animation: landing linear infinite 6s;
@@ -50,7 +50,7 @@
   &__text{
     margin: 2rem auto 6rem auto;
     p{
-      font-size: 4.2rem;
+      font-size: 2rem;
       font-style: italic;
       background: -webkit-linear-gradient(#eee, #333);
       -webkit-background-clip: text;
