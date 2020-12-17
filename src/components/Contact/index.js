@@ -7,8 +7,6 @@ import {Icon} from 'semantic-ui-react';
 import { SiRedux, SiJavascript, SiHtml5 , SiCss3, SiTailwindcss, SiNodeDotJs, SiPostgresql, SiMysql} from 'react-icons/si';
 import { HashLink as Link } from 'react-router-hash-link';
 
-
-
 // == Import
 import Field from '../common/Field';
 import hautDroite from '../../images/1.png';

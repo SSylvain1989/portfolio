@@ -101,8 +101,10 @@ h1:hover:after {
   margin: 2rem 10rem;
   .item{
     border: none;
+    // border: solid 1px white;
   }
   a{
+    border: none;
     display: inline;
     position: relative;
     text-decoration: none;
@@ -149,13 +151,18 @@ display: none;
     border: none;
     position: fixed;
     top: 5px;
-    right: 0;
-    margin: 2rem 10rem;
+    left: -5px;
+    margin: 2rem 1rem;
+    padding: 0rem 1rem;
+    width: 98%;
     .item{
       border: none;
+      // border: solid 1px white;
+
       
     }
     a{
+      border: none;
       display: inline;
       position: relative;
       text-decoration: none;
