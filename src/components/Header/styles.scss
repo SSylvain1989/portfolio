@@ -96,17 +96,36 @@ display: none;
 }
 }
 
-// tablette ipad pro
-@media(min-width: 1024px) and (max-width: 1388px)
+// tablette 
+@media(min-width: 1024px) and (max-width: 1388px) // test ipad pro ** FINI
 {
+  .header{
+    width: 95%;
+    height: fit-content;
+    height: 8.3rem;
+    h1{
+      position: relative;
+      top: -0.5rem;
+      text-decoration: none;
+      padding-top:1.3rem ;
+      margin: 0 2rem;
+      font-size: 1.8rem;
+      color: white;
+    }&__img{
+      position: relative;
+      top: 28px;
+      height: 90px;
+      width: 90px;
+    }
+  }
 
   #navbar_menu{
     background-color: #1E1E1E;
     border: none;
     position: fixed;
     top: 5px;
-    left: -5px;
-    margin: 2rem 1rem;
+    left: 37%;
+    margin: 2rem 0.7rem;
     padding: 0rem 1rem;
     width: 98%;
     .item{
@@ -125,8 +144,8 @@ display: none;
       font-size: 2.2rem;
       color: white;
       text-transform: uppercase;
-
     }
+    
   }
 
 
@@ -134,13 +153,91 @@ display: none;
     display: none;
   }
 }
-@media(min-width: 767px) and (max-width: 1023px)
- {
+@media(min-width: 767px) and (max-width: 1023px) // test sur ipad ** FINI
+{
+  #navbar_menu{
+    display: none;
+  }
+  #hamburger__menu__icon {
+    color: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 3rem;
+    z-index: 999;
+  }
+  // avant il est comme ça , apres il est comme définit par défaut
+  #hamburger__menu__icon:active ~#hamburger__menu{
+   left:55rem;
+   filter: blur(0.8rem);
+  }
+  
+  #hamburger__menu {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    position: relative;
+    left: -3.5rem;
+    top: -22px;
+    height: 98rem;
+    z-index: 997;
+    width: 58.5rem;
+    text-align: center;
+    border-radius: 9px;
+    align-items: center;
+    border: none;
+    transform: translateZ(200px);
+    transition : all 1s ease ;
+    opacity: 0.92;
+    padding: 1.5rem;
 
- }
+    .item {
+      border: none;
+      padding-top: 1.8rem;
+    }
+    a{
+      margin: auto;
+      color: white;
+      font-size: 3.5rem;
+      text-transform: uppercase;
+    }
+    .item:hover {
+      font-size: 1.2em;
+    }
+    p{
+      margin: auto;
+      width: 250px;
+      color: white;
+      font-size: 2.3rem;
+    }
+  }
+  .hamburger__contact{
+    font-size: 1.6rem !important;
+    text-transform: none !important;
+  }
+
+  .header{
+    width: 80%;
+    height: fit-content;
+    h1{
+      position: relative;
+      top: -8px;
+      text-decoration: none;
+      padding-top:1.3rem ;
+      margin: 0 2rem;
+      font-size: 2.2rem;
+      color: white;
+    }&__img{
+      position: relative;
+      top: 14px;
+      height: 70px;
+      width: 70px;
+    }
+  }
+}
 
 
-@media(min-width: 540px) and (max-width: 766px)
+@media(min-width: 540px) and (max-width: 766px) // test sur surface duo FINI
  {
   #navbar_menu{
     display: none;

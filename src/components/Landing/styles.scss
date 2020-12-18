@@ -101,8 +101,8 @@
 
 }
 
-// tablette
-@media(min-width: 1024px) and (max-width: 1388px)
+// tablette 
+@media(min-width: 1024px) and (max-width: 1388px) // test sur ipad pro ** FINI
  {
   .Landing{
     width: 100%;
@@ -120,6 +120,7 @@
     h2{
       padding-left: 3rem;
       margin-top:14rem;
+      margin-bottom: 0rem;
       font-size: 6.3rem;
       width: 66rem;
       line-height: 0.96em !important;
@@ -137,25 +138,7 @@
       animation: landing linear infinite 6s;
       transition: 0.6s;
     }
-
-  
-  @keyframes landing {
-    0%{
-      content: ' Front-End.';
-    }
-    35%{
-      content: ' Back-End.';
-    }
-    55%{
-      content: ' FullStack Js.';
-    }
-    77%{
-      content: ' de bonne humeur.';
-    }
-    100%{
-      content: ' Front-End.';
-    }    
-  }  
+ 
   &__text{
     margin: 2rem auto 6rem auto;
     p{
@@ -201,23 +184,70 @@
   color: white;
 }
 
- }
-
- // smartphone
+}
 
 
-@media(min-width: 767px) and (max-width: 1023px)
- {
 
- }
-
-
-@media(min-width: 540px) and (max-width: 766px)// test sur surface duo 
- 
-
+@media(min-width: 767px) and (max-width: 1023px) // test sur ipad ** FINI
 {
   .Landing{
+    &__title{
+      text-align: center;
+      margin: 12rem auto 1.5rem auto;
+    }
+    h2{
+      margin-top:5rem;
+      margin-bottom: 0rem;
+      padding-left: 1.9rem;
+      font-size: 4.5rem;
+      width: 50rem;
+      line-height: 0.96em !important;
+      font-weight: bolder;
+      text-transform: uppercase;
+    }
+    &__rotate:before{
+    text-transform: uppercase;
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      font-size: 4.5rem;
+      line-height: 0;
+      content:'';
+      animation: landing linear infinite 6s;
+      transition: 0.6s;
+    }
+  &__text{
+    margin: 2rem auto 6rem auto;
+    p{
+      padding-left: 1.9rem;
+      font-size: 3rem;
+      font-style: italic;
+      background: -webkit-linear-gradient(#eee, #333);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }&__scroll{
+    position: absolute;
+    bottom: 15px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    padding-bottom: 40px;
+    }
+  &__footer{
+    padding-bottom: 20px;
+    font-size: 2rem;
+    line-height: 0;
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+  }
+}
+}
 
+@media(min-width: 540px) and (max-width: 766px)// test sur surface duo ** FINI
+{
+  .Landing{
     &__title{
       text-align: center;
       margin: 12rem auto 1.5rem auto;
@@ -269,14 +299,7 @@
     flex-direction: column;
     font-weight: bolder;
   }
-
 }
-// #icon:hover{
-//   transform: scale(1.01);
-//   transition: 0.1s;
-//   color: white;
-// }
-
 }
 
  // smartphone - mini start with iphone X / max surface duo  ** FINI
