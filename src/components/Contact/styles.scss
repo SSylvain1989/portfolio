@@ -388,7 +388,7 @@ transition: 0.4s;
      
      .about{
           margin-bottom: 2rem;
-          padding: 2.3rem;
+          padding: 2rem;
           background-color: #222121;
           width: 87%;
           height: 35rem;
@@ -463,5 +463,22 @@ transition: 0.4s;
           }
 
 
+
+}
+@media(max-width: 360px) // tres petit smartphone ** FINI
+{
+     .about{
+          margin-bottom: 2rem;
+          padding: 1.2rem;
+          background-color: #222121;
+          width: 87%;
+          height: 35rem;
+          // border: solid 1px salmon;
+          transition: 0.4s;
+          border-radius: 5px;
+          font-size: 1.1rem;
+          font-weight: bold;
+     
+     }
 
 }
