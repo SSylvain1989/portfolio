@@ -8,7 +8,6 @@ import Project from './Project';
 import './styles.scss';
 import { HashLink as Link } from 'react-router-hash-link';
 
-
 // == Composant
 const Projects = () => (
   <div className="container" id="Projects">

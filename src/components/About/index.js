@@ -9,7 +9,7 @@ import './styles.scss';
 
 // == Composant
 const About = () => (
-  <div className="About">
+  <div className="About" id="about">
     <div>
       <h2>ABOUT ME</h2>
       <p>Hi , </p>
