@@ -48,7 +48,7 @@ const Header = ({
               <Link to="/" onClick={menuClick}> à propos </Link>
             </Menu.Item>
             <Menu.Item>
-              <Link to="/" onClick={menuClick}> skills </Link>
+              <Link to="/" onClick={menuClick}> compétences </Link>
             </Menu.Item>
             <Menu.Item>
               <p>Un projet ou un brin de causette ?</p><br/>
@@ -57,10 +57,10 @@ const Header = ({
             </Menu.Item>
           </Menu>
         )}
-            <Menu id="navbar_menu">
-              {/* <Menu.item> */}
               <HashLink to="/#"><img className="header__img" src={logo} alt="home__logo"/>
         <h1><strong>Sylvain  SIGONNEZ</strong></h1> </HashLink>
+            <Menu id="navbar_menu">
+              {/* <Menu.item> */}
               {/* </Menu.item> */}
               <Menu.Item>
                 <Link to="/" > Projets </Link>
@@ -69,7 +69,7 @@ const Header = ({
                 <Link to="/" > à propos </Link>
               </Menu.Item>
               <Menu.Item>
-                <Link to="/" > skills </Link>
+                <Link to="/" > compétences </Link>
               </Menu.Item>
             </Menu>
       </div>

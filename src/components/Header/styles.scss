@@ -46,52 +46,6 @@ h1:hover:after {
 }
 }
 
-
-// #hamburger__menu__icon {
-//   color:white;
-//   position: fixed;
-//   right: 0;
-//   top: 0;
-//   margin: 2rem;
-// }
-// #close__modal__icon
-// {
-//   color:white;
-//   position: fixed;
-//   right: 0;
-//   top: 0;
-//   margin: 2rem;
-// }
-
-// #hamburger__menu {
-//   display: flex;
-//   flex-direction: column;
-// 	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-//   position: absolute;
-//   left: 3rem;
-//   top: 40px;
-//   height: 200px ;
-//   width: 390px ;
-//   z-index: 999;
-//   transform: translateZ(100px);
-//   transition : all 1.9s ease-in-out ;
-//   .item {
-//     border: solid 1px white;
-//   }
-//   a{
-//     color:white;
-//     font-size: 2.2rem;
-//   }
-//   .item:hover {
-//     font-size: 1.2em;
-//   }
-//   p{
-//     width: 250px;
-//     color: white;
-//     font-size: 2rem;
-//   }
-// }
-
 #navbar_menu{
   background-color: #1E1E1E;
   border: none;
@@ -101,13 +55,12 @@ h1:hover:after {
   margin: 2rem 10rem;
   .item{
     border: none;
-    // border: solid 1px white;
   }
   a{
     border: none;
     display: inline;
     position: relative;
-    text-decoration: none;
+    text-transform: uppercase;
     padding-top:1.1rem ;
     margin: 0 2rem;
     font-size: 2.2rem;
@@ -133,6 +86,7 @@ h1:hover:after {
 
   }
 }
+/* -------------------- MEDIA QUERIES --------------------------*/
 
 // desktop
 @media(min-width: 1389px)
@@ -142,8 +96,8 @@ display: none;
 }
 }
 
-// tablette
-@media(min-width: 768px) and (max-width: 1388px)
+// tablette ipad pro
+@media(min-width: 1024px) and (max-width: 1388px)
 {
 
   #navbar_menu{
@@ -178,70 +132,16 @@ display: none;
 
   #hamburger__menu__icon {
     display: none;
-    // color:white;
-    // position: fixed;
-    // right: 0;
-    // top: 0;
-    // margin: 3rem;
-    // z-index: 999;
   }
-  // avant il est comme ça , apres il est comme définit par défaut
-  // #hamburger__menu__icon:active ~#hamburger__menu{
-  //  left:55rem;
-  //  filter: blur(1rem);
-  // }
-  // #close__modal__icon
-  // {
-  //   display: none;
-  //   color:white;
-  //   position: fixed;
-  //   right: 0;
-  //   top: 0;
-  //   margin: 2rem;
-  // }
-  
-  // #hamburger__menu {
-  //   display: flex;
-  //   flex-direction: column;
-  //   background: black;
-  //   position: relative;
-  //   left: -3rem;
-  //   top: -19px;
-  //   height: 98rem;
-  //   z-index: 997;
-  //   width: 84rem;
-  //   text-align: center;
-  //   border-radius: 9px;
-  //   align-items: center;
-  //   border: none;
-  //   transform: translateZ(200px);
-  //   transition : all 1s ease ;
-  //   opacity: 0.9;
-
-  //   .item {
-  //     border: none;
-  //   }
-  //   a{
-  //     color: white;
-  //     font-size: 2.2rem;
-  //   }
-  //   .item:hover {
-  //     font-size: 1.2em;
-  //   }
-  //   p{
-  //     margin: auto;
-  //     width: 250px;
-  //     color: white;
-  //     font-size: 2rem;
-  //   }
-  // }
-
 }
+@media(min-width: 767px) and (max-width: 1023px)
+ {
 
- // smartphone
-@media(max-width: 767px)
+ }
 
-{
+
+@media(min-width: 540px) and (max-width: 766px)
+ {
   #navbar_menu{
     display: none;
   }
@@ -258,26 +158,17 @@ display: none;
    left:55rem;
    filter: blur(0.8rem);
   }
-  // #close__modal__icon
-  // {
-  //   display: none;
-  //   color:white;
-  //   position: fixed;
-  //   right: 0;
-  //   top: 0;
-  //   margin: 2rem;
-  // }
   
   #hamburger__menu {
     display: flex;
     flex-direction: column;
     background: black;
     position: relative;
-    left: -3rem;
+    left: -3.5rem;
     top: -22px;
     height: 98rem;
     z-index: 997;
-    width: 31.5rem;
+    width: 41.5rem;
     text-align: center;
     border-radius: 9px;
     align-items: center;
@@ -292,8 +183,9 @@ display: none;
       padding-top: 1.8rem;
     }
     a{
+      margin: auto;
       color: white;
-      font-size: 4.2rem;
+      font-size: 3.5rem;
       text-transform: uppercase;
     }
     .item:hover {
@@ -312,31 +204,191 @@ display: none;
   }
 
   .header{
-    z-index: 999;
-    padding: 5px;
-    margin-bottom: 2rem;
-    height: 10rem;
-    background-color: #1E1E1E;
-    width: 365px;
-    position: fixed;
-    top: 0;
-    &__logo{
-      margin: 1.6rem 4rem;
-      position: fixed;
-      left: -30px;
-      top: 0;
-    }  h1{
-      display: inline;
+    width: 80%;
+    height: fit-content;
+    h1{
       position: relative;
-      top: -30px;
+      top: -14px;
       text-decoration: none;
       padding-top:1.1rem ;
       margin: 0 2rem;
       font-size: 1.2rem;
       color: white;
     }&__img{
+      position: relative;
+      top: 14px;
       height: 70px;
       width: 70px;
     }
   }
+
+ }
+
+
+
+ // smartphone - mini start with iphone X / max surface duo ** FINI
+ @media screen and (min-width:361px) and (max-width: 539px)
+
+{
+  #navbar_menu{
+    display: none;
+  }
+  #hamburger__menu__icon {
+    color: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 3rem;
+    z-index: 999;
+  }
+  // avant il est comme ça , apres il est comme définit par défaut
+  #hamburger__menu__icon:active ~#hamburger__menu{
+   left:55rem;
+   filter: blur(0.8rem);
+  }
+  
+  #hamburger__menu {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    position: relative;
+    left: -3.5rem;
+    top: -22px;
+    height: 98rem;
+    z-index: 997;
+    width: 31.5rem;
+    text-align: center;
+    border-radius: 9px;
+    align-items: center;
+    border: none;
+    transform: translateZ(200px);
+    transition : all 1s ease ;
+    opacity: 0.92;
+    padding: 1.5rem;
+
+    .item {
+      border: none;
+      padding-top: 1.8rem;
+    }
+    a{
+      margin: auto;
+      color: white;
+      font-size: 3.5rem;
+      text-transform: uppercase;
+    }
+    .item:hover {
+      font-size: 1.2em;
+    }
+    p{
+      margin: auto;
+      width: 250px;
+      color: white;
+      font-size: 2.3rem;
+    }
+  }
+  .hamburger__contact{
+    font-size: 1.6rem !important;
+    text-transform: none !important;
+  }
+
+  .header{
+    width: 90%;
+    height: fit-content;
+    h1{
+      position: relative;
+      top: -14px;
+      text-decoration: none;
+      padding-top:1.1rem ;
+      margin: 0 2rem;
+      font-size: 1rem;
+      color: white;
+    }&__img{
+      position: relative;
+      top: 14px;
+      height: 70px;
+      width: 70px;
+    }
+  }
+}
+
+@media(max-width: 360px) // tres petit smartphone ** FINI
+{
+
+  #navbar_menu{
+    display: none;
+  }
+  #hamburger__menu__icon {
+    color: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 3rem;
+    z-index: 999;
+  }
+  // avant il est comme ça , apres il est comme définit par défaut
+  #hamburger__menu__icon:active ~#hamburger__menu{
+   left:55rem;
+   filter: blur(0.8rem);
+  }
+  
+  #hamburger__menu {
+    display: flex;
+    flex-direction: column;
+    background: black;
+    position: relative;
+    left: -4.7rem;
+    top: -22px;
+    height: 98rem;
+    z-index: 997;
+    width: 31.5rem;
+    text-align: center;
+    border-radius: 9px;
+    align-items: center;
+    border: none;
+    transform: translateZ(200px);
+    transition : all 1s ease ;
+    opacity: 0.92;
+    padding: 1.5rem;
+
+
+    a{
+      margin: auto;
+      color: white;
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
+    .item:hover {
+      font-size: 1.2em;
+    }
+    p{
+      margin: auto;
+      width: 250px;
+      color: white;
+      font-size: 2.3rem;
+    }
+  }
+  .hamburger__contact{
+    font-size: 1.6rem !important;
+    text-transform: none !important;
+  }
+
+  .header{
+    width: 81%;
+    height: fit-content;
+    h1{
+      position: relative;
+      top: -14px;
+      text-decoration: none;
+      padding-top:1.1rem ;
+      margin: 0 2rem;
+      font-size: 0.8rem;
+      color: white;
+    }&__img{
+      position: relative;
+      top: 14px;
+      height: 70px;
+      width: 70px;
+    }
+  }
+
 }
