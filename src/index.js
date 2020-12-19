@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import 'semantic-ui-css/semantic.min.css';
 
 // == Import : local
-require('./styles/index.scss');
+// require('./styles/index.scss');
 
 // Composants
 import App from 'src/components/App';
