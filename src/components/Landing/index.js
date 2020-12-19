@@ -16,11 +16,11 @@ const Landing = () => (
   <div className="Landing" id="#">
 
     <div className="Landing__container">
-      <div className="Landing__title">
+      <div className="Landing__title" >
       
       </div>
-      <div className="Landing__text" >
-      <h2>Je<br/> suis<br/><strong>développeur</strong><br/><span className="Landing__rotate"></span><br/></h2>
+      <div className="Landing__text" id="Landing__animation">
+      <h2>Je<br/> suis<br/><strong >développeur</strong><br/><span className="Landing__rotate"></span><br/></h2>
       <p>Ma spécialité : <strong>React</strong> & <strong>Node</strong>.</p>
       </div>
       <HashLink to="/#Projects" className="Landing__scroll" >

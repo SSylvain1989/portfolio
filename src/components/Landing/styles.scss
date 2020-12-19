@@ -31,6 +31,56 @@
     animation: landing linear infinite 6s;
     transition: 0.6s;
   }
+  // keyframes pour la bordure qui tourne
+  @keyframes tipsy {
+    0%{
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+  }
+  #Landing__animation{
+    color: #fffbf1;
+    font-size: 80px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -4px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  #Landing__animation:before,
+  #Landing__animation:after {
+    content: '';
+    // hauteur du cadre
+    padding: 11rem;
+    position: absolute;
+    left: 50%;
+    // largeur du cadre
+    width: 50rem;
+    top: 50%;
+    display: block;
+    border: 13px solid;
+    border-image-source: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    border-image-slice:1;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation: 15s infinite alternate ease-in-out tipsy;
+  }
+  
+  #Landing__animation:before {
+    border-color: linear-gradient(to right, #30CFD0 0%, #330867 100%) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+  }
+  
+  #Landing__animation:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    box-shadow: 25px 25px 25px rgba(46, 32, 49, .1);
+  }
+  // keyframes pour defilement apres developpeur
   @keyframes landing {
     0%{
       content: ' Front-End.';
@@ -42,7 +92,7 @@
       content: ' FullStack Js.';
     }
     77%{
-      content: ' de bonne humeur.';
+      content: ' bonne humeur.';
     }
     100%{
       content: ' Front-End.';
@@ -50,6 +100,8 @@
   }  
   &__text{
     margin: 2rem auto 6rem auto;
+    align-content: center;
+    padding-left: 15rem;
     p{
       padding-left: 5rem;
       font-size: 4rem;
