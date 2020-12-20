@@ -11,9 +11,7 @@
   // position: relative;
 }
 .card{
-  height: 10px;
-  max-height: 10px;
-  // 
+  margin: 10px 20px 20px -10px; 
 }
 .container .card:hover .face2{
   transform: translateY(15px);
@@ -22,14 +20,14 @@
 .face1 {
   width: 500px;
   height: 300px;
-  transition: 0.5s;
+  transition: 1.5s;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1;
   background: #1E1E1E;
-  transform: translateY(140px);
+  transform: translateY(40px);
   
   
 }
@@ -40,9 +38,11 @@
 }
 .content {
   opacity: 1;
-  transition: 0.8s;
+  transition: 1.2s;
   max-height: 100%;
   width: 100%;
+  padding:0;
+  text-align: center;
 }
 .content:hover {
   opacity: 1;
@@ -50,24 +50,62 @@
   
 }
 
-.button {
+.content:hover .face1__subtitle{
+  display: none;
+}
+
+.content:hover .face1__subtitle{
+  display: none;
+}
+
+.card:hover .face1__subtitle{
+  display: none;
+}
+
+.face1__subtitle{
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  font-weight: bold;
+  color : #325690;
+  padding : 10px;
+  border-radius: 10px;
+}
+
+.button__one {
+  position: fixed;
+  bottom: 0;
+  right: 1px;
   display: inline-block;
   background-color : #2a2a2a;
   border-radius: 5px;
   color : white;
-  padding : 1rem 0.5rem;
-  border: solid 1px white;
   text-decoration: none;
-  padding:1rem;
-  margin-top: 6.7rem;
+  padding:0.4rem;
+  margin: 0.7rem;
 }
-.button:hover {
+.button__one:hover {
+  background-color :#1E1E1E;
+  color: white;
+}
+.button__two {
+  position: fixed;
+  bottom: 0;
+  right: 50px;
+  display: inline-block;
+  background-color : #2a2a2a;
+  border-radius: 5px;
+  color : white;
+  text-decoration: none;
+  padding:0.4rem;
+  margin: 0.7rem;
+}
+.button__two:hover {
   background-color :#1E1E1E;
   color: white;
 }
 .face2 {
   width: 500px;
-  height: 280px;
+  height: 180px;
   transition: 0.5s;
   position: relative;
   display: flex;
@@ -78,6 +116,10 @@
   box-sizing: border-box;
   box-shadow: 0px 10px 5px rgba(0,0,0, 0.8);
   transform: translateY(-100px);
+}
+
+.face2:hover .face1__subtitle{
+  display: none;
 }
 
 .picture{
@@ -92,8 +134,12 @@
 
 .infos{
   margin: 10px 0 0;
-  padding-top: 30px;
+  padding-top: 3px;
   font-size: 1.3rem;
+}
+
+.infos:hover .face1__subtitle{
+  display: none;
 }
 
 //media

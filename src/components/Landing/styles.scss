@@ -65,26 +65,12 @@
     top: 50%;
     display: block;
     border: 13px solid blue;
-    // border-image-source: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-    // border-image-slice:1;
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
     animation: 15s infinite alternate ease-in-out tipsy;
-    // z-index: -1;
     border-radius: 5px;
-
-
   }
   
-  // #Landing__animation:before {
-  //   border-color: linear-gradient(to right, #30CFD0 0%, #330867 100%) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
-  //   // z-index: -1;
-  // }
-  
-  // #Landing__animation:after {
-  //   border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) linear-gradient(to right, #30CFD0 0%, #330867 100%);
-  //   box-shadow: 25px 25px 25px rgba(46, 32, 49, .1);
-  //   z-index: -1;
-  // }
+
 
   #Landing__animation:before {
     border-color: #325690#316699 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
@@ -94,7 +80,6 @@
   
   #Landing__animation:after {
     border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #317FA6 #31C3CA;
-    // box-shadow: 5px 5px 5px rgba(46, 46, 49, .8);
   }
 
   // keyframes pour defilement apres developpeur
