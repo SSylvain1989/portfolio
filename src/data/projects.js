@@ -1,12 +1,15 @@
-import hero from '../images/hero.jpg';
-import github from '../images/github.jpg';
+import hero from '../images/hero2.png';
+import github from '../images/github.png';
+import portfolio from '../images/portfolio.png';
+
 
 const projects = [
   {
     fullName: 'Hero',
     stack: 'React / Redux - Node.js / Postgres / Sqitch ',
     description: 'Website wich you are the hero',
-    github: 'https://github.com/SSylvain1989/portfolioo',
+    github: 'https://github.com/O-clock-Jason/projet-hero',
+    website: 'http://3.89.27.242:3000/',
     image: hero,
   },
   {
@@ -17,11 +20,12 @@ const projects = [
     image: github,
   },
   {
-    fullName: 'Laura',
+    fullName: 'Portfolio',
     stack: 'Html / css ',
     description: 'Site vitrine de Laura developpement personnel',
     github: 'https://github.com/SSylvain1989/portfolioo',
-    image: hero,
+    website:'https://sylvain-dev.netlify.app/',
+    image: portfolio,
   },
   {
     fullName: 'Pokedex',

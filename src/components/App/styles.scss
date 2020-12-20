@@ -11,3 +11,27 @@
   background-color:#1E1E1E;
 }
 
+@media(min-width: 2560px) // taille 27 pouces
+{
+  .app {
+  padding-left: 15%;
+  padding-right: 15%;
+  }
+
+}
+
+@media(min-width: 1920px) // taille 24 pouces
+{
+  .app {
+  padding-left: 10%;
+  padding-right: 10%;
+  }
+}
+
+@media(min-width: 1389px) and (max-width: 1919px) // 19pouces à 22 pouces
+{
+  .app {
+  padding-left: 7%;
+  padding-right: 7%;
+  }
+}

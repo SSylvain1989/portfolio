@@ -57,29 +57,46 @@
   #Landing__animation:after {
     content: '';
     // hauteur du cadre
-    padding: 11rem;
+    padding: 13rem;
     position: absolute;
     left: 50%;
     // largeur du cadre
     width: 50rem;
     top: 50%;
     display: block;
-    border: 13px solid;
-    border-image-source: linear-gradient(to right, #30CFD0 0%, #330867 100%);
-    border-image-slice:1;
+    border: 13px solid blue;
+    // border-image-source: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    // border-image-slice:1;
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
     animation: 15s infinite alternate ease-in-out tipsy;
+    // z-index: -1;
+    border-radius: 5px;
+
+
   }
   
+  // #Landing__animation:before {
+  //   border-color: linear-gradient(to right, #30CFD0 0%, #330867 100%) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  //   // z-index: -1;
+  // }
+  
+  // #Landing__animation:after {
+  //   border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) linear-gradient(to right, #30CFD0 0%, #330867 100%);
+  //   box-shadow: 25px 25px 25px rgba(46, 32, 49, .1);
+  //   z-index: -1;
+  // }
+
   #Landing__animation:before {
-    border-color: linear-gradient(to right, #30CFD0 0%, #330867 100%) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-color: #325690#316699 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    box-shadow: 1px 1px 15px 1px rgba(178, 178, 192, 0.8);
     z-index: -1;
   }
   
   #Landing__animation:after {
-    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) linear-gradient(to right, #30CFD0 0%, #330867 100%);
-    box-shadow: 25px 25px 25px rgba(46, 32, 49, .1);
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #317FA6 #31C3CA;
+    // box-shadow: 5px 5px 5px rgba(46, 46, 49, .8);
   }
+
   // keyframes pour defilement apres developpeur
   @keyframes landing {
     0%{
@@ -148,13 +165,24 @@
 //media
 
 // desktop
-@media(min-width: 1389px)
+
+@media(min-width: 2560px) // taille 27 pouces
+{
+
+}
+
+@media(min-width: 1920px) // taille 24 pouces
+{
+
+}
+
+@media(min-width: 1389px) and (max-width: 1919px) // 19pouces à 22 pouces
 {
 
 }
 
 // tablette 
-@media(min-width: 1024px) and (max-width: 1388px) // test sur ipad pro ** FINI
+@media(min-width: 1024px) and (max-width: 1388px) // test sur ipad pro ** FINI 15pouces à 19pouces
  {
   .Landing{
     width: 100%;
@@ -240,7 +268,7 @@
 
 
 
-@media(min-width: 767px) and (max-width: 1023px) // test sur ipad ** FINI
+@media(min-width: 767px) and (max-width: 1023px) // test sur ipad ** FINI // ou pc 13 pouces
 {
   .Landing{
     &__title{

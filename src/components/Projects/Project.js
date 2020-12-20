@@ -17,7 +17,7 @@ const Project = ({
   </div>
 </div>
 <div className="face2">
-  <div className="content__face2">
+  <div className="content">
     <p className="infos"> Stack : {stack}  <br /> Description : {description}</p>
     <a className="button" href={github}>github</a>
   </div>
