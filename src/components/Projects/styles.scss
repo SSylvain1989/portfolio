@@ -170,10 +170,12 @@
 {
 
 }
-
+@media(min-width: 1024px) and (max-width: 1388px) // test ipad pro 
+{
+}
 // tablette
-@media(min-width: 768px) and (max-width: 1388px)
- {
+@media(min-width: 767px) and (max-width: 1023px) // test sur ipad **fini
+{
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -190,83 +192,182 @@
   }
   
 
- }
+}
 
  // smartphone
-@media(max-width: 767px)
-
+ @media(min-width: 540px) and (max-width: 766px) // test sur surface duo **fini
 {
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+  .container{
+    padding-left: 10%;
     height: 300vh;
-    margin : auto;
-    background-color:#1E1E1E;
-    padding-bottom: 1px;
   }
-  .card{
-    height: 10px;
-    max-height: 20px;
-  // 
-  }
-  .container .card:hover .face2{
-    transform: translateY(15px);
-  }
-  
-  .face1 {
-    margin: 2rem -3.5rem;
-    width: 300px;
-    height: 200px;
-    transition: 0.5s;
-    position: relative;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transform: translateY(100px);
-  
-  
-  }
-  .container .card:hover .face1 {
-    transform: translateY(0);
-    border-radius: 10px 10px 0px 0;
-  
-  }
-  .content {
-    opacity: 1;
-    transition: 0.8s;
-    max-height: 100%;
-  }
-  .content:hover {
-    opacity: 1;
-    border-radius: 10px 10px 0px 0;
-  
-  }
-  
-  .face2 {
-    width: 300px;
-    height: 200px;
-    transition: 0.5s;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color:#2a2a2a;
-    padding: 10px;
-    border-radius: 0px 0px 10px 10px;
-
-
-    transform: translateY(-100px);
-  }
-  
   .picture{
-    max-width: 300px;
-    width: 300px;
-    height: 230px;
-    border-radius: 10px 10px 10px 10px;
+    width: 360px;
+    height: 220px;
     object-fit:cover;
     object-position:50% 50%;
   }
+
+  .face1 {
+    margin: 2rem -3.5rem;
+    width: 360px;
+    height: 220px;
+    position: relative;
+    margin: auto;
+    transform: translateY(95px);
+    background-color:#2a2a2a;
+    border-radius: 15px 15px 0px 0px;
+
+  }
+
+.face2 {
+  width: 360px;
+  height: 180px;
+  transform: translateY(-50px);
+  border-radius: 5px;
+  
+  p{
+    font-size: 1.4rem;
+    padding: 0.5rem;
+  }
+}
+
+.container .card:hover .face2{
+  transform: translateY(-17px);
+}
+
+.stack{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 300px;
+&__icons{
+  display: flex;
+  flex-flow: row wrap;
+  padding: -4px;
+}
+}
+.icon{
+  width: 35px;
+  height: 35px;
+}
+}
+ // smartphone - mini start with iphone X / max surface duo ** FINI
+@media screen and (min-width:361px) and (max-width: 539px)
+{
+
+  .container{
+    padding-left: 7%;
+    height: 300vh;
+  }
+  .picture{
+    width: 330px;
+    height: 200px;
+    object-fit:cover;
+    object-position:50% 50%;
+  }
+
+  .face1 {
+    margin: 2rem -3.5rem;
+    width: 330px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    transform: translateY(80px);
+    background-color:#2a2a2a;
+    border-radius: 15px 15px 0px 0px;
+
+  }
+
+.face2 {
+  width: 330px;
+  height: 180px;
+  transform: translateY(-70px);
+  border-radius: 5px;
+  
+  p{
+    font-size: 1.4rem;
+    padding: 0.5rem;
+  }
+}
+
+.container .card:hover .face2{
+  transform: translateY(-17px);
+}
+
+.stack{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 300px;
+&__icons{
+  display: flex;
+  flex-flow: row wrap;
+  padding: -4px;
+}
+}
+.icon{
+  width: 35px;
+  height: 35px;
+}
+}
+@media(max-width: 360px) // tres petit smartphone * FINI
+{
+  .container{
+    padding-left: 7%;
+    height: 300vh;
+  }
+  .picture{
+    width: 330px;
+    height: 200px;
+    object-fit:cover;
+    object-position:50% 50%;
+  }
+
+  .face1 {
+    margin: 2rem -3.5rem;
+    width: 330px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    transform: translateY(80px);
+    background-color:#2a2a2a;
+    border-radius: 15px 15px 0px 0px;
+
+  }
+
+.face2 {
+  width: 330px;
+  height: 180px;
+  transform: translateY(-70px);
+  border-radius: 5px;
+  
+  p{
+    font-size: 1.4rem;
+    padding: 0.5rem;
+  }
+}
+
+.container .card:hover .face2{
+  transform: translateY(-17px);
+}
+
+.stack{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 300px;
+&__icons{
+  display: flex;
+  flex-flow: row wrap;
+  padding: -4px;
+}
+}
+.icon{
+  width: 35px;
+  height: 35px;
+}
 }
