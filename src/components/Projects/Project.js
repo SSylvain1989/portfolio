@@ -9,7 +9,7 @@ import './styles.scss';
 
 // == Composant
 const Project = ({
-  fullName, stack, description, github, image, website,
+  fullName, react,redux,html,css,node,postegres,semantic, description, github, image, website,
 }) => (
   <div className="card">
   <div className="face1">
@@ -20,7 +20,25 @@ const Project = ({
 </div>
 <div className="face2">
   <div className="content">
-    <p className="infos"> Stack : {stack}  <br /> Description : {description}</p>
+    <div className="stack"> 
+    <ul className="stack__icons">
+      <li>    <img className="icon" src={react} alt="react_icon"/><br/>react</li>
+      <li>    <img className="icon" src={redux} alt="redux_icon" /><br/>redux</li>
+      <li>    <img className="icon" src={html} /><br/>html5</li>
+      <li>    <img className="icon" src={css} /><br/>css3</li>
+      {node && (
+              <li> <img className="icon" src={node} /><br/>NodeJS</li>
+      )}
+      {semantic && (
+              <li> <img className="icon" src={semantic} /><br/>semantic ui</li>
+      )}
+      {postegres && (
+              <li> <img className="icon" src={postegres} /><br/>PostgreSQL</li>
+      )}
+
+    </ul>
+    </div>
+    <p>{description}</p>
     <a className="button__one" href={github} label="github"><Icon name="github" size="large" /></a>
     <a className="button__two" href={website} label="site_web"><Icon name="external alternate" size="large" /></a>
   </div>
