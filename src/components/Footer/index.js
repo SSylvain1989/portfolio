@@ -35,7 +35,7 @@ const Footer = () => (
 </ul>
     </div>
     <div className="Footer__social">
-      <h2>FOLLOW</h2>
+      <h2>SOCIAL</h2>
     <ul className="Footer__icon">
                 <li><a href="https://github.com/SSylvain1989" alt="github"><FaGithub className="Footer__social-icon" /></a></li>
                 <li><a href="https://www.linkedin.com/in/sylvain-sigonnez/" alt="linkedin"><FaLinkedin color="#0073B1" className="Footer__social-icon" /></a></li>

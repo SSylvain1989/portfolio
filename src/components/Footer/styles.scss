@@ -23,7 +23,6 @@
           padding: 1.4rem 0;
      }&__social-icon:hover{
           transform: scale(1.7);
-
      }&__copyright{
           font-size: 0.9rem; 
      }h1{
@@ -36,8 +35,7 @@
           font-weight: bold;
           padding-bottom: 2px;
           font-size: 1.2rem; 
-     }
-     &__link-a{
+     }&__link-a{
           padding: 0.2rem 0;
           border: none;
           position: relative;
@@ -88,15 +86,19 @@
           
           // margin-left:auto ;
           &__infos{
-               margin: auto;
+               // margin: auto;
 
-               // margin: 0.5rem 0.6rem;
+               margin: 0rem 0.6rem;
           }&__menu{
-               margin: auto;
+               margin: 0rem 0.6rem;
                padding-right: 15px;
                // margin: 0.5rem 1rem;
+          }&__link{
+               list-style: none;
+               padding: 1rem 0;
+               color: white;
           }&__social{
-               margin: auto;
+               margin: 0rem 0.6rem;
 
                // margin: 0.5rem 1rem;
           }&__copyright{
@@ -118,3 +120,11 @@
      }
 }
 
+@media(max-width: 360px) // tres petit smartphone * FINI
+{
+     .Footer__social{
+          margin: 0rem 0rem;
+
+     }
+
+}

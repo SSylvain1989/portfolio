@@ -250,7 +250,6 @@ display: none;
   // avant il est comme ça , apres il est comme définit par défaut
   #hamburger__menu__icon:active ~#hamburger__menu{
    left:55rem;
-   filter: blur(0.8rem);
   }
   
   #hamburger__menu {
@@ -338,7 +337,7 @@ display: none;
   // avant il est comme ça , apres il est comme définit par défaut
   #hamburger__menu__icon:active ~#hamburger__menu{
    left:55rem;
-   filter: blur(0.8rem);
+  //  filter: blur(0.2rem);
   }
   
   #hamburger__menu {
@@ -346,11 +345,11 @@ display: none;
     flex-direction: column;
     background: black;
     position: relative;
-    left: -3.5rem;
-    top: -22px;
+    left: -3.1rem;
+    top: -15px;
     height: 98rem;
     z-index: 997;
-    width: 31.5rem;
+    width: 32.5rem;
     text-align: center;
     border-radius: 9px;
     align-items: center;
@@ -358,11 +357,13 @@ display: none;
     transform: translateZ(200px);
     transition : all 1s ease ;
     opacity: 0.92;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
 
     .item {
       border: none;
-      padding-top: 1.8rem;
+      padding-top: 2.8rem;
+      margin-top: 1rem;
+      padding-right: 2rem;
     }
     a{
       margin: auto;
@@ -422,7 +423,6 @@ display: none;
   // avant il est comme ça , apres il est comme définit par défaut
   #hamburger__menu__icon:active ~#hamburger__menu{
    left:55rem;
-   filter: blur(0.8rem);
   }
   
   #hamburger__menu {
@@ -430,7 +430,7 @@ display: none;
     flex-direction: column;
     background: black;
     position: relative;
-    left: -4.7rem;
+    left: -4.2rem;
     top: -18px;
     height: 98rem;
     z-index: 997;
