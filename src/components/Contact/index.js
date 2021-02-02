@@ -20,12 +20,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './styles.scss';
 
 // == Composant
-const Contact = ({
-  // email,
-  // message,
-  // changeField,
-  // resetFields,
-}) => {
+const Contact = () => {
   toast.configure();
 
   // ici je dis que des la première monture du composant je mets le state à "one"
@@ -83,14 +78,14 @@ const Contact = ({
         </p>
         <p>En 2020 je décide de faire de mes centres d'intérêts
           mon activité professionnelle.
-          Je sors donc en novembre 2020 d'une formation développeur web - Fullstack Javascript :
+          Je sors en novembre 2020 d'une formation développeur web - Fullstack Javascript :
           Spécialité ReactJS ⚛️ (735 heures)
         </p>
 
-        <p>Avant d'être développeur, je suis resté 8 dans le secteur des transports et
+        <p>Avant d'être développeur, je suis resté 8 ans dans le secteur des transports et
           logistics avec un master 1 en poche
         </p>
-        <p>Je suis à la recherche aujourd'hui d'un poste ou d'un stage </p>
+        <p>Je suis à l'écoute du marché, n'hésitez pas à me contacter je suis sur que je serais répondre à vos attentes </p>
       </div>
       <div
         className="Skill__hard"
@@ -126,16 +121,16 @@ const Contact = ({
 
       </div>
       {isShown === 'one' && (
-        <img className="Picture" src={basDroite} alt="dog" />
+        <img className="Picture" src={basDroite} alt="sylvain sigonnez qui montre la case contact" />
       )}
       {isShown === 'two' && (
-        <img className="Picture" src={hautGauche} alt="d" />
+        <img className="Picture" src={hautGauche} alt="sylvain sigonnez qui montre la case de sa présentation" />
       )}
       {isShown === 'three' && (
-        <img className="Picture" src={basGauche} alt="c" />
+        <img className="Picture" src={basGauche} alt="sylvain sigonnez qui montre la case des soft skills" />
       )}
       {isShown === 'for' && (
-      <img className="Picture" src={hautDroite} alt="g" />
+      <img className="Picture" src={hautDroite} alt="sylvain sigonnez qui montre la case des hard skills" />
       )}
       <div
         className="contact"

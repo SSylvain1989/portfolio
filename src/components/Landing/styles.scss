@@ -75,7 +75,7 @@
     // hauteur du cadre
     padding: 13rem;
     @media (max-width: 360px){
-      padding: 6rem;
+      padding: 5rem;
     }
     @media screen and (min-width:361px) and (max-width: 539px)
     {
@@ -119,6 +119,7 @@
     width: 50rem;
     @media (max-width: 360px){
       width: 16rem;
+      top: 53%;
     }
     @media screen and (min-width:361px) and (max-width: 539px)
     {
@@ -462,6 +463,7 @@
       padding: 0px;
     }
     h2{
+      letter-spacing: -0.2rem;
       padding-left: 0rem;
       margin-top:1rem;
       margin-bottom: 0rem;
@@ -476,6 +478,7 @@
     } 
   &__text{
     margin: 2rem auto 6rem auto;
+    padding-left: 11.8rem;
     p{
       letter-spacing: -2px;
       padding-top: -1rem;
