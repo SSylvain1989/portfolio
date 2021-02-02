@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import {Icon} from 'semantic-ui-react';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { CgMail } from 'react-icons/cg';
+import { HashLink } from 'react-router-hash-link';
+
 
 
 
@@ -25,11 +27,11 @@ const Footer = () => (
     </div>
     <div className="Footer__menu">
       <h2>MENU</h2>
-<ul>
-  <li>Accueil</li>
-  <li>Projets</li>
-  <li>À propos</li>
-  <li>Contact</li>
+<ul className="Footer__link"> 
+  <HashLink to="/#landing"><li className="Footer__link-a">Accueil</li></HashLink>
+  <HashLink to="/#Projects"><li className="Footer__link-a">Projets</li></HashLink>
+  <HashLink to="/#about"><li className="Footer__link-a">À propos</li></HashLink>
+  <HashLink to="/#about"><li className="Footer__link-a">Contact</li></HashLink>
 </ul>
     </div>
     <div className="Footer__social">

@@ -7,7 +7,7 @@ import { Icon } from 'semantic-ui-react';
 import {
   SiRedux, SiJavascript, SiHtml5, SiCss3, SiTailwindcss, SiNodeDotJs, SiPostgresql, SiMysql,
 } from 'react-icons/si';
-import { HashLink as Link } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link';
 
 // == Import
 import Field from '../common/Field';
@@ -57,7 +57,7 @@ const Contact = ({
   };
 
   return (
-    <div className="container__contact">
+    <div className="container__contact" id="about">
       <div
         className="about"
         onMouseEnter={() => setIsShown('one')}
@@ -144,7 +144,9 @@ const Contact = ({
       >
         {/* <div className="contact__wrap"> */}
         <form className="contact__form" onSubmit={onSubmit}>
-          <h3 className="contact__title">Contact <Icon name="linkedin" size="large" /><Icon name="github" size="large" />
+          <h3 
+          className="contact__title"><span>Contact</span>
+          <a href="https://www.linkedin.com/in/sylvain-sigonnez/" alt="linkedin"><Icon name="linkedin" size="large" /></a><a href="https://github.com/SSylvain1989" alt="github"><Icon name="github" size="large" /></a>
           </h3>
 
           <Field

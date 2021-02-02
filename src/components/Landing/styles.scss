@@ -21,8 +21,8 @@
     text-transform: uppercase;
   }
   &__rotate:before{
-	text-transform: uppercase;
-	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+  text-transform: uppercase;
+  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
     font-size: 6.5rem;
@@ -140,22 +140,23 @@
     }
     top: 50%;
     display: block;
-    border: 13px solid blue;
+
+    border: 13px solid ;
     // bordure du cadre
 
     @media (max-width: 360px){
-      border: 6px solid blue;
+      border: 6px solid ;
     }
     @media screen and (min-width:361px) and (max-width: 539px)
     {
-      border: 7px solid blue;
+      border: 7px solid ;
     }
     @media(min-width: 540px) and (max-width: 766px) {
-      border: 8px solid blue;
+      border: 8px solid ;
     }
     @media(min-width: 767px) and (max-width: 1023px)
     {
-      border: 11px solid blue;
+      border: 11px solid ;
     }
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
     animation: 15s infinite alternate ease-in-out tipsy;
@@ -165,13 +166,22 @@
 
 
   #Landing__animation:before {
-    border-color: #325690#316699 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
-    box-shadow: 1px 1px 15px 1px rgba(178, 178, 192, 0.8);
-    z-index: -1;
+    // border-image: linear-gradient(to right, #30CFD0 0%, #330867 100%) -10;
+    // background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    // border-image-slice: 1;
+    border-color: #30CFD0#316699 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    // border-image: linear-gradient(to left,#330867 0%, #30CFD0 100%) 0;
+
+    // box-shadow: 1px 1px 15px 1px rgba(178, 178, 192, 0.8);
+    z-index: 2;
+
   }
   
   #Landing__animation:after {
-    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #317FA6 #31C3CA;
+    border-image: linear-gradient(to right,#325690 0%, #330867 50%,#30CFD0  90%) 1;
+    // border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #317FA6 #31C3CA;
+    z-index: -3;
+
   }
 
   // keyframes pour defilement apres developpeur

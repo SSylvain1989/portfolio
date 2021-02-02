@@ -6,6 +6,7 @@ height: 100%;
 display: flex;
 flex-wrap: wrap;
 position: relative;
+margin-top: 28rem;
 }
 
 // partie formulaire contact
@@ -28,9 +29,20 @@ position: relative;
      flex-direction: column;
 }&__title{
      margin: 1.5rem auto;
-     padding-top: 1.5rem;
+     padding-top: 1.8rem;
      font-size: 1.5rem;
      font-weight: 900;
+     a{
+          color: white;
+          margin-bottom: 50px;
+          margin: 0 0.5rem;
+     }
+     a:hover{
+          transform: scale(1.7);
+     }
+     span{
+          margin-top: 9rem ;
+     }
 }&__email{
      border-radius: 5px;
      padding: 0.7rem;

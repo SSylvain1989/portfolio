@@ -6,6 +6,7 @@ import {
   Menu,
 
 } from 'semantic-ui-react';
+// permet de faire les encres de liens au clic
 import { HashLink } from 'react-router-hash-link';
 
 // == Import
@@ -22,7 +23,7 @@ const Header = ({
     handleMenuClick();
   };
   return (
-    <div className="header">
+    <div className="header" id="header">
       {/* <div className="header__logo">
       <HashLink to="/#"><img className="header__img" src={logo} alt="home__logo"/>
         <h1><strong>Sylvain  SIGONNEZ</strong></h1> </HashLink>

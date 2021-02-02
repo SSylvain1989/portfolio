@@ -1,3 +1,4 @@
+/* //
 .Footer{
      background-color:#1E1E1E;
      width: 100%;
@@ -5,7 +6,6 @@
      display: flex;
      text-align: center;
      justify-content: center;
-     padding-top: 7rem;
      
      // margin-left:auto ;
      &__infos{
@@ -116,5 +116,6 @@
                font-size: 1rem; 
           }
      }
-}
 
+
+} */
