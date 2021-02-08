@@ -37,6 +37,7 @@ const projects = [
     redux: redux,
     html: html,
     css: css,
+    semantic,
     description: 'un annuaire qui permet de chercher des repos sur github',
     github: 'https://github.com/SSylvain1989/portfolioo',
     image: github,
