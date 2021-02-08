@@ -39,7 +39,8 @@ const projects = [
     css: css,
     semantic,
     description: 'un annuaire qui permet de chercher des repos sur github',
-    github: 'https://github.com/SSylvain1989/portfolioo',
+    github: 'https://github.com/SSylvain1989/gitAPI',
+    website:'https://github-search-repos.netlify.app/',
     image: github,
   },
   {
@@ -49,7 +50,7 @@ const projects = [
     html: html,
     css: css,
     description: 'Mon portfolio personel',
-    github: 'https://github.com/SSylvain1989/portfolioo',
+    github: 'https://github.com/SSylvain1989/portfolio',
     website:'https://sylvain-dev.netlify.app/',
     image: portfolio,
   },
