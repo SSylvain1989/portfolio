@@ -29,7 +29,7 @@ const Header = ({
         <h1><strong>Sylvain  SIGONNEZ</strong></h1> </HashLink>
 
       </div> */}
-      <Icon id="hamburger__menu__icon" name="list" size="big" onClick={menuClick} />
+      <Icon id="hamburger__menu__icon" name="bars" size="big" onClick={menuClick} />
       {/* changement de la valeur fait en passant par la
         fonction menulClick ligne 20 qui déclenche
       handleMenuClick dans le container qui elle déclenche
