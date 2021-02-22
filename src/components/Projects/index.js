@@ -19,7 +19,6 @@ const Projects = () => (
       />
     ))
 }
-{/* <p className="Projects__end">More to come ...</p> */}
   </div>
 );
 

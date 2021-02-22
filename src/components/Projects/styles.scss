@@ -203,16 +203,16 @@
     height: 300vh;
   }
   .picture{
-    width: 360px;
-    height: 220px;
+    width: 380px;
+    height: 240px;
     object-fit:cover;
     object-position:50% 50%;
   }
 
   .face1 {
     margin: 2rem -3.5rem;
-    width: 360px;
-    height: 220px;
+    width: 380px;
+    height: 240px;
     position: relative;
     margin: auto;
     transform: translateY(95px);
@@ -222,7 +222,7 @@
   }
 
 .face2 {
-  width: 360px;
+  width: 380px;
   height: 180px;
   transform: translateY(-50px);
   border-radius: 5px;
@@ -323,16 +323,16 @@
     height: 300vh;
   }
   .picture{
-    width: 315px;
-    height: 185px;
+    width: 330px;
+    height: 210px;
     object-fit:cover;
     object-position:50% 50%;
   }
 
   .face1 {
     margin: 2rem -3.5rem;
-    width: 320px;
-    height: 190px;
+    width: 330px;
+    height: 202px;
     position: relative;
     margin: auto;
     transform: translateY(80px);
@@ -342,10 +342,11 @@
   }
 
 .face2 {
-  width: 318px;
-  height: 180px;
+  width: 323px;
+  height: 195px;
   transform: translateY(-70px);
   border-radius: 5px;
+  margin: auto;
   
   p{
     font-size: 1.4rem;
@@ -362,8 +363,8 @@
   align-items: center;
   justify-content: center;
   margin: auto;
-  width: 300px;
-  padding: 0 0.5rem ;
+  width: 315px;
+  padding: 6px 0;
 &__icons{
   display: flex;
   flex-flow: row wrap;
@@ -373,5 +374,8 @@
 .icon{
   width: 35px;
   height: 35px;
+}
+.li__icon{
+  padding: 0 2px 0 2px;
 }
 }

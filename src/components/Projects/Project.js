@@ -9,41 +9,61 @@ import './styles.scss';
 
 // == Composant
 const Project = ({
-  fullName, react,redux,html,css,node,postegres,semantic, description, github, image, website,
+  fullName,
+  react,
+  redux,
+  html,
+  css,
+  node,
+  postegres,
+  semantic,
+  description,
+  github,
+  image,
+  website,
+  yarn,
+  npm,
 }) => (
   <div className="card">
-  <div className="face1">
-  <div className="content">
-    <img className="picture" src={image} alt="hero" />
-    <h3 className="face1__subtitle">{fullName}</h3>
-  </div>
-</div>
-<div className="face2">
-  <div className="content">
-    <div className="stack"> 
-    <ul className="stack__icons">
-      <li>    <img className="icon" src={react} alt="react_icon"/><br/>react</li>
-      <li>    <img className="icon" src={redux} alt="redux_icon" /><br/>redux</li>
-      <li>    <img className="icon" src={html} /><br/>html5</li>
-      <li>    <img className="icon" src={css} /><br/>css3</li>
-      {node && (
-              <li> <img className="icon" src={node} /><br/>NodeJS</li>
-      )}
-      {semantic && (
-              <li> <img className="icon" src={semantic} /><br/>semantic ui</li>
-      )}
-      {postegres && (
-              <li> <img className="icon" src={postegres} /><br/>PostgreSQL</li>
-      )}
-
-    </ul>
+    <div className="face1">
+      <div className="content">
+        <img className="picture" src={image} alt="hero" />
+        <h3 className="face1__subtitle">{fullName}</h3>
+      </div>
     </div>
-    <p>{description}</p>
-    <a className="button__one" href={github} label="github"><Icon name="github" size="large" /></a>
-    <a className="button__two" href={website} label="site_web"><Icon name="external alternate" size="large" /></a>
+    <div className="face2">
+      <div className="content">
+        <div className="stack">
+          <ul className="stack__icons">
+            <li className="li__icon">    <img className="icon" src={react} alt="react_icon" /><br />react</li>
+            <li className="li__icon">    <img className="icon" src={html} alt="html_icon" /><br />html5</li>
+            <li className="li__icon">    <img className="icon" src={css} alt="css_icon" /><br />css3</li>
+            {node && (
+            <li className="li__icon"> <img className="icon" src={node} alt={`${node}_icon`} /><br />NodeJS</li>
+            )}
+            {semantic && (
+            <li className="li__icon"> <img className="icon" src={semantic} alt="semantic_icon" /><br />Semantic ui</li>
+            )}
+            {postegres && (
+            <li className="li__icon"> <img className="icon" src={postegres} alt="postegres_icon" /><br />PostgreSQL</li>
+            )}
+            { redux && (
+            <li className="li__icon">    <img className="icon" src={redux} alt="redux_icon" /><br />Redux</li>
+            )}
+            { yarn && (
+            <li className="li__icon">    <img className="icon" src={yarn} alt="redux_icon" /><br />Yarn</li>
+            )}
+            { npm && (
+            <li className="li__icon">    <img className="icon" src={npm} alt="redux_icon" /><br />Npm</li>
+            )}
+          </ul>
+        </div>
+        <p>{description}</p>
+        <a className="button__one" href={github} label="github"><Icon name="github" size="large" /></a>
+        <a className="button__two" href={website} label="site_web"><Icon name="external alternate" size="large" /></a>
+      </div>
+    </div>
   </div>
-</div>
-</div>
 );
 
 // == propTypes

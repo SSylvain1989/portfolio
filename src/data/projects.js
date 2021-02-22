@@ -1,4 +1,5 @@
 import hero from '../images/hero2.png';
+import converter from '../images/converter.png';
 import github from '../images/github.png';
 import portfolio from '../images/portfolio.png';
 import yarn from '../images/yarn.png';
@@ -12,58 +13,53 @@ import javascript from '../images/javascript.png';
 import css from '../images/css.png';
 import html from '../images/html.png';
 
-
-
-
-
-
 const projects = [
   {
     fullName: 'Hero',
-    react: react,
-    redux: redux,
-    node: node,
-    postegres: postegres,
-    html: html,
-    css: css,
-    description: 'Le site dont vous êtes le héro, chaque décision peut être fatale',
-    github: 'https://github.com/O-clock-Jason/projet-hero',
+    react,
+    redux,
+    node,
+    postegres,
+    html,
+    css,
+    description: 'le site dont vous êtes le héro, chaque décision est décisive',
+    github: 'https://github.com/SSylvain1989/hero',
     website: 'http://3.89.27.242:3000/',
     image: hero,
   },
   {
     fullName: 'Search Git Repo',
-    react: react,
-    redux: redux,
-    html: html,
-    css: css,
+    react,
+    html,
+    css,
+    redux,
     semantic,
-    description: 'un annuaire qui permet de chercher des repos sur github',
+    description: 'annuaire qui permet de chercher des repos sur github',
     github: 'https://github.com/SSylvain1989/gitAPI',
-    website:'https://github-search-repos.netlify.app/',
+    website: 'https://github-search-repos.netlify.app/',
     image: github,
   },
   {
     fullName: 'Portfolio',
-    react: react,
-    redux: redux,
-    html: html,
-    css: css,
+    react,
+    redux,
+    html,
+    css,
+    semantic,
     description: 'Mon portfolio personel',
     github: 'https://github.com/SSylvain1989/portfolio',
-    website:'https://sylvain-dev.netlify.app/',
+    website: 'https://sylvain-dev.netlify.app/',
     image: portfolio,
   },
   {
-    fullName: 'Pokedex',
-    react: react,
-    redux: redux,
-    node: node,
-    html: html,
-    css: css,
-    description: 'Référencement pokemon',
-    github: 'https://github.com/SSylvain1989/portfolioo',
-    image: hero,
+    fullName: 'Converter',
+    react,
+    html,
+    css,
+    description: 'Convertisseur de devises',
+    github: 'https://github.com/SSylvain1989/converter',
+    website: 'https://convertisseur-de-devises.netlify.app/',
+    image: converter,
   },
 ];
 
