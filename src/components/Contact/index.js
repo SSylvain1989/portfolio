@@ -170,7 +170,7 @@ const Contact = () => {
       {/* // ce composant représente en front la bulle pop pup success ou error */}
     </div>
     <a className="cv" href={monCv} download="cv sylvain sigonnez">
-  <Icon name="cloud download" size="large" />
+  <Icon name="cloud download" size="huge" />
   <p className="cv__text" href="">
     CV
   </p>

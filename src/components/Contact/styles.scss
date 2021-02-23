@@ -167,8 +167,8 @@ transition: 0.4s;
 
 .cv{
      border: solid #2A2A2A 3px;
-     height: 100px;
-     width: 100px;
+     height: 120px;
+     width: 120px;
      border-radius: 50%;
      display: flex;
      flex-direction: column;
@@ -178,11 +178,13 @@ transition: 0.4s;
      margin: auto;
      &__text{
           color: white;
-          padding-top: 1.5rem;
+          padding-top: 1rem;
           font-size: 1.5rem;
+          font-weight: 700;
      }
      i{
           color: white;
+          padding-left: 1px;
      }
 }
 
