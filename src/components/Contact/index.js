@@ -7,7 +7,6 @@ import { Icon } from 'semantic-ui-react';
 import {
   SiRedux, SiJavascript, SiHtml5, SiCss3, SiTailwindcss, SiNodeDotJs, SiPostgresql, SiMysql,
 } from 'react-icons/si';
-import { HashLink } from 'react-router-hash-link';
 
 // == Import
 import Field from '../common/Field';
@@ -34,10 +33,10 @@ const Contact = () => {
   const onSubmit = (event) => {
     event.preventDefault();//
     console.log(event.target);
-    // let form = {
-    //   // les attributs name & message sont identiques 
-    // aux attributs du template du mail de emailJs
-    //   name: email, message,
+    //  let form = {
+    //  les attributs name & message sont identiques 
+    //  aux attributs du template du mail de emailJs
+    //  name: email, message,
     // };
     emailjs.sendForm('service_tcg8gkr', 'template_v3fahxb', event.target, 'user_fkzQbVgbBCHNTPo54IgVK')
       .then((result) => {
@@ -52,6 +51,7 @@ const Contact = () => {
   };
 
   return (
+    <div>
     <div className="container__contact" id="about">
       <div
         className="about"
@@ -78,14 +78,14 @@ const Contact = () => {
         </p>
         <p>En 2020 je décide de faire de mes centres d'intérêts
           mon activité professionnelle.
-          Je sors en novembre 2020 d'une formation développeur web - Fullstack Javascript :
+          Je sors en novembre 2020 d'une formation développeur web - Fullstack <span>Javascript</span> :
           Spécialité ReactJS ⚛️ (735 heures)
         </p>
 
-        <p>Avant d'être développeur, je suis resté 8 ans dans le secteur des transports et
-          logistics avec un master 1 en poche
+        <p>Avant d'être <span>développeur</span>, je suis resté 8 ans dans le secteur des transports et
+          logistiques avec un master 1 en poche
         </p>
-        <p>Je suis à l'écoute du marché, n'hésitez pas à me contacter je suis sur que je serais répondre à vos attentes </p>
+        <p>Je suis à l'écoute du marché, n'hésitez pas à me contacter je suis sur que je serais répondre à vos attentes. </p>
       </div>
       <div
         className="Skill__hard"
@@ -94,7 +94,7 @@ const Contact = () => {
       >
         <h3>Hard skills</h3>
         <li>Javascript   <SiJavascript /></li>
-        <li>ReactJS ⚛️ / Redux  <SiRedux /></li>
+        <li><span>ReactJS</span> ⚛️ / Redux  <SiRedux /></li>
         <li>Html  <SiHtml5 /></li>
         <li>CSS / Sass (SCSS) / Tailwind  <SiCss3 /><SiTailwindcss /></li>
         <li>NodeJS   <SiNodeDotJs /></li>
@@ -112,7 +112,7 @@ const Contact = () => {
         <h3>Soft skills</h3>
         <li>Bonne humeur</li>
         <li>Esprit d'initiative</li>
-        <li>Forte connaissance en transport et logistics</li>
+        <li>Forte connaissance en transport et logistiques</li>
         <li>Gestion du stress</li>
         <li>Empathie</li>
         <li>Esprit d'équipe</li>
@@ -137,7 +137,6 @@ const Contact = () => {
         onMouseEnter={() => setIsShown('for')}
         onMouseLeave={() => setIsShown('for')}
       >
-        {/* <div className="contact__wrap"> */}
         <form className="contact__form" onSubmit={onSubmit}>
           <h3 
           className="contact__title"><span>Contact</span>
@@ -147,45 +146,31 @@ const Contact = () => {
           <Field
             name="name"
             placeholder="Votre nom"
-            // onChange={(event) => {
-            //   setUseremail(event.target.value);
-            // }}
-            // value={email}
             type="text"
             className="contact__email"
           />
           <Field
             name="email"
             placeholder="exemple@gmail.com"
-            // onChange={(event) => {
-            //   setUseremail(event.target.value);
-            // }}
-            // value={email}
             type="email"
             className="contact__email"
           />
           <textarea
             name="message"
             placeholder="Votre message"
-            // onChange={(event) => {
-            //   setMessage(event.target.value);
-            // }}
-            // value={message}
             type="text"
             className="contact__message"
           />
           <button className="contact__button" type="submit">Envoyer</button>
         </form>
-        {/* </div> */}
-        {/* <div className="contact__social">
-          <h2>Mail</h2>
-          <p>sylvain.sigonnez@gmail.com</p>
-          <h2>Social</h2>
-
-          </div> */}
       </div>
       <ToastContainer />
       {/* // ce composant représente en front la bulle pop pup success ou error */}
+    </div>
+    <a className="cv" href="/cv_sylvain_sigonnez.pdf" download="cv sylvain sigonnez">
+    <Icon name="cloud download" size="large" />
+      <p className="cv__text" href="">CV</p>
+    </a>
     </div>
   );
 };

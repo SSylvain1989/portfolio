@@ -8,7 +8,7 @@ import { Route, Switch } from 'react-router-dom';
 import Header from 'src/containers/Header';
 import Landing from 'src/components/Landing';
 import Projects from 'src/components/Projects';
-import About from 'src/components/About';
+import News from 'src/components/News';
 import Footer from 'src/components/Footer';
 import Contact from 'src/containers/Contact';
 import './styles.scss';
@@ -16,7 +16,6 @@ import './styles.scss';
 // == Composant
 const App = () => (
   <div className="app">
-    {/* <Counter /> */}
     <Header />
     <Route exact path="/">
     <Landing />
@@ -24,11 +23,11 @@ const App = () => (
     <Route exact path="/">
     <Projects />
     </Route>
-    {/* <Route exact path="/">
-    <About />
-    </Route> */}
     <Route exact path="/">
     <Contact />
+    </Route>
+    <Route exact path="/">
+    <News />
     </Route>
     <Footer />
   </div>

@@ -1,8 +1,7 @@
 .container__contact{
-margin: 9rem auto;
+margin: 9rem auto 0.7rem;
 width: 97%;
 height: 100%;
-// border: seashell 1px solid;
 display: flex;
 flex-wrap: wrap;
 position: relative;
@@ -12,8 +11,6 @@ margin-top: 28rem;
 // partie formulaire contact
 .contact{
      padding: 0.8rem;
-     // border: solid 1px red;
-     // background-color: #5a2424;
      width: 50%;
      height: 28rem;
      background-color: #222121;
@@ -73,6 +70,7 @@ margin-top: 28rem;
      transition: 0.4s;
      }
 
+// partie texte sur moi
 .about{
      padding: 1.5rem;
      background-color: #222121;
@@ -81,9 +79,8 @@ margin-top: 28rem;
      // border: solid 1px salmon;
      transition: 0.4s;
      border-radius: 5px;
-     font-size: 1.4rem;
+     font-size: 1.35rem;
      font-weight: bold;
-
 }
 
 .about:hover{
@@ -168,6 +165,33 @@ transition: 0.4s;
      font-size: 1.2rem;
 }
 
+.cv{
+     border: solid #2A2A2A 3px;
+     height: 100px;
+     width: 100px;
+     border-radius: 50%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     box-shadow: silver;
+     margin: auto;
+     &__text{
+          color: white;
+          padding-top: 1.5rem;
+          font-size: 1.5rem;
+     }
+     i{
+          color: white;
+     }
+}
+
+.cv:hover{
+     background-color: #2A2A2A;
+     transform: scale(1.05);
+     transition: 0.1s;
+}
+
 //***** media*****//
 
 // desktop
@@ -180,7 +204,7 @@ transition: 0.4s;
 @media(min-width: 768px) and (max-width: 1388px)
 {
      .container__contact{
-          margin: 9rem auto;
+          margin: 9rem auto 0.7rem;
           width: 97%;
           height: 100%;
           display: flex;
@@ -326,12 +350,13 @@ transition: 0.4s;
      
 }
 
+
  // smartphone
 @media(max-width: 767px)
 
 {
      .container__contact{
-          margin: 9rem auto;
+          margin: 9rem auto 0.7rem;
           width: 97%;
           height: 100%;
           display: flex;
