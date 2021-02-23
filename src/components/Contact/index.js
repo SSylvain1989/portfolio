@@ -8,7 +8,9 @@ import {
   SiRedux, SiJavascript, SiHtml5, SiCss3, SiTailwindcss, SiNodeDotJs, SiPostgresql, SiMysql,
 } from 'react-icons/si';
 
+
 // == Import
+import monCv from "../../assets/cv_sylvain_sigonnez.pdf";
 import Field from '../common/Field';
 import hautDroite from '../../images/1.png';
 import basDroite from '../../images/2.png';
@@ -167,10 +169,13 @@ const Contact = () => {
       <ToastContainer />
       {/* // ce composant représente en front la bulle pop pup success ou error */}
     </div>
-    <a className="cv" href="/cv_sylvain_sigonnez.pdf" download="cv sylvain sigonnez">
-    <Icon name="cloud download" size="large" />
-      <p className="cv__text" href="">CV</p>
-    </a>
+    <a className="cv" href={monCv} download="cv sylvain sigonnez">
+  <Icon name="cloud download" size="large" />
+  <p className="cv__text" href="">
+    CV
+  </p>
+</a>
+    
     </div>
   );
 };
