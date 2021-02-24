@@ -32,7 +32,6 @@ const projects = [
     react,
     html,
     css,
-    redux,
     semantic,
     description: 'annuaire qui permet de chercher des repos sur github',
     github: 'https://github.com/SSylvain1989/gitAPI',

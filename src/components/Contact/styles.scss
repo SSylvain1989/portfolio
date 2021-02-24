@@ -76,7 +76,6 @@ margin-top: 28rem;
      background-color: #222121;
      width: 50%;
      height: 28rem;
-     // border: solid 1px salmon;
      transition: 0.4s;
      border-radius: 5px;
      font-size: 1.35rem;
@@ -120,7 +119,6 @@ transition: 0.4s;
      padding: 1rem;
      width: 50%;
      height: 28rem;
-     // border: solid 1px rgb(114, 250, 159);
      transition: 0.4s;
      border-radius: 5px;
      font-size: 1.4rem;
@@ -201,14 +199,14 @@ transition: 0.4s;
 
 }
 
-// ipad - ipad pro ( position paysage ) - macbook 11"
-@media (min-width: 1024px) and ( min-height: 767px ) and ( max-height: 850px ), screen and (orientation : landscape)
-{
-.about{
-     font-size: 1.7rem !important;
-     padding-top: 5rem !important;
-}
-}
+// // ipad - ipad pro ( position paysage ) - macbook 11"
+// @media (min-width: 1024px) and ( min-height: 767px ) and ( max-height: 850px ), screen and (orientation : landscape)
+// {
+// .about{
+//      font-size: 1.7rem !important;
+//      padding-top: 5rem !important;
+// }
+// }
 
 // tablette
 @media(min-width: 768px) and (max-width: 1388px)
@@ -271,7 +269,7 @@ transition: 0.4s;
           height: 6rem;
           width: 14rem;
      }&__social{
-       padding-top: 6.5rem;
+     padding-top: 6.5rem;
      }
      }
      
@@ -290,17 +288,15 @@ transition: 0.4s;
           height: 42rem;
           transition: 0.4s;
           border-radius: 5px;
-          font-size: 2.1rem;
+          font-size: 1.7rem;
           font-weight: bold;
-     
      }
      
      .about:hover{
-          
           background-color: #2A2A2A;
           transform: scale(1.01);
           transition: 0.4s;
-          }
+     }
      
      .Skill__hard{
           margin-bottom: 2rem;
@@ -360,14 +356,14 @@ transition: 0.4s;
      
 }
 
-// smartphone landscape
-@media (min-width: 600px) and ( min-height: 350px ) and ( max-height: 766px ), screen and (orientation : landscape)
-{
-     .about{
-          font-size: 1.3rem !important;
-          padding-top: 5rem !important;
-     }
-}
+// // smartphone landscape
+// @media (min-width: 600px) and ( min-height: 350px ) and ( max-height: 766px ), screen and (orientation : landscape)
+// {
+//      .about{
+//           font-size: 1.3rem ;
+//           padding-top: 5rem ;
+//      }
+// }
 
  // smartphone
 @media(max-width: 767px)
