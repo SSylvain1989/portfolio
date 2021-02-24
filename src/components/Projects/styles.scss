@@ -4,10 +4,10 @@
   flex-wrap: wrap;
   justify-content: space-around;
   width: 100%;
-  height: 100vh;
-  margin : 10rem auto;
+  height: 76vh;
+  // margin : 10rem auto;
   background-color: #1E1E1E;
-  padding-bottom: 220px;
+  padding-top: 220px;
 }
 .card{
   margin: 10px 20px 20px -10px; 
@@ -167,7 +167,9 @@
 // desktop
 @media(min-width: 1389px)
 {
-
+  .container {
+    margin : 15rem auto ;
+  }
 
 }
 
@@ -179,10 +181,17 @@
 }
 }
 
-@media(min-width: 1024px) and (max-width: 1388px) // test ipad pro 
+@media(min-width: 1024px) and (max-width: 1086px) // petit " gap " pour être full responsive à l'analyse insepcteur google
 {
   .container {
-    margin : 15rem auto 38rem auto;
+    margin : 15rem auto 86rem auto;
+  }
+}
+
+@media(min-width: 1086px) and (max-width: 1388px) // test ipad pro 
+{
+  .container {
+    margin : 15rem auto 2rem auto;
   }
 }
 // tablette
@@ -192,7 +201,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 300vh;
+    height: 180vh;
     margin : auto;
     background-color: #1E1E1E;
     padding-bottom: 1px;
@@ -200,25 +209,15 @@
   .card{
     height: 10px;
     max-height: 20px;
-  // 
   }
-  
-
 }
-// // smartphone landscape
-// @media (min-width: 600px) and ( min-height: 350px ) and ( max-height: 766px ), screen and (orientation : landscape)
-// {
-//   .container {
-//     margin : 5rem auto 83rem auto ;
-//   }
-// }
 
  // smartphone
  @media(min-width: 540px) and (max-width: 766px) // test sur surface duo **fini
 {
   .container{
     padding-left: 10%;
-    height: 300vh;
+    height: 140vh;
   }
   .picture{
     width: 380px;
@@ -279,7 +278,7 @@
 
   .container{
     padding-left: 7%;
-    height: 300vh;
+    height: 140vh;
   }
   .picture{
     width: 330px;
@@ -338,7 +337,7 @@
 {
   .container{
     padding-left: 7%;
-    height: 300vh;
+    height: 130vh;
   }
   .picture{
     width: 330px;
