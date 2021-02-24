@@ -154,7 +154,6 @@ transition: 0.4s;
 }
 
 .Picture:hover{
-     // background-color: #2A2A2A;
      transform: scale(1.01);
      transition: 0.1s;
      }
@@ -200,6 +199,15 @@ transition: 0.4s;
 @media(min-width: 1389px)
 {
 
+}
+
+// ipad - ipad pro ( position paysage ) - macbook 11"
+@media (min-width: 1024px) and ( min-height: 767px ) and ( max-height: 850px ), screen and (orientation : landscape)
+{
+.about{
+     font-size: 1.7rem !important;
+     padding-top: 5rem !important;
+}
 }
 
 // tablette
@@ -274,12 +282,12 @@ transition: 0.4s;
           }
      
      .about{
+          margin-top: 15rem;
           margin-bottom: 2rem;
           padding: 2.3rem;
           background-color: #222121;
           width: 87%;
           height: 42rem;
-          // border: solid 1px salmon;
           transition: 0.4s;
           border-radius: 5px;
           font-size: 2.1rem;
@@ -352,6 +360,14 @@ transition: 0.4s;
      
 }
 
+// smartphone landscape
+@media (min-width: 600px) and ( min-height: 350px ) and ( max-height: 766px ), screen and (orientation : landscape)
+{
+     .about{
+          font-size: 1.3rem !important;
+          padding-top: 5rem !important;
+     }
+}
 
  // smartphone
 @media(max-width: 767px)
