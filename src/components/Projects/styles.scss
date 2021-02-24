@@ -168,7 +168,8 @@
 @media(min-width: 1389px)
 {
   .container {
-    margin : 15rem auto ;
+    margin : 5rem auto ;
+    height: 180vh;
   }
 
 }
@@ -198,7 +199,7 @@
 @media(min-width: 1086px) and (max-width: 1388px) // test ipad pro 
 {
   .container {
-    margin : 15rem auto 2rem auto;
+    margin : 10rem auto 2rem auto;
   }
 }
 // tablette
@@ -223,8 +224,9 @@
  @media(min-width: 540px) and (max-width: 766px) // test sur surface duo **fini
 {
   .container{
+    padding-top: 50px;
     padding-left: 10%;
-    height: 260vh;
+    height: 300vh;
   }
   .picture{
     width: 380px;
@@ -284,8 +286,9 @@
 {
 
   .container{
+    padding-top: 50px;
     padding-left: 7%;
-    height: 260vh;
+    height: 280vh;
   }
   .picture{
     width: 330px;

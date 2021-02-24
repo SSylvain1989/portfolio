@@ -259,7 +259,13 @@
 
 @media(min-width: 1389px) and (max-width: 1919px) // 19pouces à 22 pouces
 {
-
+  .Landing{
+    &__scroll{
+      padding-bottom: 2px;
+    }&__footer{
+      display: none ;
+    }
+  }
 
 }
 
