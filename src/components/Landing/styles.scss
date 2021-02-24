@@ -429,6 +429,18 @@
 }
 }
 
+@media(min-width: 540px) and (max-width: 766px) and (orientation : landscape )
+{
+  .Landing{
+    &__scroll{
+      padding-bottom: 2px;
+    }&__footer{
+      display: none ;
+    }
+  }
+
+}
+
  // smartphone - mini start with iphone X / max surface duo  ** FINI
  @media screen and (min-width:361px) and (max-width: 539px)
  {
