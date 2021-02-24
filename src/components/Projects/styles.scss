@@ -220,6 +220,14 @@
   }
 }
 
+@media(min-width: 767px) and (max-width: 1023px) and (orientation : landscape ) // test sur ipad **fini
+{
+  .container {
+    height: 520vh;
+    padding-top: 60px;
+  }
+}
+
  // smartphone
  @media(min-width: 540px) and (max-width: 766px) // test sur surface duo **fini
 {

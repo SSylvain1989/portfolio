@@ -67,6 +67,7 @@
     }
     transform: translateX(-50%) translateY(-50%);
   }
+
   
   #Landing__animation:before,
   #Landing__animation:after {
@@ -90,6 +91,10 @@
     @media(min-width: 767px) and (max-width: 1023px)
     {
       padding:9rem;
+    }
+    @media(min-width: 767px) and (max-width: 1023px) and (orientation : landscape ) // iphone X paysage
+    {
+      display: none;
     }
     @media(min-width: 1024px) and (max-width: 1388px)
     {
@@ -372,6 +377,17 @@
     }
   }
 }
+}
+
+@media(min-width: 767px) and (max-width: 1023px) and (orientation : landscape ) // iphone X paysage
+{
+  .Landing{
+    &__scroll{
+      display: none ;
+    }&__footer{
+      display: none ;
+    }
+  }
 }
 
 @media(min-width: 540px) and (max-width: 766px)// test sur surface duo ** FINI
