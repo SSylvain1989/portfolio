@@ -61,7 +61,7 @@ module.exports = {
 
       // Images
       {
-        test: /\.(ico|gif|png|jpe?g|webp|svg|pdf)$/i,
+        test: /\.(ico|gif|webp|jpe?g|png|webp|svg|pdf)$/i,
         use: [
             {
                 loader: "file-loader",
@@ -75,7 +75,7 @@ module.exports = {
 
 
 // {
-//   test: /\.(pdf|ico|gif|png|jpe?g|webp|svg)$/i,
+//   test: /\.(pdf|ico|gif|webp|jpe?g|webp|svg)$/i,
 //   use: [
 //     {
 //       loader: 'file-loader',

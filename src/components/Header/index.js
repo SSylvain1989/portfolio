@@ -12,7 +12,7 @@ import { HashLink } from 'react-router-hash-link';
 // == Import
 
 import './styles.scss';
-import logo from '../../images/cv.png';
+import logo from '../../images/cv.webp';
 
 // == Composant
 const Header = ({
