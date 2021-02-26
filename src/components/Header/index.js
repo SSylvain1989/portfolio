@@ -24,11 +24,6 @@ const Header = ({
   };
   return (
     <div className="header" id="header">
-      {/* <div className="header__logo">
-      <HashLink to="/#"><img className="header__img" src={logo} alt="home__logo"/>
-        <h1><strong>Sylvain  SIGONNEZ</strong></h1> </HashLink>
-
-      </div> */}
       <Icon id="hamburger__menu__icon" name="bars" size="big" onClick={menuClick} />
       {/* changement de la valeur fait en passant par la
         fonction menulClick ligne 20 qui déclenche
@@ -53,7 +48,7 @@ const Header = ({
         </Menu.Item>
       </Menu>
       )}
-      <HashLink to="/#"><img className="header__img" src={logo} alt="home__logo" />
+      <HashLink to="/#"><img loading="lazy" className="header__img" src={logo} alt="home__logo" />
         <h1><strong>Sylvain  SIGONNEZ</strong></h1>
       </HashLink>
       <Menu id="navbar_menu">

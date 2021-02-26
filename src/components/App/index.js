@@ -1,17 +1,23 @@
 // == Import npm
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import PropTypes from 'prop-types';
 import { Route, Switch } from 'react-router-dom';
+import { Loader } from 'semantic-ui-react';
+
 
 // == Import
-// import Counter from 'src/containers/Counter';
 import Header from 'src/containers/Header';
 import Landing from 'src/components/Landing';
-import Projects from 'src/components/Projects';
 import News from 'src/components/News';
-import Footer from 'src/components/Footer';
-import Contact from 'src/containers/Contact';
 import './styles.scss';
+
+
+// == Lazy componsant
+const Projects = lazy(() => import ('src/components/Projects'));
+const Footer = lazy(() => import ('src/components/Footer'));
+const Contact = lazy(() => import ('src/components/Contact'));
+
+
 
 // == Composant
 const App = () => (
@@ -21,15 +27,21 @@ const App = () => (
     <Landing />
     </Route>
     <Route exact path="/">
+    <Suspense fallback={<div><Loader active size="massive" inline='centered' /></div>}>
     <Projects />
+    </Suspense>
     </Route>
     <Route exact path="/">
+    <Suspense fallback={<div><Loader active size="massive" inline='centered' /></div>}>
     <Contact />
+    </Suspense>
     </Route>
     <Route exact path="/">
     <News />
     </Route>
+    <Suspense fallback={<div><Loader active size="massive" inline='centered' /></div>}>
     <Footer />
+    </Suspense>
   </div>
 );
 

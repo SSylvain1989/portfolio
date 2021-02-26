@@ -86,7 +86,7 @@ const Contact = () => {
           <p>Avant d'être <span>développeur</span>, je suis resté 8 ans dans le secteur des transports et
             logistiques avec un master 1 en poche
           </p>
-          <p>Je suis à l'écoute du marché, n'hésitez pas à me contacter je suis sur que je serais répondre à vos attentes. </p>
+          <p>Je suis à l'écoute du marché, n'hésitez pas à me contacter je suis sur que je saurais répondre à vos attentes. </p>
         </div>
         <div
           className="Skill__hard"
