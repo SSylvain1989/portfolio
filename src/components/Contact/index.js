@@ -95,6 +95,7 @@ const Contact = () => {
           onMouseLeave={() => setIsShown('two')}
         >
           <h3>Hard skills</h3>
+          <ul>
           <li>Javascript   <SiJavascript /></li>
           <li><span>ReactJS</span> ⚛️ / Redux  <SiRedux /></li>
           <li>Html  <SiHtml5 /></li>
@@ -104,7 +105,7 @@ const Contact = () => {
           <li>SQL/PostgreSQL/Sequelize   <SiPostgresql />    <SiMysql /></li>
           <li>Typescript</li>
           <li>RESTful APIs design & implementation</li>
-          {/* <li>Mocha/Chai/Enzyme</li> */}
+          </ul>
         </div>
         <div
           className="Skill__soft"
