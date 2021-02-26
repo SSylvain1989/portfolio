@@ -37,10 +37,10 @@ const Footer = () => (
     <div className="Footer__social">
       <h2>SOCIAL</h2>
     <ul className="Footer__icon">
-                <li><a href="https://github.com/SSylvain1989" alt="github"><FaGithub className="Footer__social-icon" /></a></li>
-                <li><a href="https://www.linkedin.com/in/sylvain-sigonnez/" alt="linkedin"><FaLinkedin color="#0073B1" className="Footer__social-icon" /></a></li>
-                <li><a href="https://twitter.com/_Sylvain_7" alt="twitter"><FaTwitter color="#1DA1F2" className="Footer__social-icon" /></a></li>
-                <li><a href={`mailto:sylvain.sigonnez@gmail.com`} alt="email"><CgMail color="#EA4335" className="Footer__social-icon" /></a></li>
+                <li><a href="https://github.com/SSylvain1989" alt="github"><FaGithub className="Footer__social-icon" /><span  className="sr-only">Github</span> </a></li>
+                <li><a href="https://www.linkedin.com/in/sylvain-sigonnez/" alt="linkedin"><FaLinkedin color="#0073B1" className="Footer__social-icon" /><span  className="sr-only">Linkedin</span></a></li>
+                <li><a href="https://twitter.com/_Sylvain_7" alt="twitter"><FaTwitter color="#1DA1F2" className="Footer__social-icon" /><span  className="sr-only">Twitter</span></a></li>
+                <li><a href={`mailto:sylvain.sigonnez@gmail.com`} alt="email"><CgMail color="#EA4335" className="Footer__social-icon" /><span  className="sr-only">Gmail</span></a></li>
               </ul>
     </div>
 

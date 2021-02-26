@@ -40,17 +40,23 @@ margin-top: 28rem;
      span{
           margin-top: 9rem ;
      }
+}&__name{
+     border-radius: 5px;
+     padding: 0.7rem;
+     text-align: center;
+     margin: 1rem auto;
+     width: 75%;
 }&__email{
      border-radius: 5px;
      padding: 0.7rem;
      text-align: center;
-     margin: auto;
+     margin: 1rem auto;
      width: 75%;
 }&__message{
      border-radius: 5px;
-     padding: 0.5rem;
+     padding: 2rem;
      text-align: center;
-     margin: auto;
+     margin: 1rem auto;
      height: 6rem;
      width: 75%;
 }&__button{
@@ -62,6 +68,17 @@ margin-top: 28rem;
 }&__social{
   padding-top: 6.5rem;
 }
+}
+.sr-only{
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     padding: 0;
+     margin: -1px;
+     overflow: hidden;
+     clip: rect(0, 0, 0, 0);
+     white-space: nowrap; /* added line */
+     border: 0;
 }
 
 .contact:hover{

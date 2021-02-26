@@ -27,7 +27,7 @@ const Contact = () => {
   useEffect(() => {
     setIsShown('one');
   }, []);
-  // gestion du modification de la photo avec onMouseOver et useState
+  // gestion du modification de la photo avec onMouseOver et useState , ici j'initialise mon state
   const [isShown, setIsShown] = useState('');
 
   // gestion du formulaire de contact
@@ -56,6 +56,7 @@ const Contact = () => {
       <div className="container__contact" id="about">
         <div
           className="about"
+          // ici je change la valeur du state de mon composant 
           onMouseEnter={() => setIsShown('one')}
           onMouseLeave={() => setIsShown('one')}
         >
@@ -142,10 +143,11 @@ const Contact = () => {
           <form className="contact__form" onSubmit={onSubmit}>
             <h3
               className="contact__title"
-            ><span>Contact</span>
-              <a href="https://www.linkedin.com/in/sylvain-sigonnez/" alt="linkedin"><Icon name="linkedin" size="large" /></a><a href="https://github.com/SSylvain1989" alt="github"><Icon name="github" size="large" /></a>
+            ><strong>Contact</strong>
+              <a href="https://www.linkedin.com/in/sylvain-sigonnez/" alt="linkedin"><Icon name="linkedin" size="large" /><span  className="sr-only">Linkedin</span> </a>
+              <a href="https://github.com/SSylvain1989" alt="github"><Icon name="github" size="large" /><span  className="sr-only">Github</span> </a>
             </h3>
-            <label className="contact__email">Votre nom
+            <label><span  className="sr-only">Votre nom</span> 
             <Field
               name="name"
               placeholder="Votre nom"
@@ -153,8 +155,7 @@ const Contact = () => {
               className="contact__email"
             />
             </label>
-            <label className="contact__email">Votre nom
-
+            <label><span className="sr-only">Votre email</span>
             <Field
               name="email"
               placeholder="exemple@gmail.com"
@@ -162,7 +163,7 @@ const Contact = () => {
               className="contact__email"
             />
           </label>
-          <label className="contact__email">Votre nom
+          <label ><span className="sr-only"> Votre message</span>
             <textarea
               name="message"
               placeholder="Votre message"
@@ -177,7 +178,7 @@ const Contact = () => {
         <ToastContainer />
         {/* // ce composant représente en front la bulle pop pup success ou error */}
       </div>
-      <a className="cv" label="telecharger cv sylvain sigonnez" href={monCv} download="cv sylvain sigonnez">
+      <a className="cv" href={monCv} download="cv sylvain sigonnez">
         <Icon name="cloud download" size="huge" />
         <p className="cv__text" href="">
           CV
