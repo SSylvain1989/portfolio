@@ -24,7 +24,9 @@ const App = () => (
   <div className="app">
     <Header />
     <Route exact path="/">
+    <Suspense fallback={<div><Loader active size="massive" inline='centered' />Chargement...</div>}>
     <Landing />
+    </Suspense>
     </Route>
     <Route exact path="/">
     <Suspense fallback={<div><Loader active size="massive" inline='centered' /></div>}>

@@ -111,6 +111,7 @@ const Contact = () => {
           onMouseLeave={() => setIsShown('three')}
         >
           <h3>Soft skills</h3>
+          <ul>
           <li>Bonne humeur</li>
           <li>Esprit d'initiative</li>
           <li>Forte connaissance en transport et logistiques</li>
@@ -119,7 +120,7 @@ const Contact = () => {
           <li>Esprit d'équipe</li>
           <li>Remise en question</li>
           <li>Négociation</li>
-
+          </ul>
         </div>
         {isShown === 'one' && (
         <img className="Picture" src={basDroite} alt="sylvain sigonnez qui montre la case contact" />
@@ -144,32 +145,39 @@ const Contact = () => {
             ><span>Contact</span>
               <a href="https://www.linkedin.com/in/sylvain-sigonnez/" alt="linkedin"><Icon name="linkedin" size="large" /></a><a href="https://github.com/SSylvain1989" alt="github"><Icon name="github" size="large" /></a>
             </h3>
-
+            <label className="contact__email">Votre nom
             <Field
               name="name"
               placeholder="Votre nom"
               type="text"
               className="contact__email"
             />
+            </label>
+            <label className="contact__email">Votre nom
+
             <Field
               name="email"
               placeholder="exemple@gmail.com"
               type="email"
               className="contact__email"
             />
+          </label>
+          <label className="contact__email">Votre nom
             <textarea
               name="message"
               placeholder="Votre message"
               type="text"
               className="contact__message"
             />
+            </label>
+
             <button className="contact__button" type="submit">Envoyer</button>
           </form>
         </div>
         <ToastContainer />
         {/* // ce composant représente en front la bulle pop pup success ou error */}
       </div>
-      <a className="cv" href={monCv} download="cv sylvain sigonnez">
+      <a className="cv" label="telecharger cv sylvain sigonnez" href={monCv} download="cv sylvain sigonnez">
         <Icon name="cloud download" size="huge" />
         <p className="cv__text" href="">
           CV
