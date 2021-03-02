@@ -56,7 +56,7 @@ const Contact = () => {
       <div className="container__contact" id="about">
         <div
           className="about"
-          // ici je change la valeur du state de mon composant 
+          // ici je change la valeur du state de mon composant
           onMouseEnter={() => setIsShown('one')}
           onMouseLeave={() => setIsShown('one')}
         >
@@ -96,15 +96,15 @@ const Contact = () => {
         >
           <h3>Hard skills</h3>
           <ul>
-          <li>Javascript   <SiJavascript /></li>
-          <li><span>ReactJS</span> ⚛️ / Redux  <SiRedux /></li>
-          <li>Html  <SiHtml5 /></li>
-          <li>CSS / Sass (SCSS) / Tailwind  <SiCss3 /><SiTailwindcss /></li>
-          <li>NodeJS   <SiNodeDotJs /></li>
-          <li>Express</li>
-          <li>SQL/PostgreSQL/Sequelize   <SiPostgresql />    <SiMysql /></li>
-          <li>Typescript</li>
-          <li>RESTful APIs design & implementation</li>
+            <li>Javascript   <SiJavascript /></li>
+            <li><span>ReactJS</span> ⚛️ / Redux  <SiRedux /></li>
+            <li>Html  <SiHtml5 /></li>
+            <li>CSS / Sass (SCSS) / Tailwind  <SiCss3 /><SiTailwindcss /></li>
+            <li>NodeJS   <SiNodeDotJs /></li>
+            <li>Express</li>
+            <li>SQL/PostgreSQL/Sequelize   <SiPostgresql />    <SiMysql /></li>
+            <li>Typescript</li>
+            <li>RESTful APIs design & implementation</li>
           </ul>
         </div>
         <div
@@ -114,14 +114,14 @@ const Contact = () => {
         >
           <h3>Soft skills</h3>
           <ul>
-          <li>Bonne humeur</li>
-          <li>Esprit d'initiative</li>
-          <li>Forte connaissance en transport et logistiques</li>
-          <li>Gestion du stress</li>
-          <li>Empathie</li>
-          <li>Esprit d'équipe</li>
-          <li>Remise en question</li>
-          <li>Négociation</li>
+            <li>Bonne humeur</li>
+            <li>Esprit d'initiative</li>
+            <li>Forte connaissance en transport et logistiques</li>
+            <li>Gestion du stress</li>
+            <li>Empathie</li>
+            <li>Esprit d'équipe</li>
+            <li>Remise en question</li>
+            <li>Négociation</li>
           </ul>
         </div>
         {isShown === 'one' && (
@@ -145,32 +145,32 @@ const Contact = () => {
             <h3
               className="contact__title"
             ><strong>Contact</strong>
-              <a href="https://www.linkedin.com/in/sylvain-sigonnez/" alt="linkedin"><Icon name="linkedin" size="large" /><span  className="sr-only">Linkedin</span> </a>
-              <a href="https://github.com/SSylvain1989" alt="github"><Icon name="github" size="large" /><span  className="sr-only">Github</span> </a>
+              <a href="https://www.linkedin.com/in/sylvain-sigonnez/" alt="linkedin"><Icon name="linkedin" size="large" /><span className="sr-only">Linkedin</span> </a>
+              <a href="https://github.com/SSylvain1989" alt="github"><Icon name="github" size="large" /><span className="sr-only">Github</span> </a>
             </h3>
-            <label><span  className="sr-only">Votre nom</span> 
-            <Field
-              name="name"
-              placeholder="Votre nom"
-              type="text"
-              className="contact__email"
-            />
+            <label className="contact__emailLabel"><span className="sr-only">Votre nom</span>
+              <Field
+                name="name"
+                placeholder="Votre nom"
+                type="text"
+                className="contact__email"
+              />
             </label>
-            <label><span className="sr-only">Votre email</span>
-            <Field
-              name="email"
-              placeholder="exemple@gmail.com"
-              type="email"
-              className="contact__email"
-            />
-          </label>
-          <label ><span className="sr-only"> Votre message</span>
-            <textarea
-              name="message"
-              placeholder="Votre message"
-              type="text"
-              className="contact__message"
-            />
+            <label className="contact__emailLabel"><span className="sr-only">Votre email</span>
+              <Field
+                name="email"
+                placeholder="exemple@gmail.com"
+                type="email"
+                className="contact__email"
+              />
+            </label>
+            <label className="contact__messageLabel"><span className="sr-only"> Votre message</span>
+              <textarea
+                name="message"
+                placeholder="Votre message"
+                type="text"
+                className="contact__message"
+              />
             </label>
 
             <button className="contact__button" type="submit">Envoyer</button>

@@ -89,14 +89,14 @@ margin-top: 28rem;
 
 // partie texte sur moi
 .about{
-     padding: 1.5rem;
+     padding: 2.5rem 1.7rem 2.2rem 1.5rem;
      background-color: #222121;
      width: 50%;
      height: 28rem;
      transition: 0.4s;
      border-radius: 5px;
-     font-size: 1.35rem;
-     font-weight: bold;
+     font-size: 1.20rem;
+     font-weight: 500;
 }
 
 .about:hover{
@@ -117,13 +117,15 @@ margin-top: 28rem;
      h3{
      text-align: center;
      font-size: 1.8rem;
-     padding-bottom: 1rem;
+     padding-bottom: 0.8rem;
      }
-     li{
+}
+
+li{
      padding-left: 35px;
      padding-bottom: 12px;
-     font-weight: 500;
-     }
+     font-weight: 300;
+     list-style: none;
 }
 
 .Skill__hard:hover{
@@ -277,6 +279,14 @@ transition: 0.4s;
           margin: 1rem auto;
           height: 10rem;
           width: 85%;
+     }&__emailLabel{
+          width: 85%;
+          margin-left: 7rem;
+          margin-right: 0rem;
+     }&__messageLabel{
+          width: 85%;
+          margin-left: 7rem;
+          margin-right: 0rem;
      }&__button{
           border-radius: 5px;
           margin: 1rem auto 0.6rem auto;
@@ -305,7 +315,7 @@ transition: 0.4s;
           height: 42rem;
           transition: 0.4s;
           border-radius: 5px;
-          font-size: 1.7rem;
+          font-size: 1.5rem;
           font-weight: bold;
      }
      
@@ -322,7 +332,6 @@ transition: 0.4s;
           height: 42rem;
           transition: 0.4s;
           border-radius: 5px;
-          list-style: none;
           h3{
           text-align: center;
           font-size: 2.2rem;
@@ -331,8 +340,7 @@ transition: 0.4s;
           li{
           padding: 1rem 1.2rem;
           font-weight: 500;
-          font-size: 2.1rem;
-          font-weight: bold;
+          font-size: 1.5rem;
           }
      }
      
@@ -359,9 +367,7 @@ transition: 0.4s;
           li{
           padding: 1rem 1.2rem;
           font-weight: 500;
-          font-size: 2.1rem;
-          font-weight: bold;
-
+          font-size: 1.5rem;
           }
      }
      .Skill__soft:hover{
@@ -460,7 +466,6 @@ transition: 0.4s;
           background-color: #222121;
           width: 87%;
           height: 35rem;
-          // border: solid 1px salmon;
           transition: 0.4s;
           border-radius: 5px;
           font-size: 1.1rem;
@@ -541,7 +546,6 @@ transition: 0.4s;
           background-color: #222121;
           width: 87%;
           height: 35rem;
-          // border: solid 1px salmon;
           transition: 0.4s;
           border-radius: 5px;
           font-size: 1.1rem;

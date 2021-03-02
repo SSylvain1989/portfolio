@@ -2,7 +2,7 @@
      "editor.formatOnSave": true,
      "files.autoSave": "off",
      "workbench.sideBar.location": "left",
-     "window.zoomLevel": 1,
+     "window.zoomLevel": 0,
      "unParamètreBidon": "uneValeurBidon",
      "htmlhint.options": {
          "spec-char-escape": false
