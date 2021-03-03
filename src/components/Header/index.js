@@ -8,6 +8,7 @@ import {
 } from 'semantic-ui-react';
 // permet de faire les encres de liens au clic
 import { HashLink } from 'react-router-hash-link';
+import PropTypes from 'prop-types';
 
 // == Import
 
@@ -48,7 +49,7 @@ const Header = ({
         </Menu.Item>
       </Menu>
       )}
-      <HashLink to="/#"><img loading="lazy" className="header__img" src={logo} alt="home__logo" />
+      <HashLink to="/#"><img loading="lazy" className="header__img" src={logo} alt="home__logo" width="80px" height="100px" />
         <h1><strong>Sylvain  SIGONNEZ</strong></h1>
       </HashLink>
       <Menu id="navbar_menu">
@@ -65,6 +66,11 @@ const Header = ({
     </div>
 
   );
+};
+
+Header.propTypes = {
+  handleMenuClick: PropTypes.func.isRequired,
+  showMenuBoolean: PropTypes.bool.isRequired,
 };
 
 // == Export
