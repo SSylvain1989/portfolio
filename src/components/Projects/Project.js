@@ -59,11 +59,11 @@ const Project = ({
           </ul>
         </div>
         <p>{description}</p>
-        <a className="button__github" href={github} label="github" alt={`redirection vers le github du projet ${fullName}`}><span  className="sr-only"> Github</span> <Icon name="github" size="large" /></a>
-        <a className="button__website" href={website} label="site_web"  alt={`redirection vers le site internet du projet ${fullName}`}><span  className="sr-only">Website</span> <Icon name="external alternate" size="large" /></a>
+        <a className="button__github" href={github} label="github" alt={`redirection vers le github du projet ${fullName}`}><span className="sr-only"> Github</span> <Icon name="github" size="large" /></a>
+        <a className="button__website" href={website} label="site_web" alt={`redirection vers le site internet du projet ${fullName}`}><span className="sr-only">Website</span> <Icon name="external alternate" size="large" /></a>
       </div>
     </div>
-    
+
   </div>
 );
 
@@ -73,7 +73,6 @@ Project.propTypes = ({
   description: PropTypes.string.isRequired,
   github: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
-  stack: PropTypes.string.isRequired,
 });
 
 // == Export

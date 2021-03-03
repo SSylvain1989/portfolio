@@ -41,12 +41,12 @@ const Contact = () => {
     // };
     emailjs.sendForm('service_tcg8gkr', 'template_v3fahxb', event.target, 'user_fkzQbVgbBCHNTPo54IgVK')
       .then((result) => {
-        console.log('email envoyé', result);
+        // console.log('email envoyé', result);
         toast.success('Merci pour votre message je vous reviens rapidement', { className: 'toast__success', position: toast.POSITION.TOP_RIGHT });
       },
       (error) => {
         toast.error('Une erreur est apparue, retentez votre envoi s\'il-vous-plait');
-        console.log('erreur', error);
+        // console.log('erreur', error);
       });
     event.target.reset();
   };
@@ -129,7 +129,7 @@ const Contact = () => {
           </ul>
         </div>
         {isShown === 'one' && (
-        <img className="Picture" src={basDroite} alt="sylvain sigonnez qui montre la case contact" />
+        <img className="Picture" src={basDroite} alt="sylvain sigonnez qui montre la case contact" width="100px" height="100px" />
         )}
         {isShown === 'two' && (
         <img className="Picture" src={hautGauche} alt="sylvain sigonnez qui montre la case de sa présentation" />
@@ -194,17 +194,9 @@ const Contact = () => {
   );
 };
 
-Contact.propTypes = ({
-  email: PropTypes.string,
-  message: PropTypes.string,
-  changeField: PropTypes.func.isRequired,
-  resetFields: PropTypes.func.isRequired,
-});
-
 Contact.defaultProps = ({
   email: '',
   message: '',
-  response: '',
 });
 
 export default Contact;
