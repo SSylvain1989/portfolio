@@ -74,20 +74,24 @@ const Contact = () => {
       <p>I speack & write in French , i have and advanced level in English</p>
       <p>Before i learn how to code , i was in logistics</p>
       <p>Looking for a dev or just chat with me ? Just write me down below </p> */}
-          <p>Bonjour 🖐️, </p>
-          <p>Sylvain 31 ans et 168 cm de bonne humeur 😄.
+          <p>Bonjour 👋, </p>
+          <p>Sylvain 31 ans et 168 cm de bonne humeur 🙂 .
             Basé dans le sud de la France à Toulouse la ville Rose.
           </p>
           <p>En 2020 je décide de faire de mes centres d'intérêts
             mon activité professionnelle.
-            Je sors en novembre 2020 d'une formation développeur web - Fullstack <span>Javascript</span> :
-            Spécialité ReactJS ⚛️ (735 heures)
+            Je sors en novembre 2020
+            d'une formation développeur web - Fullstack <strong>Javascript</strong> :
+            Spécialité ReactJS ⚛️ (735 heures).
           </p>
 
-          <p>Avant d'être <span>développeur</span>, je suis resté 8 ans dans le secteur des transports et
-            logistiques avec un master 1 en poche
+          <p>Avant d'être <span>développeur</span>,
+            je suis resté 8 ans dans le secteur des transports et
+            logistiques avec un master 1 en poche.
           </p>
-          <p>Je suis à l'écoute du marché, n'hésitez pas à me contacter je suis sur que je saurais répondre à vos attentes. </p>
+          <p>Je suis à l'écoute du marché, n'hésitez pas à
+            me contacter je suis sur que je saurais répondre à vos attentes.
+          </p>
         </div>
         <div
           className="Skill__hard"
