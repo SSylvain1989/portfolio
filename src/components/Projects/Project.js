@@ -27,7 +27,7 @@ const Project = ({
   <div className="card">
     <div className="face1">
       <div className="content">
-        <img className="picture" src={image} alt="hero" />
+        <img className="picture" src={image} alt="hero" width="180px" height="120px" />
         <h3 className="face1__subtitle">{fullName}</h3>
       </div>
     </div>
@@ -39,22 +39,22 @@ const Project = ({
             <li className="li__icon">    <img className="icon" src={html} alt="html_icon" /><br />html5</li>
             <li className="li__icon">    <img className="icon" src={css} alt="css_icon" /><br />css3</li>
             {node && (
-            <li className="li__icon"> <img className="icon" src={node} alt={`${node}_icon`} /><br />NodeJS</li>
+            <li className="li__icon"> <img className="icon" src={node} alt={`${node}_icon`} width="40px" height="40px" /><br />NodeJS</li>
             )}
             {semantic && (
-            <li className="li__icon"> <img className="icon" src={semantic} alt="semantic_icon" /><br />Semantic ui</li>
+            <li className="li__icon"> <img className="icon" src={semantic} alt="semantic_icon" width="40px" height="40px" /><br />Semantic ui</li>
             )}
             {postegres && (
-            <li className="li__icon"> <img className="icon" src={postegres} alt="postegres_icon" /><br />PostgreSQL</li>
+            <li className="li__icon"> <img className="icon" src={postegres} alt="postegres_icon" width="40px" height="40px" /><br />PostgreSQL</li>
             )}
             { redux && (
-            <li className="li__icon">    <img className="icon" src={redux} alt="redux_icon" /><br />Redux</li>
+            <li className="li__icon">    <img className="icon" src={redux} alt="redux_icon" width="40px" height="40px" /><br />Redux</li>
             )}
             { yarn && (
-            <li className="li__icon">    <img className="icon" src={yarn} alt="redux_icon" /><br />Yarn</li>
+            <li className="li__icon">    <img className="icon" src={yarn} alt="redux_icon" width="40px" height="40px" /><br />Yarn</li>
             )}
             { npm && (
-            <li className="li__icon">    <img className="icon" src={npm} alt="redux_icon" /><br />Npm</li>
+            <li className="li__icon">    <img className="icon" src={npm} alt="redux_icon" width="40px" height="40px" /><br />Npm</li>
             )}
           </ul>
         </div>

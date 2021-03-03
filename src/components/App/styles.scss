@@ -1,4 +1,4 @@
-// body{width:100%;}
+@use 'src/styles/vars' as v;
 .app {
   width:100%;
   min-height : 300vh;
@@ -8,7 +8,7 @@
   padding-right: 3%;
   // position: relative;
   font-family: 'sans-serif';
-  background-color:#1E1E1E;
+  background-color: v.$very-dark;
 }
 
 @media(min-width: 2560px) // taille 27 pouces
