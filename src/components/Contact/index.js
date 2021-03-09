@@ -7,6 +7,8 @@ import { Icon } from 'semantic-ui-react';
 import {
   SiRedux, SiJavascript, SiHtml5, SiCss3, SiTailwindcss, SiNodeDotJs, SiPostgresql, SiMysql,
 } from 'react-icons/si';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 // == Import
 import monCv from '../../assets/cv_sylvain_sigonnez.pdf';
@@ -22,13 +24,14 @@ import './styles.scss';
 // == Composant
 const Contact = () => {
   toast.configure();
+  // gestion du modification de la photo avec onMouseOver et useState , ici j'initialise mon state
+  const [isShown, setIsShown] = useState('');
 
   // ici je dis que des la première monture du composant je mets le state à "one"
   useEffect(() => {
     setIsShown('one');
+    Aos.init({ duration: 2200 });
   }, []);
-  // gestion du modification de la photo avec onMouseOver et useState , ici j'initialise mon state
-  const [isShown, setIsShown] = useState('');
 
   // gestion du formulaire de contact
   const onSubmit = (event) => {
@@ -41,19 +44,17 @@ const Contact = () => {
     // };
     emailjs.sendForm('service_tcg8gkr', 'template_v3fahxb', event.target, 'user_fkzQbVgbBCHNTPo54IgVK')
       .then((result) => {
-        // console.log('email envoyé', result);
         toast.success('Merci pour votre message je vous reviens rapidement', { className: 'toast__success', position: toast.POSITION.TOP_RIGHT });
       },
       (error) => {
         toast.error('Une erreur est apparue, retentez votre envoi s\'il-vous-plait');
-        // console.log('erreur', error);
       });
     event.target.reset();
   };
 
   return (
     <div>
-      <div className="container__contact" id="about">
+      <div data-aos="fade-up" className="container__contact" id="about">
         <div
           className="about"
           // ici je change la valeur du state de mon composant
@@ -62,7 +63,7 @@ const Contact = () => {
         >
           {/* <p>Hi , </p>
       <p>My Name is Sylvain , i have 31 yers old , 168cm of
-      good humeur and humour ( maybe a little dark)
+      good humeur and humour ,
         french dude who live in south of France , Toulouse ( Occitanie ).
       </p>
       <p>I have study code in O'clock in 2020 for 6 months</p>
@@ -84,7 +85,6 @@ const Contact = () => {
             d'une formation développeur web - Fullstack <strong>Javascript</strong> :
             Spécialité ReactJS ⚛️ (735 heures).
           </p>
-
           <p>Avant d'être <span>développeur</span>,
             je suis resté 8 ans dans le secteur des transports et
             logistiques avec un master 1 en poche.
@@ -176,7 +176,6 @@ const Contact = () => {
                 className="contact__message"
               />
             </label>
-
             <button className="contact__button" type="submit">Envoyer</button>
           </form>
         </div>
@@ -189,7 +188,6 @@ const Contact = () => {
           CV
         </p>
       </a>
-
     </div>
   );
 };

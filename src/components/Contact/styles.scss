@@ -461,3 +461,9 @@ transition: 0.2s;
      }
 
 }
+@media(max-width: 320px) // tres tres petit smartphone ** FINI
+{
+     .about{
+          height: 43rem;
+     }
+}

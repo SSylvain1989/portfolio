@@ -177,7 +177,7 @@
 {
   .container {
     margin : 5rem auto ;
-    height: 180vh;
+    height: 100vh;
   }
 
 }
@@ -428,5 +428,47 @@
 }
 .li__icon{
   padding: 0 2px 0 2px;
+}
+}
+
+@media(max-width: 320px) // tres tres petit smartphone * FINI
+{
+  .picture{
+    width: 300px;
+    height: 190px;
+  }
+
+  .face1 {
+    margin: 2rem -3.5rem;
+    width: 300px;
+    height: 182px;
+    position: relative;
+    margin: auto;
+    transform: translateY(80px);
+    background-color:#2a2a2a;
+
+  }
+
+.face2 {
+  width: 300px;
+  height: 195px;
+  
+  p{
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  .stack{
+    width: 310px;
+    padding: 5px 0;
+  
+  }
+  .icon{
+    width: 28px;
+    height: 28px;
+  }
+  .li__icon{
+    padding: 0 1px 0 1px;
+    font-size: 0.5rem;
+  }
 }
 }
