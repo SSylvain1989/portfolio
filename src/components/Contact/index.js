@@ -30,7 +30,8 @@ const Contact = () => {
   // ici je dis que des la première monture du composant je mets le state à "one"
   useEffect(() => {
     setIsShown('one');
-    Aos.init({ duration: 2200 });
+    Aos.init({
+      duration: 1400 });
   }, []);
 
   // gestion du formulaire de contact

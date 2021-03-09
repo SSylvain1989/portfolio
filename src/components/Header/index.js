@@ -1,17 +1,16 @@
 // == Import npm
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import {
   Icon,
   Menu,
 
 } from 'semantic-ui-react';
 // permet de faire les encres de liens au clic
-import { HashLink } from 'react-router-hash-link';
 import PropTypes from 'prop-types';
 
 // == Import
-
+import 'aos/dist/aos.css';
 import './styles.scss';
 import logo from '../../images/cv.webp';
 
@@ -23,6 +22,7 @@ const Header = ({
   const menuClick = () => {
     handleMenuClick();
   };
+
   return (
     <div className="header" id="header">
       <Icon id="hamburger__menu__icon" name="bars" size="big" onClick={menuClick} />
@@ -34,13 +34,37 @@ const Header = ({
       {showMenuBoolean === true && (
       <Menu vertical id="hamburger__menu">
         <Menu.Item>
-          <HashLink to="/#Projects" onClick={menuClick}> Projets </HashLink>
+          <Link
+            to="Projects"
+            spy
+            smooth
+            offset={0}
+            duration={800}
+            onClick={menuClick}
+          > Projets
+          </Link>
         </Menu.Item>
         <Menu.Item>
-          <HashLink to="/#about" onClick={menuClick}> à propos </HashLink>
+          <Link
+            to="about"
+            spy
+            smooth
+            offset={0}
+            duration={800}
+            onClick={menuClick}
+          > à propos
+          </Link>
         </Menu.Item>
         <Menu.Item>
-          <HashLink to="/#about" onClick={menuClick}> compétences </HashLink>
+          <Link
+            to="about"
+            spy
+            smooth
+            offset={0}
+            duration={800}
+            onClick={menuClick}
+          > compétences
+          </Link>
         </Menu.Item>
         <Menu.Item>
           <p>Un projet ou un brin de causette ?</p><br />
@@ -49,22 +73,48 @@ const Header = ({
         </Menu.Item>
       </Menu>
       )}
-      <HashLink to="/#"><img loading="lazy" className="header__img" src={logo} alt="home__logo" width="80px" height="100px" />
+      <Link
+        to="landing"
+        spy
+        smooth
+        offset={0}
+        duration={800}
+      ><img loading="lazy" className="header__img" src={logo} alt="home__logo" width="80px" height="100px" />
         <h1><strong>Sylvain  SIGONNEZ</strong></h1>
-      </HashLink>
+      </Link>
       <Menu id="navbar_menu">
         <Menu.Item>
-          <HashLink to="/#Projects"> Projets </HashLink>
+          <Link
+            to="Projects"
+            spy
+            smooth
+            offset={0}
+            duration={800}
+          > Projets
+          </Link>
         </Menu.Item>
         <Menu.Item>
-          <HashLink to="/#about"> à propos </HashLink>
+          <Link
+            to="about"
+            spy
+            smooth
+            offset={0}
+            duration={800}
+          > à propos
+          </Link>
         </Menu.Item>
         <Menu.Item>
-          <HashLink to="/#about"> compétences </HashLink>
+          <Link
+            to="about"
+            spy
+            smooth
+            offset={0}
+            duration={800}
+          > compétences
+          </Link>
         </Menu.Item>
       </Menu>
     </div>
-
   );
 };
 

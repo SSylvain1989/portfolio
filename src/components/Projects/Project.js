@@ -27,11 +27,11 @@ const Project = ({
   npm,
 }) => {
   useEffect(() => {
-    Aos.init({ duration: 2200 });
+    Aos.init({ duration: 1400 });
   }, []);
 
   return (
-    <div data-aos="fade-up" className="card">
+    <div data-aos="fade-right" className="card">
       <div className="face1">
         <div className="content">
           <img className="picture" src={image} alt="aperçu du site" width="180px" height="120px" />
@@ -71,7 +71,7 @@ const Project = ({
         </div>
       </div>
     </div>
-)
+  );
 };
 
 // == propTypes

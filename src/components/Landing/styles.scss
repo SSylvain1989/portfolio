@@ -10,6 +10,8 @@
   }&__title{
     text-align: center;
     margin: 12rem auto 1.5rem auto;
+  }&__h2:hover{
+    color: aqua;
   }
   h2{
     padding-left: 5rem;
@@ -231,6 +233,7 @@
     text-align: center;
     color: white;
     padding-bottom: 40px;
+    cursor: pointer;
     }
   &__footer{
     padding-bottom: 20px;
@@ -239,24 +242,22 @@
     display: flex;
     flex-direction: column;
     font-weight: bolder;
-  }&__footer{
     transform: scale(1.01);
     transition: 0.1s;
     color: white;
+    &__footer:hover{
+      color: aqua;
+    }
   }a:hover{
     transform: scale(1.01);
     transition: 0.1s;
-    color: white;
-  }&__scroll:hover{
-    color: white;
-    transform: scale(1.01);
-    letter-spacing: 0.1rem;
-}
+    color: aqua;
+  }
 }
 #icon:hover{
   transform: scale(1.01);
   transition: 0.1s;
-  color: white;
+  color: aqua;
 }
 
 //media

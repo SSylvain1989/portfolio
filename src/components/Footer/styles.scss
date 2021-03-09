@@ -6,11 +6,16 @@
      margin-top: 6rem;
      display: flex;
      text-align: center;
-     justify-content: center;
-     padding-top: 7rem;
-     
+     justify-content: center;   
      &__infos{
           margin: 2rem 4rem;
+          display: flex;
+          flex-direction: column;
+          a{
+               font-weight: bold;
+               padding: 12px 0;
+               font-size: 1.2rem; 
+          }
      }&__menu{
           margin: 2rem 4rem;
      }&__link{
@@ -31,10 +36,6 @@
           font-weight: bold;
           padding-bottom: 10px;
           font-size: 1.2rem;
-     }p{
-          font-weight: bold;
-          padding-bottom: 2px;
-          font-size: 1.2rem; 
      }&__link-a{
           padding: 0.2rem 0;
           border: none;
@@ -69,21 +70,6 @@ a{
      border: 0;
 }
 
-
-
-//media
-
-// desktop
-@media(min-width: 1389px)
-{
-
-}
-
-// tablette
-@media(min-width: 768px) and (max-width: 1388px)
- {
- }
-
  // smartphone
 @media(max-width: 767px)
 
@@ -115,7 +101,7 @@ a{
                font-weight: bold;
                padding-bottom: 10px;
                font-size: 0.85rem;
-          }p{
+          }a{
                font-weight: bold;
                padding-bottom: 2px;
                font-size: 0.85rem; 
@@ -133,14 +119,15 @@ a{
           }&__menu{
                margin: 0rem 0.1rem;
                padding-right: 30px;
-     }
-     &__social{
+     }&__social{
           margin: 0rem 0.1rem;
           padding-right: 8px;
      }li{
           font-size: 0.65rem;
-     }p{
+     }a{
           font-size: 0.65rem; 
+     }h1{
+          padding-bottom: 0.3rem;
      }
      }
 }
