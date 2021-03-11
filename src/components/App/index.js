@@ -7,13 +7,14 @@ import { Loader } from 'semantic-ui-react';
 // == Import
 import Header from 'src/containers/Header';
 import Landing from 'src/components/Landing';
-import News from 'src/components/News';
+
 import './styles.scss';
 
 // == Lazy componsant
 const Projects = lazy(() => import('src/components/Projects'));
 const Footer = lazy(() => import('src/components/Footer'));
 const Contact = lazy(() => import('src/components/Contact'));
+const News = lazy(() => import('src/components/News'));
 
 // == Composant
 const App = () => (
@@ -35,7 +36,9 @@ const App = () => (
       </Suspense>
     </Route>
     <Route exact path="/">
-      <News />
+      <Suspense fallback={<div><Loader active size="massive" inline="centered" /></div>}>
+        <News />
+      </Suspense>
     </Route>
     <Suspense fallback={<div><Loader active size="massive" inline="centered" /></div>}>
       <Footer />
