@@ -18,14 +18,14 @@ const Landing = () => {
   }, []);
 
   return (
-    <div data-aos="fade-left" className="Landing" id="landing">
+    <div data-aos="fade-down" className="Landing" id="landing">
       <div className="Landing__container">
         <div className="Landing__title" />
         <div className="Landing__text" id="Landing__animation">
           <div className="Landing__h2">
-            <h2 data-aos="fade-up">Je<br /> suis<br /><strong>développeur</strong><br /><span className="Landing__rotate" /><br /></h2>
+            <h2>Je<br /> suis<br /><strong>développeur</strong><br /><span className="Landing__rotate" /><br /></h2>
           </div>
-          <p >Ma spécialité : <strong>React</strong> & <strong>Node</strong>.</p>
+          <p>Ma spécialité : <strong>React</strong> & <strong>Node</strong>.</p>
         </div>
         <Link
           to="Projects"

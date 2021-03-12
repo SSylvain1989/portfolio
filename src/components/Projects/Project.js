@@ -27,7 +27,7 @@ const Project = ({
   npm,
 }) => {
   useEffect(() => {
-    Aos.init({ duration: 1500 });
+    Aos.init({ duration: 1400 });
   }, []);
 
   return (
@@ -35,11 +35,7 @@ const Project = ({
       <div className="face1">
         <div className="content">
           <img className="picture" src={image} alt="aperçu du site" width="180px" height="120px" />
-          <h3
-            data-aos="fade-up"
-            className="face1__subtitle"
-          >{fullName}
-          </h3>
+          <h3 data-aos="fade-up" className="face1__subtitle">{fullName}</h3>
         </div>
       </div>
       <div className="face2">
