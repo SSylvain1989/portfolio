@@ -30,8 +30,7 @@ const Contact = () => {
   // ici je dis que des la première monture du composant je mets le state à "one"
   useEffect(() => {
     setIsShown('one');
-    Aos.init({
-      duration: 1400 });
+    Aos.init({ duration: 1400 });
   }, []);
 
   // gestion du formulaire de contact
@@ -55,8 +54,9 @@ const Contact = () => {
 
   return (
     <div>
-      <div data-aos="fade-up" className="container__contact" id="about">
+      <div className="container__contact" id="about">
         <div
+          data-aos="fade-right"
           className="about"
           // ici je change la valeur du state de mon composant
           onMouseEnter={() => setIsShown('one')}
@@ -95,6 +95,7 @@ const Contact = () => {
           </p>
         </div>
         <div
+          data-aos="fade-left"
           className="Skill__hard"
           onMouseEnter={() => setIsShown('two')}
           onMouseLeave={() => setIsShown('two')}
@@ -113,6 +114,7 @@ const Contact = () => {
           </ul>
         </div>
         <div
+          data-aos="fade-right"
           className="Skill__soft"
           onMouseEnter={() => setIsShown('three')}
           onMouseLeave={() => setIsShown('three')}
@@ -142,6 +144,7 @@ const Contact = () => {
         <img className="Picture" src={hautDroite} alt="sylvain sigonnez qui montre la case des hard skills" />
         )}
         <div
+          data-aos="fade-left"
           className="contact"
           onMouseEnter={() => setIsShown('for')}
           onMouseLeave={() => setIsShown('for')}

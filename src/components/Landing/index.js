@@ -14,7 +14,7 @@ import './styles.scss';
 // == Composant
 const Landing = () => {
   useEffect(() => {
-    Aos.init({ duration: 2200 });
+    Aos.init({ duration: 2300 });
   }, []);
 
   return (
@@ -23,9 +23,9 @@ const Landing = () => {
         <div className="Landing__title" />
         <div className="Landing__text" id="Landing__animation">
           <div className="Landing__h2">
-            <h2>Je<br /> suis<br /><strong>développeur</strong><br /><span className="Landing__rotate" /><br /></h2>
+            <h2 data-aos="fade-up">Je<br /> suis<br /><strong>développeur</strong><br /><span className="Landing__rotate" /><br /></h2>
           </div>
-          <p>Ma spécialité : <strong>React</strong> & <strong>Node</strong>.</p>
+          <p >Ma spécialité : <strong>React</strong> & <strong>Node</strong>.</p>
         </div>
         <Link
           to="Projects"
