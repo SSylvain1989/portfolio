@@ -1,12 +1,8 @@
 @use 'vars';
 
   // or you can import your own font
-  @font-face {
-    font-family: 'Langar-Regular', sans-serif;
-    src: url('../assets/fonts/Langar-Regular.ttf'), url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
-  }
   body {
-    font-family: 'Langar-Regular', sans-serif;
+    font-family: 'Varela Round', sans-serif;
     min-height: 100vh;
     background-color:#1E1E1E;
   }

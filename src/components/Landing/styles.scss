@@ -14,11 +14,12 @@
     color: aqua;
   }
   h2{
+    font-family: 'Varela Round';
     padding-left: 5rem;
     margin-top:8rem;
-    font-size: 6.5rem;
+    font-size: 6.25rem;
     width: 73rem;
-    line-height: 0.96em !important;
+    line-height: 0.96em;
     font-weight: bolder;
     text-transform: uppercase;
   }
@@ -88,16 +89,13 @@
   #Landing__animation:after {
     content: '';
     // hauteur du cadre
-    padding: 13rem;
+    padding: 12rem;
     @media (max-width: 360px){
-      padding: 5rem;
+      padding: 3.7rem;
     }
-    // @media  ( max-height: 860px )     {
-    // display: none ;
-    // }
     @media screen and (min-width:361px) and (max-width: 539px)
     {
-      padding:5.5rem;
+      padding:4rem;
     }
     @media(min-width: 540px) and (max-width: 766px) 
     {
@@ -119,11 +117,11 @@
     left: 50%;
     // position horizontale du cadre
     @media (max-width: 360px){
-      left: 65%;
+      left: 67%;
     }
     @media screen and (min-width:361px) and (max-width: 539px)
     {
-      left: 67%;
+      left: 62%;
     }
     @media(min-width: 540px) and (max-width: 766px) 
     {
@@ -141,12 +139,12 @@
     width: 50rem;
     @media (max-width: 360px){
       width: 16rem;
-      top: 53%;
+      top: 46%;
     }
     @media screen and (min-width:361px) and (max-width: 539px)
     {
-      top: 47%;
-      width: 21.2rem;
+      top: 56%;
+      width: 17rem;
     }
     @media(min-width: 540px) and (max-width: 766px) 
     {
@@ -162,7 +160,7 @@
       width: 48rem;
       top: 60%;
     }
-    top: 50%;
+    top: 52%;
     display: block;
 
     border: 13px solid ;
@@ -173,7 +171,7 @@
     }
     @media screen and (min-width:361px) and (max-width: 539px)
     {
-      border: 7px solid ;
+      border: 6px solid ;
     }
     @media(min-width: 540px) and (max-width: 766px) {
       border: 8px solid ;
@@ -218,10 +216,12 @@
     }    
   }  
   &__text{
+    font-family: 'Varela Round';
     margin: 2rem auto 6rem auto;
     align-content: center;
     padding-left: 15rem;
     p{
+      
       padding-left: 5rem;
       font-size: 4rem;
       font-style: italic;
@@ -230,6 +230,7 @@
       -webkit-text-fill-color: transparent;
     }
   }&__scroll{
+    font-family: 'Varela Round';
     position: absolute;
     bottom: 15px;
     margin: auto;
@@ -479,7 +480,7 @@
     h2{
       padding-left: 0rem;
       margin-top:4rem;
-      font-size: 2.8rem;
+      font-size: 2rem;
       width: 22rem;
       line-height: 0.96em !important;
       font-weight: bolder;
@@ -491,7 +492,7 @@
     background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-      font-size: 2.5rem;
+      font-size: 2rem;
       line-height: 0;
       content:'';
       animation: landing linear infinite 6s;
@@ -502,7 +503,7 @@
     p{
       letter-spacing: -0.14rem;
       padding-left: 0rem;
-      font-size: 1.8rem;
+      font-size: 1.3rem;
       font-style: italic;
       background: -webkit-linear-gradient(#eee, #333);
       -webkit-background-clip: text;
@@ -511,7 +512,7 @@
   }
   &__footer{
     padding-bottom: 20px;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     line-height: 0;
     display: flex;
     flex-direction: column;

@@ -1,6 +1,7 @@
 @use 'src/styles/vars' as v;
 
 .Footer{
+     font-family: 'Varela Round';
      background-color: v.$very-dark;
      width: 100%;
      margin-top: 6rem;
@@ -31,7 +32,10 @@
      }&__copyright{
           font-size: 0.9rem; 
      }h1{
+          font-family: 'Varela Round';
           padding-bottom: 1rem;
+     }h2{
+          font-family: 'Varela Round';
      }li{
           font-weight: bold;
           padding-bottom: 10px;

@@ -1,6 +1,7 @@
 @use 'src/styles/vars' as v;
 
 .container__contact{
+     font-family: 'Varela Round';
 margin: 9rem auto 0.7rem;
 width: 97%;
 height: 100%;
@@ -18,6 +19,7 @@ li{
 
 // partie formulaire contact
 .contact{
+     
      padding: 0.8rem;
      width: 50%;
      height: 28rem;
@@ -28,11 +30,13 @@ li{
      display: flex;
      justify-content: space-around;
 &__form{
+     
      margin-left: 1.5rem;
      width: 95%;    
      display: flex;
      flex-direction: column;
 }&__title{
+     font-family: 'Varela Round';
      margin: 1.5rem auto;
      padding-top: 1.8rem;
      font-size: 1.5rem;
@@ -50,6 +54,7 @@ li{
      }
      
 }&__name{
+     
      border-radius: 5px;
      padding: 0.7rem;
      text-align: center;
@@ -77,6 +82,7 @@ li{
      height: 7.5rem;
      width: 80%;
 }&__button{
+     font-family: 'Varela Round';
      border-radius: 5px;
      margin: 1.5rem auto 0.6rem auto;
      padding: 0.5rem 2rem;
@@ -127,6 +133,7 @@ li{
      }
 
 .Skill__hard{
+     
      padding: 1rem;
      width: 50%;
      height: 28rem;
@@ -135,6 +142,7 @@ li{
      font-size: 1.4rem;
      list-style: none;
      h3{
+          font-family: 'Varela Round';
      text-align: center;
      font-size: 1.8rem;
      padding-bottom: 0.8rem;
@@ -158,11 +166,13 @@ transition: 0.2s;
      font-size: 1.4rem;
      list-style: none;
      h3{
+          font-family: 'Varela Round';
      text-align: center;
      font-size: 1.8rem;
      padding: 1rem;
      }
      li{
+          
      padding-left: 15px;
      padding-bottom: 1rem;
      font-weight: 500;
