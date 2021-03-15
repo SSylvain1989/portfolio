@@ -1,9 +1,8 @@
 // == Import npm
 import React from 'react';
-import PropTypes from 'prop-types';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { CgMail } from 'react-icons/cg';
-import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-scroll';
 
 // == Import
 
@@ -22,10 +21,10 @@ const Footer = () => (
       <div className="Footer__menu">
         <h2>MENU</h2>
         <ul className="Footer__link">
-          <li className="Footer__link-a"><HashLink to="/#landing">Accueil</HashLink></li>
-          <li className="Footer__link-a"><HashLink to="/#Projects">Projets</HashLink></li>
-          <li className="Footer__link-a"><HashLink to="/#about">À propos</HashLink></li>
-          <li className="Footer__link-a"><HashLink to="/#about">Contact</HashLink></li>
+          <li className="Footer__link-a"><Link to="landing" spy smooth>Accueil</Link></li>
+          <li className="Footer__link-a"><Link to="Projects" spy smooth>Projets</Link></li>
+          <li className="Footer__link-a"><Link to="about" spy smooth>À propos</Link></li>
+          <li className="Footer__link-a"><Link to="about" spy smooth >Contact</Link></li>
         </ul>
       </div>
       <div className="Footer__social">

@@ -129,11 +129,11 @@
     }
     @media(min-width: 767px) and (max-width: 1023px)
     {
-      left: 61.5%;
+      left: 60.5%;
     }
     @media(min-width: 1024px) and (max-width: 1388px)
     {
-      left:59%
+      left:55%
     }
     // largeur du cadre et position vertical
     width: 50rem;
@@ -153,12 +153,13 @@
     }
     @media(min-width: 767px) and (max-width: 1023px)
     {
-      width: 34.5rem;
+      width: 35.5rem;
+      top: 50%;
     }
     @media(min-width: 1024px) and (max-width: 1388px)
     {
       width: 48rem;
-      top: 60%;
+      top: 59%;
     }
     top: 52%;
     display: block;
@@ -266,17 +267,6 @@
 
 //media
 
-// desktop
-
-@media(min-width: 2560px) // taille 27 pouces
-{
-
-}
-
-@media(min-width: 1920px) // taille 24 pouces
-{
-
-}
 
 @media(min-width: 1389px) and (max-width: 1919px) // 19pouces à 22 pouces
 {
@@ -334,8 +324,8 @@
       padding-left: 0rem;
       margin-top:14rem;
       margin-bottom: 0rem;
-      font-size: 6.3rem;
-      width: 50rem;
+      font-size: 6rem;
+      width: 54rem;
     }
     &__rotate:before{
       font-size: 6.3rem;
@@ -369,7 +359,7 @@
       margin-bottom: 0rem;
       padding-left: 0rem;
       font-size: 4.5rem;
-      width: 36rem;
+      width: 38rem;
       line-height: 0.96em !important;
       font-weight: bolder;
       text-transform: uppercase;
