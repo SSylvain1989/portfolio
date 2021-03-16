@@ -203,6 +203,15 @@
   .container{
     height: 215vh;
   }
+  .face1__subtitle{
+    font-family: 'Varela Round';
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color : v.$subtitle-bleu;
+    padding : 15px;
+    border-radius: 10px;
+  }
 }
 
 @media(min-width: 1086px) and (max-width: 1388px) // test ipad pro 
@@ -298,6 +307,77 @@
   height: 35px;
 }
 }
+
+@media (min-width: 988px) and (max-width: 1388px) and (min-height : 600px) and (max-height: 1224px ) // petit écran en haut comme macbook air 11
+{
+  .container{
+    padding-top: 50px;
+    padding-left: 10%;
+    height: 110vh;
+  }
+  .picture{
+    width: 380px;
+    height: 240px;
+    object-fit:cover;
+    object-position:50% 50%;
+  }
+
+  .face1 {
+    margin: 2rem -3.5rem;
+    width: 380px;
+    height: 240px;
+    position: relative;
+    margin: auto;
+    transform: translateY(95px);
+    background-color:#2a2a2a;
+    border-radius: 15px 15px 0px 0px;
+
+  }
+  .face1__subtitle{
+    font-family: 'Varela Round';
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color : v.$subtitle-bleu;
+    padding : 15px;
+    border-radius: 10px;
+  }
+.face2 {
+  width: 380px;
+  height: 180px;
+  transform: translateY(-50px);
+  border-radius: 5px;
+  
+  p{
+    font-size: 1.4rem;
+    padding: 0.5rem;
+  }
+}
+
+.container .card:hover .face2{
+  transform: translateY(-17px);
+}
+
+.stack{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 300px;
+  padding: 0 0.5rem ;
+&__icons{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0px;
+}
+}
+.icon{
+  width: 35px;
+  height: 35px;
+}
+
+}
+
 @media(min-width: 540px) and (max-width: 766px) and (orientation : landscape )
 {
   .container {

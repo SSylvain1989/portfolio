@@ -19,3 +19,24 @@
     color: #2FCFD0;
   }
 }
+@media (min-width: 988px) and (max-width: 1388px) and (min-height : 600px) and (max-height: 1224px ) // petit écran en haut comme macbook air 11
+{
+  .News{
+    font-size: 1.15rem;
+    h2{
+      font-size: 1.4rem;
+      font-family: 'Varela Round';
+      padding-bottom: 1rem;
+    }
+    a{
+      color: white;
+      border-bottom: white 1px solid;
+      font-style: italic;
+      font-size: 1.2rem;
+    }
+    a:hover{
+      color: #2FCFD0;
+    }
+
+}
+}
