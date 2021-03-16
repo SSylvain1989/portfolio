@@ -113,9 +113,9 @@
     {
       padding:12rem;
     }
-    @media (min-width: 1086px) and (max-width: 1388px) and (min-height : 700px) and (max-height: 1224px ) // petit écran en haut comme macbook air 11
+    @media (min-width: 1086px) and (max-width: 1388px) and (min-height : 600px) and (max-height: 1224px ) // petit écran en haut comme macbook air 11
     {
-      padding:9rem;
+      padding:6.5rem;
     }
     position: absolute;
     left: 50%;
@@ -139,9 +139,9 @@
     {
       left:55%;
     }
-    @media (min-width: 1086px) and (max-width: 1388px) and (min-height : 700px) and (max-height: 1224px ) // petit écran en haut comme macbook air 11
+    @media (min-width: 1086px) and (max-width: 1388px) and (min-height : 600px) and (max-height: 1224px ) // petit écran en haut comme macbook air 11
     {
-      left:48%;
+      left:44%;
     }
     
     // largeur du cadre et position vertical
@@ -172,8 +172,8 @@
     }
     @media (min-width: 988px) and (max-width: 1388px) and (min-height : 600px) and (max-height: 1224px ) // petit écran en haut comme macbook air 11
     {
-      width: 38rem;
-      top: 61%;
+      width: 28rem;
+      top: 64%;
     }
     top: 52%;
     display: block;
@@ -195,9 +195,9 @@
     {
       border: 11px solid ;
     }
-    @media (min-width: 1086px) and (max-width: 1388px) and (min-height : 700px) and (max-height: 1224px ) // petit écran en haut comme macbook air 11
+    @media (min-width: 1086px) and (max-width: 1388px) and (min-height : 600px) and (max-height: 1224px ) // petit écran en haut comme macbook air 11
     {
-      border : 10px solid;
+      border : 8px solid;
     }
     transform: translateX(-50%) translateY(-50%) rotate(0deg);
     animation: 15s infinite alternate ease-in-out tipsy;
@@ -405,14 +405,14 @@
   }
 }
 
-@media (min-width: 1086px) and (max-width: 1388px) and (min-height : 700px) and (max-height: 1224px ) // petit écran en haut comme macbook air 11
+@media (min-width: 1086px) and (max-width: 1388px) and (min-height : 600px) and (max-height: 1224px ) // petit écran en haut comme macbook air 11
 {
   .Landing{
     h2{
-      padding-left: 0rem;
+      padding-left: 2rem;
       margin-top:14rem;
       margin-bottom: 0rem;
-      font-size: 5rem;
+      font-size: 3.5rem;
       width: 54rem;
     }
     &__scroll{
@@ -420,12 +420,12 @@
     }&__footer{
       display: none ;
     }    &__rotate:before{
-
-        font-size: 5rem;
+      
+        font-size: 3.5rem;
 
       }
     p{
-      padding-left: 0rem;
+      padding-left: 2rem;
       font-size: 3.2rem;
     }
   }
