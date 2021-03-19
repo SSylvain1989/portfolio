@@ -1,4 +1,7 @@
 import hero from '../images/hero2.webp';
+import tea from '../images/tea.webp';
+import vue from '../images/vue.webp';
+import sass from '../images/sass.webp';
 import converter from '../images/converter.webp';
 import github from '../images/github.webp';
 import portfolio from '../images/portfolio.webp';
@@ -59,6 +62,16 @@ const projects = [
     github: 'https://github.com/SSylvain1989/converter',
     website: 'https://convertisseur-de-devises.netlify.app/',
     image: converter,
+  },
+  {
+    fullName: 'Tea-Time',
+    sass,
+    vue,
+    html,
+    description: 'initiation à vueJs - une interface toute simple',
+    github: 'https://github.com/SSylvain1989/vue-projet-market',
+    website: 'https://teatimee.netlify.app/#/',
+    image: tea,
   },
 ];
 

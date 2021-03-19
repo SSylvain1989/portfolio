@@ -313,7 +313,7 @@
   .container{
     padding-top: 50px;
     padding-left: 10%;
-    height: 110vh;
+    height: 150vh;
   }
   .picture{
     width: 380px;
@@ -514,6 +514,10 @@
 
 @media(max-width: 320px) // tres tres petit smartphone * FINI
 {
+  .container{
+    padding-left: 7%;
+    height: 380vh;
+  }
   .picture{
     width: 300px;
     height: 190px;

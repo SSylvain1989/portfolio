@@ -25,6 +25,8 @@ const Project = ({
   website,
   yarn,
   npm,
+  vue,
+  sass,
 }) => {
   useEffect(() => {
     Aos.init({ duration: 1400 });
@@ -35,16 +37,20 @@ const Project = ({
       <div className="face1">
         <div className="content">
           <img className="picture" src={image} alt="aperçu du site" width="180px" height="120px" />
-          <h3 data-aos="fade-up" className="face1__subtitle">{fullName}</h3>
+          <h3 data-aos="fade-up" className="face1__subtitle">{fullName} <img src={react} /><img src={vue} /> </h3>
         </div>
       </div>
       <div className="face2">
         <div className="content">
           <div className="stack">
             <ul className="stack__icons">
-              <li className="li__icon">    <img className="icon" src={react} alt="react_icon" width="40px" height="35px" /><br />react</li>
+            {react && (
+              <li className="li__icon"> <img className="icon" src={react} alt={`${react}_icon`} width="40px" height="35px" /><br />react</li>
+              )}
               <li className="li__icon">    <img className="icon" src={html} alt="html_icon" width="40px" height="35px" /><br />html5</li>
-              <li className="li__icon">    <img className="icon" src={css} alt="css_icon" width="40px" height="35px" /><br />css3</li>
+              {css && (
+              <li className="li__icon"> <img className="icon" src={css} alt={`${css}_icon`} width="40px" height="35px" /><br />css</li>
+              )}
               {node && (
               <li className="li__icon"> <img className="icon" src={node} alt={`${node}_icon`} width="40px" height="35px" /><br />NodeJS</li>
               )}
@@ -62,6 +68,12 @@ const Project = ({
               )}
               { npm && (
               <li className="li__icon">    <img className="icon" src={npm} alt="redux_icon" width="40px" height="35px" /><br />Npm</li>
+              )}
+              { vue && (
+              <li className="li__icon">    <img className="icon" src={vue} alt="redux_icon" width="40px" height="35px" /><br />Vue</li>
+              )}
+              { sass && (
+              <li className="li__icon">    <img className="icon" src={sass} alt="redux_icon" width="40px" height="35px" /><br />sass</li>
               )}
             </ul>
           </div>
