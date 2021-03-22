@@ -1,42 +1,84 @@
-.News{
+@use 'src/styles/vars'as v;
+
+
+.News {
   font-family: 'Varela Round';
   height: fit-content;
   width: auto;
   margin: 6rem auto 6rem;
   padding: 3rem;
   font-size: 1.6rem;
-  h2{
+
+  h2 {
     font-family: 'Varela Round';
     padding-bottom: 1rem;
   }
-  a{
+
+  a {
     color: white;
     border-bottom: white 1px solid;
     font-style: italic;
     font-size: 1.7rem;
   }
-  a:hover{
+
+  a:hover {
     color: #2FCFD0;
   }
+
+
+  .stack {
+    background-color: v.$very-light-dark;
+    border: solid 1px v.$very-light-dark;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 500px;
+    padding: 1rem;
+    margin-bottom: 4rem;
+
+    &__icons {
+      display: flex;
+      flex-direction: row;
+      padding: 0rem;
+      margin: auto;
+      justify-content: space-around;
+      list-style: none;
+
+    }
+  }
+
+  // une icone
+  .icon {
+    padding-top: 5px;
+    width: 40px;
+    height: 40px;
+  }
 }
-@media (min-width: 988px) and (max-width: 1388px) and (min-height : 600px) and (max-height: 1224px ) // petit écran en haut comme macbook air 11
-{
-  .News{
+
+@media (min-width: 988px) and (max-width: 1388px) and (min-height : 600px) and (max-height: 1224px) // petit écran en haut comme macbook air 11
+
+  {
+  .News {
     font-size: 1.15rem;
-    h2{
+
+    h2 {
       font-size: 1.4rem;
       font-family: 'Varela Round';
       padding-bottom: 1rem;
     }
-    a{
+
+    a {
       color: white;
       border-bottom: white 1px solid;
       font-style: italic;
       font-size: 1.2rem;
     }
-    a:hover{
+
+    a:hover {
       color: #2FCFD0;
     }
 
-}
+  }
 }

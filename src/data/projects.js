@@ -25,7 +25,7 @@ const projects = [
     postegres,
     html,
     css,
-    description: 'le site dont vous êtes le héro, chaque décision est décisive',
+    description: 'le site dont vous êtes le héro, chaque décision est décisive(desktop uniquement)',
     github: 'https://github.com/SSylvain1989/hero',
     website: 'http://3.89.27.242:3000/',
     image: hero,
