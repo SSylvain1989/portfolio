@@ -15,6 +15,7 @@ import postegres from '../images/postegres.webp';
 import javascript from '../images/javascript.webp';
 import css from '../images/css.webp';
 import html from '../images/html.webp';
+import todo from '../images/todo.webp';
 
 const projects = [
   {
@@ -25,7 +26,7 @@ const projects = [
     postegres,
     html,
     css,
-    description: 'le site dont vous êtes le héro, chaque décision est décisive(desktop uniquement)',
+    description: 'le site dont vous êtes le héro, chaque décision est décisive(desktop only)',
     github: 'https://github.com/SSylvain1989/hero',
     website: 'http://3.89.27.242:3000/',
     image: hero,
@@ -72,6 +73,16 @@ const projects = [
     github: 'https://github.com/SSylvain1989/vue-projet-market',
     website: 'https://teatimee.netlify.app/#/',
     image: tea,
+  },
+  {
+    fullName: 'Todo - Veille Techno',
+    vue,
+    html,
+    css,
+    description: 'Une todo pour apprendre les concepts de VueJS',
+    github: 'https://github.com/SSylvain1989/todoVue',
+    website: 'https://vuejs3-todo.netlify.app/',
+    image: todo,
   },
 ];
 
