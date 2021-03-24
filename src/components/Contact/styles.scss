@@ -1,589 +1,676 @@
-@use 'src/styles/vars' as v;
+@use 'src/styles/vars'as v;
 
-.container__contact{
-     font-family: 'Varela Round';
-margin: 9rem auto 0.7rem;
-width: 97%;
-height: 100%;
-display: flex;
-flex-wrap: wrap;
-position: relative;
-margin-top: 28rem;
-li{
-     padding-left: 35px;
-     padding-bottom: 12px;
-     font-weight: 300;
-     list-style: none;
-}
+.container__contact {
+  font-family: 'Varela Round';
+  margin: 9rem auto 0.7rem;
+  width: 97%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 28rem;
+
+  li {
+    padding-left: 35px;
+    padding-bottom: 12px;
+    font-weight: 300;
+    list-style: none;
+  }
 }
 
 // partie formulaire contact
-.contact{
-     
-     padding: 0.8rem;
-     width: 50%;
-     height: 28rem;
-     background-color:v.$light-dark;
-     border-radius: 5px;
-     transition: 0.2s;
-     border-radius: 5px;
-     display: flex;
-     justify-content: space-around;
-&__form{
-     
-     margin-left: 1.5rem;
-     width: 95%;    
-     display: flex;
-     flex-direction: column;
-}&__title{
-     font-family: 'Varela Round';
-     margin: 1.5rem auto;
-     padding-top: 1.8rem;
-     font-size: 1.5rem;
-     font-weight: 900;
-     a{
-          color: white;
-          margin-bottom: 50px;
-          margin: 0 0.5rem;
-     }
-     a:hover{
-          transform: scale(1.7);
-     }
-     span{
-          margin-top: 9rem ;
-     }
-     
-}&__name{
-     
-     border-radius: 5px;
-     padding: 0.7rem;
-     text-align: center;
-     margin: 1rem auto;
-     width: 75%;
-}&__emailLabel{
-     padding: 0.5rem 0rem;
-     text-align: center;
-     margin: 0.1rem auto;
-     width: 80%;
-}&__email{
-     border-radius: 5px;
-     padding: 0.7rem;
-     text-align: center;
-     width: 80%;
-}&__messageLabel{
-     text-align: center;
-     margin: 1rem auto;
-     height: 6rem;
-     width: 80%;
-}&__message{
-     border-radius: 5px;
-     padding: 2rem;
-     text-align: center;
-     height: 7.5rem;
-     width: 80%;
-}&__button{
-     font-family: 'Varela Round';
-     border-radius: 5px;
-     margin: 1.5rem auto 0.6rem auto;
-     padding: 0.5rem 2rem;
-     font-size: 1.2rem;
-     font-weight: bold;
-}&__button:hover{
-     transform: scale(1.05);
-     background-color: white;
-}&__social{
-  padding-top: 6.5rem;
-}
-}
-.sr-only{
-     position: absolute;
-     width: 1px;
-     height: 1px;
-     padding: 0;
-     margin: -1px;
-     overflow: hidden;
-     clip: rect(0, 0, 0, 0);
-     white-space: nowrap; /* added line */
-     border: 0;
+.contact {
+
+  padding: 0.8rem;
+  width: 50%;
+  height: 28rem;
+  background-color: v.$light-dark;
+  border-radius: 5px;
+  transition: 0.2s;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+
+  &__form {
+
+    margin-left: 1.5rem;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: 'Varela Round';
+    margin: 1.5rem auto;
+    padding-top: 1.8rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+
+    a {
+      color: white;
+      margin-bottom: 50px;
+      margin: 0 0.5rem;
+    }
+
+    a:hover {
+      transform: scale(1.7);
+    }
+
+    span {
+      margin-top: 9rem;
+    }
+
+  }
+
+  &__name {
+
+    border-radius: 5px;
+    padding: 0.7rem;
+    text-align: center;
+    margin: 1rem auto;
+    width: 75%;
+  }
+
+  &__emailLabel {
+    padding: 0.5rem 0rem;
+    text-align: center;
+    margin: 0.1rem auto;
+    width: 80%;
+  }
+
+  &__email {
+    border-radius: 5px;
+    padding: 0.7rem;
+    text-align: center;
+    width: 80%;
+  }
+
+  &__messageLabel {
+    text-align: center;
+    margin: 1rem auto;
+    height: 6rem;
+    width: 80%;
+  }
+
+  &__message {
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: center;
+    height: 7.5rem;
+    width: 80%;
+  }
+
+  &__button {
+    font-family: 'Varela Round';
+    border-radius: 5px;
+    margin: 1.5rem auto 0.6rem auto;
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  &__button:hover {
+    transform: scale(1.05);
+    background-color: white;
+  }
+
+  &__social {
+    padding-top: 6.5rem;
+  }
 }
 
-.contact:hover{
-     background-color: v.$dark;
-     transform: scale(1.01);
-     transition: 0.2s;
-     }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  /* added line */
+  border: 0;
+}
+
+.contact:hover {
+  background-color: v.$dark;
+  transform: scale(1.01);
+  transition: 0.2s;
+}
 
 // partie texte sur moi
-.about{
-     padding: 2.5rem 1.7rem 2.2rem 1.5rem;
-     background-color:v.$light-dark;
-     width: 50%;
-     height: 28rem;
-     transition: 0.2s;
-     border-radius: 5px;
-     font-size: 1.20rem;
-     font-weight: 500;
+.about {
+  padding: 2.5rem 1.7rem 2.2rem 1.5rem;
+  background-color: v.$light-dark;
+  width: 50%;
+  height: 28rem;
+  transition: 0.2s;
+  border-radius: 5px;
+  font-size: 1.20rem;
+  font-weight: 500;
 }
 
-.about:hover{
-     
-     background-color:v.$dark;
-     transform: scale(1.01);
-     transition: 0.2s;
-     }
+.about:hover {
 
-.Skill__hard{
-     
-     padding: 1rem;
-     width: 50%;
-     height: 28rem;
-     transition: 0.2s;
-     border-radius: 5px;
-     font-size: 1.4rem;
-     list-style: none;
-     h3{
-          font-family: 'Varela Round';
-     text-align: center;
-     font-size: 1.8rem;
-     padding-bottom: 0.8rem;
-     }
+  background-color: v.$dark;
+  transform: scale(1.01);
+  transition: 0.2s;
+}
+
+.Skill__hard {
+
+  padding: 1rem;
+  width: 50%;
+  height: 28rem;
+  transition: 0.2s;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  list-style: none;
+
+  h3 {
+    font-family: 'Varela Round';
+    text-align: center;
+    font-size: 1.8rem;
+    padding-bottom: 0.8rem;
+  }
 }
 
 
 
-.Skill__hard:hover{
-background-color:v.$dark;
-transform: scale(1.01);
-transition: 0.2s;
+.Skill__hard:hover {
+  background-color: v.$dark;
+  transform: scale(1.01);
+  transition: 0.2s;
 }
 
-.Skill__soft{
-     padding: 1rem;
-     width: 50%;
-     height: 28rem;
-     transition: 0.2s;
-     border-radius: 5px;
-     font-size: 1.4rem;
-     list-style: none;
-     h3{
-          font-family: 'Varela Round';
-     text-align: center;
-     font-size: 1.8rem;
-     padding: 1rem;
-     }
-     li{
-          
-     padding-left: 15px;
-     padding-bottom: 1rem;
-     font-weight: 500;
-     }
-}
-.Skill__soft:hover{
-     background-color:v.$dark;
-     transform: scale(1.01);
-     transition: 0.1s;
-     }
+.Skill__soft {
+  padding: 1rem;
+  width: 50%;
+  height: 28rem;
+  transition: 0.2s;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  list-style: none;
 
-.Picture{
-     position: absolute;
-     top: calc(50%-8.9rem);
-     left: calc(49%-7.5rem);
-     z-index: 997;
-     transition: 0.1s;
-     border-radius: 50%;
-     width: 250px;
-     height: 300px;
+  h3 {
+    font-family: 'Varela Round';
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+
+  li {
+
+    padding-left: 15px;
+    padding-bottom: 1rem;
+    font-weight: 500;
+  }
 }
 
-.Picture:hover{
-     transform: scale(1.01);
-     transition: 0.1s;
-     }
-
-.toast__success{
-     background-color: black;
-     color: white;
-     font-size: 1.2rem;
+.Skill__soft:hover {
+  background-color: v.$dark;
+  transform: scale(1.01);
+  transition: 0.1s;
 }
 
-.cv{
-     border: solid v.$dark 3px;
-     height: 120px;
-     width: 120px;
-     border-radius: 50%;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     box-shadow: silver;
-     margin: auto;
-     &__text{
-          color: white;
-          padding-top: 1rem;
-          font-size: 1.5rem;
-          font-weight: 700;
-     }
-     i{
-          color: white;
-          padding-left: 1px;
-     }
+.Picture {
+  position: absolute;
+  top: calc(50%-8.9rem);
+  left: calc(49%-7.5rem);
+  z-index: 997;
+  transition: 0.1s;
+  border-radius: 50%;
+  width: 250px;
+  height: 300px;
 }
 
-.cv:hover{
-     background-color:v.$dark;
-     transform: scale(1.05);
-     transition: 0.1s;
+.Picture:hover {
+  transform: scale(1.01);
+  transition: 0.1s;
+}
+
+.toast__success {
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.cv {
+  border: solid v.$dark 3px;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: silver;
+  margin: auto;
+
+  &__text {
+    color: white;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  i {
+    color: white;
+    padding-left: 1px;
+  }
+}
+
+.cv:hover {
+  background-color: v.$dark;
+  transform: scale(1.05);
+  transition: 0.1s;
 }
 
 //***** media*****//
 
 // desktop
-@media(min-width: 1389px)
-{
-
-}
+@media(min-width: 1389px) {}
 
 
 // tablette
-@media(min-width: 768px) and (max-width: 1388px)
-{
-     .container__contact{
-          margin: 9rem auto 0.7rem;
-          width: 97%;
-          height: 100%;
-          flex-direction: column;
-          align-items: center;
-          position: relative;
-          }
-     .Picture{
-          display: none;
-     }
-     .contact{
-          margin-bottom: 1rem;
-          background-color: v.$very-dark;
-          padding: 0.8rem;
-          width: 87%;
-          height: 40rem;
-          border-radius: 5px;
-          transition: 0.2s;
-          border-radius: 5px;
-          display: flex;
-          justify-content: space-around;
-     &__form{
-     }&__title{
-          font-size: 2.2rem;
-     }&__email{
-          font-size: 2.1rem;
-          height: 4.5rem;
-          width: 85%;
-     }&__message{
-          font-size: 2.1rem;
-          height: 10rem;
-          width: 85%;
-     }&__emailLabel{
-          width: 85%;
-          margin-left: 3rem;
-          margin-right: 0rem;
-     }&__messageLabel{
-          width: 85%;
-          margin-left: 3rem;
-          margin-right: 0rem;
-     }&__button{
-          margin: 5rem auto 0.6rem auto;
-          padding: 0.5rem 2rem;
-          height: 4rem;
-          width: 14rem;
-     }
-     }
-     
-     .about{
-          margin-top: 15rem;
-          margin-bottom: 2rem;
-          padding: 2.3rem;
-          background-color:v.$light-dark;
-          width: 87%;
-          height: 42rem;
-          transition: 0.2s;
-          border-radius: 5px;
-          font-size: 1.5rem;
-          font-weight: bold;
-     }
-     
-     .Skill__hard{
-          margin-bottom: 2rem;
-          padding: 1rem;
-          width: 87%;
-          height: 42rem;
-          transition: 0.2s;
-          border-radius: 5px;
-          h3{
-          text-align: center;
-          font-size: 2.2rem;
-          padding-bottom: 1rem;
-          }
-          li{
-          padding: 1rem 1.2rem;
-          font-weight: 500;
-          font-size: 1.5rem;
-          }
-     }
-     
-     .Skill__soft{
-          margin-bottom: 2rem;
-          background-color:v.$light-dark;
-          padding: 1rem;
-          width: 87%;
-          height: 42rem;
-          transition: 0.2s;
-          border-radius: 5px;
-          list-style: none;
-          h3{
-          text-align: center;
-          font-size: 2.2rem;
-          padding: 1rem;
-          }
-          li{
-          padding: 1rem 1.2rem;
-          font-weight: 500;
-          font-size: 1.5rem;
-          }
-     }
-}
-@media (min-width: 988px) and (max-width: 1388px) and (min-height : 600px) and (max-height: 1224px ) // petit écran en haut comme macbook air 11
-{
-     
-          .container__contact{
-               margin: 9rem auto 0.7rem;
-               width: 97%;
-               height: 100%;
-               display: flex;
-               flex-direction: wrap;
-               align-items: center;
-               position: relative;
-               }
-          .Picture{
-               display: none;
-          }
-          .contact{
-               margin-bottom: 1rem;
-               background-color: v.$very-dark;
-               padding: 0.8rem;
-               width: 40%;
-               height: 40rem;
-          &__form{
-               margin-left: 0rem;
-               width: 95%;    
-          }&__title{
-               font-size: 1.2rem;
-               margin: 1rem auto;
-               padding-top: 1.5rem;
-               font-weight: 900;
-               i{
-                    margin-left: 0.2rem;
-                    font-size: 1.1rem;
-                    padding: 0rem;
-               }
-               a{
-                    margin: 0.1rem;
-               }
-          }&__email{
-               height:2.8rem;
-               font-size: 1rem;
+@media(min-width: 768px) and (max-width: 1388px) {
+  .container__contact {
+    margin: 0rem auto 0.7rem;
+    width: 97%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
 
-               width: 100%;
-          }&__message{
-               height: 5.8em;
-               font-size: 1rem;
-               width: 100%;
-          }&__button{
-     
-               margin: 1rem auto 0.6rem 8.5rem;
-               padding: 0.5rem 1rem;
-     
-          }&__social{
-               padding-top: 6.5rem;
-          }
-          }
-          
-     
-          
-          .about{
-               margin-bottom: 2rem;
-               background-color:v.$light-dark;
-               width: 50%;
-               height: 26rem;
-               font-size: 1.1rem;
-               font-weight: 500;
-          
-          }
-          
-          .Skill__hard{
-               margin-bottom: 2rem;
-               padding: 0.2rem;
-               width: 45%;
-               height: 31rem;
-               transition: 0.2s;
-               border-radius: 5px;
-               list-style: none;
-               h3{
-               text-align: center;
-               font-size: 1.7rem;
-               padding-bottom: 1.3rem;
-               }
-               li{
-               padding: 0.8rem 0.4rem 0.8rem 0rem;
-               font-weight: 500;
-               font-size: 0.9rem;
-               font-weight: 500;
-               }
-          }
-          
-          .Skill__soft{
-               margin-bottom: 2rem;
-               width: 45%;
-               background-color:v.$light-dark;
-               padding: 1rem;
-               height: 31rem;
-               transition: 0.2s;
-               border-radius: 5px;
-               list-style: none;
-               h3{
-               text-align: center;
-               font-size: 1.7rem;
-               padding: 1.3rem;
-               }
-               li{
-                    padding: 0.8rem 0.4rem 0.8rem 0rem;
-                    font-weight: 500;
-                    font-size: 0.9rem;
-                    font-weight: 500;
-               }
-          }
+  .Picture {
+    display: none;
+  }
+
+  .contact {
+    margin-bottom: 1rem;
+    background-color: v.$very-dark;
+    padding: 0.8rem;
+    width: 87%;
+    height: 40rem;
+    border-radius: 5px;
+    transition: 0.2s;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+
+    &__form {}
+
+    &__title {
+      font-size: 2.2rem;
+    }
+
+    &__email {
+      font-size: 2.1rem;
+      height: 4.5rem;
+      width: 85%;
+    }
+
+    &__message {
+      font-size: 2.1rem;
+      height: 10rem;
+      width: 85%;
+    }
+
+    &__emailLabel {
+      width: 85%;
+      margin-left: 3rem;
+      margin-right: 0rem;
+    }
+
+    &__messageLabel {
+      width: 85%;
+      margin-left: 3rem;
+      margin-right: 0rem;
+    }
+
+    &__button {
+      margin: 5rem auto 0.6rem auto;
+      padding: 0.5rem 2rem;
+      height: 4rem;
+      width: 14rem;
+    }
+  }
+
+  .about {
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+    padding: 2.3rem;
+    background-color: v.$light-dark;
+    width: 87%;
+    height: 42rem;
+    transition: 0.2s;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .Skill__hard {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    width: 87%;
+    height: 42rem;
+    transition: 0.2s;
+    border-radius: 5px;
+
+    h3 {
+      text-align: center;
+      font-size: 2.2rem;
+      padding-bottom: 1rem;
+    }
+
+    li {
+      padding: 1rem 1.2rem;
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+  }
+
+  .Skill__soft {
+    margin-bottom: 2rem;
+    background-color: v.$light-dark;
+    padding: 1rem;
+    width: 87%;
+    height: 42rem;
+    transition: 0.2s;
+    border-radius: 5px;
+    list-style: none;
+
+    h3 {
+      text-align: center;
+      font-size: 2.2rem;
+      padding: 1rem;
+    }
+
+    li {
+      padding: 1rem 1.2rem;
+      font-weight: 500;
+      font-size: 1.5rem;
+    }
+  }
 }
 
- // smartphone
-@media(max-width: 767px)
+@media (min-width: 988px) and (max-width: 1388px) and (min-height : 600px) and (max-height: 1224px) // petit écran en haut comme macbook air 11
 
-{
-     .container__contact{
-          margin: 9rem auto 0.7rem;
-          width: 97%;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          position: relative;
-          }
-     .Picture{
-          display: none;
-     }
-     .contact{
-          margin-bottom: 1rem;
-          background-color: v.$very-dark;
-          padding: 0.8rem;
-          width: 89%;
-          height: 30rem;
-     &__form{
-          margin-left: 0rem;
-          width: 95%;    
-     }&__title{
-          font-size: 1.7rem;
-          margin: 1.5rem auto;
-          padding-top: 1.5rem;
-          font-weight: 900;
-          i{
-               margin-left: 0.2rem;
-               font-size: 1.1rem;
-               padding: 0rem;
-          }
-          a{
-               margin: 0.1rem;
-          }
-     }&__email{
-          width: 100%;
-     }&__message{
-          font-size: 1.2rem;
-          width: 100%;
-     }&__button{
+  {
 
-          margin: 1.7rem auto 0.6rem auto;
-          padding: 0.5rem 2rem;
+  .container__contact {
+    margin: 9rem auto 0.7rem;
+    width: 97%;
+    height: 100%;
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    position: relative;
+  }
 
-     }&__social{
-          padding-top: 6.5rem;
-     }
-     }
-     
+  .Picture {
+    display: none;
+  }
 
-     
-     .about{
-          margin-bottom: 2rem;
-          background-color:v.$light-dark;
-          width: 87%;
-          height: 39rem;
-          font-size: 1.1rem;
-          font-weight: 500;
-     
-     }
-     
-     .Skill__hard{
-          margin-bottom: 2rem;
-          padding: 0.2rem;
-          width: 87%;
-          height: 36rem;
-          transition: 0.2s;
-          border-radius: 5px;
-          list-style: none;
-          h3{
-          text-align: center;
-          font-size: 1.7rem;
-          padding-bottom: 1.3rem;
-          }
-          li{
-          padding: 0.8rem 0.4rem 0.8rem 0rem;
-          font-weight: 500;
-          font-size: 0.9rem;
-          font-weight: 500;
-          }
-     }
-     
-     .Skill__soft{
-          margin-bottom: 2rem;
-          width: 87%;
-          background-color:v.$light-dark;
-          padding: 1rem;
-          height: 35rem;
-          transition: 0.2s;
-          border-radius: 5px;
-          list-style: none;
-          h3{
-          text-align: center;
-          font-size: 1.7rem;
-          padding: 1.3rem;
-          }
-          li{
-               padding: 0.8rem 0.4rem 0.8rem 0rem;
-               font-weight: 500;
-               font-size: 0.9rem;
-               font-weight: 500;
-          }
-     }
+  .contact {
+    margin-bottom: 1rem;
+    background-color: v.$very-dark;
+    padding: 0.8rem;
+    width: 40%;
+    height: 40rem;
+
+    &__form {
+      margin-left: 0rem;
+      width: 95%;
+    }
+
+    &__title {
+      font-size: 1.2rem;
+      margin: 1rem auto;
+      padding-top: 1.5rem;
+      font-weight: 900;
+
+      i {
+        margin-left: 0.2rem;
+        font-size: 1.1rem;
+        padding: 0rem;
+      }
+
+      a {
+        margin: 0.1rem;
+      }
+    }
+
+    &__email {
+      height: 2.8rem;
+      font-size: 1rem;
+
+      width: 100%;
+    }
+
+    &__message {
+      height: 5.8em;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    &__button {
+
+      margin: 1rem auto 0.6rem 8.5rem;
+      padding: 0.5rem 1rem;
+
+    }
+
+    &__social {
+      padding-top: 6.5rem;
+    }
+  }
+
+
+
+  .about {
+    margin-bottom: 2rem;
+    background-color: v.$light-dark;
+    width: 50%;
+    height: 26rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+
+  }
+
+  .Skill__hard {
+    margin-bottom: 2rem;
+    padding: 0.2rem;
+    width: 45%;
+    height: 31rem;
+    transition: 0.2s;
+    border-radius: 5px;
+    list-style: none;
+
+    h3 {
+      text-align: center;
+      font-size: 1.7rem;
+      padding-bottom: 1.3rem;
+    }
+
+    li {
+      padding: 0.8rem 0.4rem 0.8rem 0rem;
+      font-weight: 500;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
+
+  .Skill__soft {
+    margin-bottom: 2rem;
+    width: 45%;
+    background-color: v.$light-dark;
+    padding: 1rem;
+    height: 31rem;
+    transition: 0.2s;
+    border-radius: 5px;
+    list-style: none;
+
+    h3 {
+      text-align: center;
+      font-size: 1.7rem;
+      padding: 1.3rem;
+    }
+
+    li {
+      padding: 0.8rem 0.4rem 0.8rem 0rem;
+      font-weight: 500;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
+}
+
+// smartphone
+@media(max-width: 767px) {
+  .container__contact {
+    margin: 9rem auto 0.7rem;
+    width: 97%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .Picture {
+    display: none;
+  }
+
+  .contact {
+    margin-bottom: 1rem;
+    background-color: v.$very-dark;
+    padding: 0.8rem;
+    width: 89%;
+    height: 30rem;
+
+    &__form {
+      margin-left: 0rem;
+      width: 95%;
+    }
+
+    &__title {
+      font-size: 1.7rem;
+      margin: 1.5rem auto;
+      padding-top: 1.5rem;
+      font-weight: 900;
+
+      i {
+        margin-left: 0.2rem;
+        font-size: 1.1rem;
+        padding: 0rem;
+      }
+
+      a {
+        margin: 0.1rem;
+      }
+    }
+
+    &__email {
+      width: 100%;
+    }
+
+    &__message {
+      font-size: 1.2rem;
+      width: 100%;
+    }
+
+    &__button {
+
+      margin: 1.7rem auto 0.6rem auto;
+      padding: 0.5rem 2rem;
+
+    }
+
+    &__social {
+      padding-top: 6.5rem;
+    }
+  }
+
+
+
+  .about {
+    margin-bottom: 2rem;
+    background-color: v.$light-dark;
+    width: 87%;
+    height: 39rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+
+  }
+
+  .Skill__hard {
+    margin-bottom: 2rem;
+    padding: 0.2rem;
+    width: 87%;
+    height: 36rem;
+    transition: 0.2s;
+    border-radius: 5px;
+    list-style: none;
+
+    h3 {
+      text-align: center;
+      font-size: 1.7rem;
+      padding-bottom: 1.3rem;
+    }
+
+    li {
+      padding: 0.8rem 0.4rem 0.8rem 0rem;
+      font-weight: 500;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
+
+  .Skill__soft {
+    margin-bottom: 2rem;
+    width: 87%;
+    background-color: v.$light-dark;
+    padding: 1rem;
+    height: 35rem;
+    transition: 0.2s;
+    border-radius: 5px;
+    list-style: none;
+
+    h3 {
+      text-align: center;
+      font-size: 1.7rem;
+      padding: 1.3rem;
+    }
+
+    li {
+      padding: 0.8rem 0.4rem 0.8rem 0rem;
+      font-weight: 500;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+  }
 
 }
+
 @media(max-width: 360px) // tres petit smartphone ** FINI
-{
-     .about{
-          padding: 1.2rem;
-          height: 37rem;
-          font-size: 1.1rem;
-          font-weight: 500;
-     
-     }
+
+  {
+  .about {
+    padding: 1.2rem;
+    height: 37rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+
+  }
 
 }
+
 @media(max-width: 320px) // tres tres petit smartphone ** FINI
-{
-     .about{
-          height: 43rem;
-     }
+
+  {
+  .about {
+    height: 43rem;
+  }
 }
