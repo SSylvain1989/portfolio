@@ -85,6 +85,13 @@
 
 @media(max-width: 767px) {
   .News {
+    font-size: 1.05rem;
+
+    a {
+
+      font-size: 1.05rem;
+    }
+
     .stack {
       display: none;
     }
