@@ -8,17 +8,17 @@
 
   25% {
     transform: translateX(75vw);
-    opacity: 0.25;
+    opacity: 0.20;
   }
 
   50% {
     transform: translateX(50vw);
-    opacity: 0.50;
+    opacity: 0.40;
   }
 
   75% {
     transform: translateX(25vw);
-    opacity: 0.75;
+    opacity: 0.65;
   }
 
   100% {
@@ -31,13 +31,19 @@
   z-index: 999;
   padding-top: 10px;
   margin-bottom: 2rem;
-  height: 5.5rem;
+  height: 5.24rem;
   background-color: v.$very-dark;
-  width: 90%;
+  width: 60%;
   position: fixed;
-  padding-left: 8rem;
+  padding-left: 2rem;
   top: 0;
   left: 0;
+
+  @media screen and (min-width:768px) and (max-width:1500px) {
+    padding-left: 0px;
+    height: 5.6rem;
+    width: 100%;
+  }
 
   @media screen and (max-width:768px) {
     padding-left: 10px;
@@ -57,6 +63,11 @@
     font-size: 2.2rem;
     color: white;
     cursor: pointer;
+
+    @media screen and (min-width:769px) and (max-width:1269px) {
+      font-size: 1.3rem;
+      top: -65px;
+    }
 
     @media screen and (max-width:768px) {
       font-size: 1.2rem;
@@ -92,7 +103,6 @@
       left: 2px;
       height: 50px;
       width: 50px;
-
     }
   }
 
@@ -110,9 +120,17 @@
   position: fixed;
   top: 0;
   right: 0;
-  margin: 0.5rem 12.5rem 0rem 1rem;
+  margin: 0rem 12.5rem 0rem 1rem;
   width: 40%;
   padding-left: 0rem;
+
+  @media screen and (min-width:769px) and (max-width:1269px) {
+    width: 30%;
+  }
+
+  @media screen and (min-width:1260px) and (max-width:1500px) {
+    margin: 0 20.5rem 0 1rem;
+  }
 
   @media screen and (max-width:768px) {
     display: none;
@@ -130,8 +148,16 @@
     padding-top: 0.5rem;
     margin: 0 2rem;
     font-size: 2.2rem;
-    color: white;
+    background: -webkit-linear-gradient(0.20turn, #30CFD0, #9753eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     cursor: pointer;
+
+    @media screen and (min-width:769px) and (max-width:1269px) {
+      font-size: 1.2rem;
+      padding-top: 1.1rem;
+      margin: 0 0.1rem 0 0.1rem;
+    }
   }
 
   a:after {
@@ -174,20 +200,18 @@
     text-transform: uppercase;
   }
 
-
-
-
   .item {
     text-align: center;
 
     p {
       margin: auto;
-      width: 290px;
+      width: 273px;
       background: -webkit-linear-gradient(0.20turn, #30CFD0, #9753eb);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-size: 1.3rem;
       font-weight: bold;
+      border-bottom: 1px solid #30CFD0;
     }
 
     a {
@@ -198,12 +222,11 @@
       -webkit-text-fill-color: transparent;
       font-size: 1.3rem;
       font-weight: bold;
-
     }
 
     .hamburger__contact {
-
       font-size: 1.3rem;
+      line-height: 2;
       text-transform: none;
     }
   }
@@ -214,7 +237,7 @@
 }
 
 #hamburger__menu__icon:active~#hamburger__menu {
-  filter: blur(1.05rem);
+  filter: blur(0.95rem);
 }
 
 #hamburger__menu__icon {
@@ -222,11 +245,9 @@
   position: fixed;
   right: 10px;
   top: 2;
-
   background: -webkit-linear-gradient(0.20turn, #30CFD0, #9753eb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 
   @media screen and (min-width:768px) {
     display: none;
