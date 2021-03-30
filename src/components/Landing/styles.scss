@@ -421,7 +421,7 @@
       margin-top: 5rem;
       margin-bottom: 0rem;
       padding-left: 0rem;
-      font-size: 4.5rem;
+      font-size: 3.5rem;
       width: 38rem;
       line-height: 0.96em !important;
       font-weight: bolder;
@@ -433,7 +433,7 @@
       background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-size: 4.5rem;
+      font-size: 3.5rem;
       line-height: 0;
       content: '';
       animation: landing linear infinite 6s;
@@ -445,7 +445,8 @@
 
       p {
         padding-left: 0rem;
-        font-size: 3rem;
+        font-size: 2.5rem;
+        letter-spacing: 0.1rem;
       }
     }
   }
