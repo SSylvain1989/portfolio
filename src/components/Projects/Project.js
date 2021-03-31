@@ -37,7 +37,7 @@ const Project = ({
       <div className="face1">
         <div className="content">
           <img className="picture" src={image} alt="aperçu du site" width="180px" height="120px" />
-          <h3 data-aos="fade-up" className="face1__subtitle">{fullName} <img src={react} /><img src={vue} /> </h3>
+          <h3 data-aos="fade-up" className="face1__subtitle">{fullName} <img src={react} alt="react icon" /><img src={vue} alt="vue icon"/> </h3>
         </div>
       </div>
       <div className="face2">
