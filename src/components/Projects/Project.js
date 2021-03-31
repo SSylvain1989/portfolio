@@ -37,7 +37,14 @@ const Project = ({
       <div className="face1">
         <div className="content">
           <img className="picture" src={image} alt="aperçu du site" width="180px" height="120px" />
-          <h3 data-aos="fade-up" className="face1__subtitle">{fullName} <img src={react} alt="react icon" /><img src={vue} alt="vue icon"/> </h3>
+          <h3 data-aos="fade-up" className="face1__subtitle">{fullName}
+          {react && (
+              <img src={react} alt="react icon" width="40px" height="35px" />
+              )}
+          {vue && (
+              <img src={vue} alt="vue icon" width="40px" height="35px"/>
+              )}
+            </h3>
         </div>
       </div>
       <div className="face2">

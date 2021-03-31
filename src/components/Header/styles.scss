@@ -149,11 +149,11 @@
     width: 100%;
     transform: scale(1.01);
   }
-
 }
 
 #hamburger__menu__icon:active~#hamburger__menu {
   right: -100%;
+  transition: 0.2s;
 }
 
 #hamburger__menu {
@@ -168,7 +168,7 @@
   width: 100%;
   background-color: v.$dark;
   z-index: 998;
-  transition: 0.4s;
+  transition: 0.2s;
 
   a {
     color: white;
