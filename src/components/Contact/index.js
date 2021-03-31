@@ -1,12 +1,11 @@
 // == Import npm
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
 import emailjs from 'emailjs-com';
 import { toast, ToastContainer } from 'react-toastify';
 import { Icon } from 'semantic-ui-react';
-import {
-  SiRedux, SiJavascript, SiHtml5, SiCss3, SiTailwindcss, SiNodeDotJs, SiPostgresql, SiMysql,
-} from 'react-icons/si';
+// import {
+//   SiRedux, SiJavascript, SiHtml5, SiCss3, SiTailwindcss, SiNodeDotJs, SiPostgresql, SiMysql,
+// } from 'react-icons/si';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -57,26 +56,11 @@ const Contact = () => {
     <div>
       <div  className="container__contact" id="about">
         <div
-        data-aos="fade-up"
           className="about"
           // ici je change la valeur du state de mon composant
           onMouseEnter={() => setIsShown('one')}
           onMouseLeave={() => setIsShown('one')}
         >
-          {/* <p>Hi , </p>
-      <p>My Name is Sylvain , i have 31 yers old , 168cm of
-      good humeur and humour ,
-        french dude who live in south of France , Toulouse ( Occitanie ).
-      </p>
-      <p>I have study code in O'clock in 2020 for 6 months</p>
-      <p>I'm inlove of React , but i only framework of javascript i know for
-        this moment but i want to learn VueJS
-      </p>
-      <p>Before i became a dev , i was in transport and logistics ,
-      with a master 1 , for 8 years</p>
-      <p>I speack & write in French , i have and advanced level in English</p>
-      <p>Before i learn how to code , i was in logistics</p>
-      <p>Looking for a dev or just chat with me ? Just write me down below </p> */}
           <p>Bonjour 👋, </p>
           <p>Sylvain 31 ans et 168 cm de bonne humeur 🙂 .
             Basé dans le sud de la France à Toulouse la ville Rose.
@@ -102,13 +86,13 @@ const Contact = () => {
         >
           <h3>Hard skills</h3>
           <ul>
-            <li>Javascript   <SiJavascript /></li>
-            <li><span>ReactJS</span> ⚛️ / Redux  <SiRedux /></li>
-            <li>Html  <SiHtml5 /></li>
-            <li>CSS / Sass (SCSS) / Tailwind  <SiCss3 /><SiTailwindcss /></li>
-            <li>NodeJS   <SiNodeDotJs /></li>
+            <li>Javascript   </li>
+            <li><span>ReactJS</span> ⚛️ / Redux  </li>
+            <li>VueJS  </li>
+            <li>CSS / Sass (SCSS) / Tailwind  </li>
+            <li>NodeJS   </li>
             <li>Express</li>
-            <li>SQL/PostgreSQL/Sequelize   <SiPostgresql />    <SiMysql /></li>
+            <li>SQL / PostgreSQL / Sequelize  </li>
             <li>Typescript</li>
             <li>RESTful APIs design & implementation</li>
           </ul>

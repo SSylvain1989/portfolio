@@ -34,7 +34,7 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    width: 500px;
+    width: fit-content;
     padding: 1rem;
     margin-bottom: 4rem;
 
@@ -45,6 +45,7 @@
       margin: auto;
       justify-content: space-around;
       list-style: none;
+      font-size: 2.5rem;
 
     }
   }
@@ -52,12 +53,13 @@
   // une icone
   .icon {
     padding-top: 5px;
+    margin: 0 20px;
     width: 40px;
     height: 40px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1388px) and (min-height : 600px) and (max-height: 1224px) // petit écran en haut comme macbook air 11
+@media (min-width: 718px) and (max-width: 1388px) and (min-height : 600px) and (max-height: 1224px) // petit écran en haut comme macbook air 11
 
   {
   .News {
@@ -80,18 +82,30 @@
       color: #2FCFD0;
     }
 
+  
+    // une icone
+    .icon {
+
+      margin: 0 15px;
+
+    }
   }
 }
 
-@media(max-width: 767px) {
+@media(max-width: 717px) {
+  .News {
+    .icon {
+      margin: 0 10px;
+    }
+  }
+}
+
+@media(max-width: 572px) {
   .News {
     font-size: 1.05rem;
-
     a {
-
       font-size: 1.05rem;
     }
-
     .stack {
       display: none;
     }

@@ -185,7 +185,7 @@
   border: 0;
 }
 
-//media
+//media*********//////
 
 // desktop
 @media(min-width: 1389px) {
@@ -195,22 +195,6 @@
   }
 
 }
-
-// ipad position paysage 
-// @media (min-width: 1024px) and (max-width: 1024px) {
-//   .container__contact {
-//     padding-top: 10rem;
-//   }
-// }
-
-// @media(min-width: 1024px) and (max-width: 1086px) // petit " gap " pour être full responsive à l'analyse insepcteur google
-
-//   {
-//   .container {
-//     margin: 15rem auto 140rem auto;
-
-//   }
-// }
 
 @media (min-width: 1086px) and (max-width: 1388px) and (min-height : 400px) and (max-height: 1224px) // petit écran en haut comme macbook air 11
 
