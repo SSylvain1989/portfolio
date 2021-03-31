@@ -295,6 +295,7 @@
   }
   
   .Skill__hard {
+    background-color: v.$light-dark;
     padding: 1.5rem;
     width: 80%;
     height: fit-content;
@@ -303,7 +304,6 @@
   }
   
   .Skill__soft {
-    background-color: v.$dark;
     padding: 1.5rem;
     background-color: v.$dark;
     width: 80%;

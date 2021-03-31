@@ -33,7 +33,7 @@ const Project = ({
   }, []);
 
   return (
-    <div data-aos="fade-right" className="card">
+    <div className="card">
       <div className="face1">
         <div className="content">
           <img className="picture" src={image} alt="aperçu du site" width="180px" height="120px" />
