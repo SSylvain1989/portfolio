@@ -27,6 +27,7 @@ const Project = ({
   npm,
   vue,
   sass,
+  nextjs,
 }) => {
   useEffect(() => {
     Aos.init({ duration: 1400 });
@@ -38,20 +39,20 @@ const Project = ({
         <div className="content">
           <img className="picture" src={image} alt="aperçu du site" width="180px" height="120px" />
           <h3 data-aos="fade-up" className="face1__subtitle">{fullName}
-          {react && (
-              <img src={react} alt="react icon" width="40px" height="35px" />
-              )}
-          {vue && (
-              <img src={vue} alt="vue icon" width="40px" height="35px"/>
-              )}
-            </h3>
+            {react && (
+            <img src={react} alt="react icon" width="40px" height="35px" />
+            )}
+            {vue && (
+            <img src={vue} alt="vue icon" width="40px" height="35px" />
+            )}
+          </h3>
         </div>
       </div>
       <div className="face2">
         <div className="content">
           <div className="stack">
             <ul className="stack__icons">
-            {react && (
+              {react && (
               <li className="li__icon"> <img className="icon" src={react} alt={`${react}_icon`} width="40px" height="35px" /><br />react</li>
               )}
               <li className="li__icon">    <img className="icon" src={html} alt="html_icon" width="40px" height="35px" /><br />html5</li>
@@ -81,6 +82,9 @@ const Project = ({
               )}
               { sass && (
               <li className="li__icon">    <img className="icon" src={sass} alt="redux_icon" width="40px" height="35px" /><br />sass</li>
+              )}
+              { nextjs && (
+              <li className="li__icon">    <img className="icon" src={nextjs} alt="redux_icon" width="40px" height="35px" /><br />nextJs</li>
               )}
             </ul>
           </div>

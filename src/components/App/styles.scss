@@ -1,37 +1,39 @@
-@use 'src/styles/vars' as v;
+@use 'src/styles/vars'as v;
+
 .app {
-  width:100%;
-  min-height : 300vh;
+  width: 100%;
+  min-height: 300vh;
   box-sizing: border-box;
   color: white;
   padding-left: 3%;
   padding-right: 3%;
-  // position: relative;
-  // font-family: 'sans-serif';
   background-color: v.$very-dark;
 }
 
 @media(min-width: 2560px) // taille 27 pouces
-{
+
+  {
   .app {
-  padding-left: 15%;
-  padding-right: 15%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 
 }
 
 @media(min-width: 1920px) // taille 24 pouces
-{
+
+  {
   .app {
-  padding-left: 10%;
-  padding-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 
 @media(min-width: 1389px) and (max-width: 1919px) // 19pouces à 22 pouces
-{
+
+  {
   .app {
-  padding-left: 7%;
-  padding-right: 7%;
+    padding-left: 7%;
+    padding-right: 7%;
   }
 }

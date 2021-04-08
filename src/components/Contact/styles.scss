@@ -9,22 +9,24 @@
   flex-wrap: wrap;
   position: relative;
 
-  @media screen and (max-width : 1101px){
+  @media screen and (max-width : 1101px) {
     flex-direction: column;
     margin: 2rem auto;
     align-items: center;
     width: 100%;
-    .Picture{
+
+    .Picture {
       display: none;
     }
   }
 
-  @media screen and (max-height : 965px){
+  @media screen and (max-height : 965px) {
     flex-direction: column;
     margin: 2rem auto;
     align-items: center;
     width: 100%;
-    .Picture{
+
+    .Picture {
       display: none;
     }
   }
@@ -82,24 +84,28 @@
     margin: 1rem auto;
     width: 75%;
   }
+
   &__emailLabel {
     padding: 0.5rem 0rem;
     text-align: center;
     margin: 0.1rem auto;
     width: 80%;
   }
+
   &__email {
     border-radius: 5px;
     padding: 0.7rem;
     text-align: center;
     width: 80%;
   }
+
   &__messageLabel {
     text-align: center;
     margin: 1rem auto;
     height: 6rem;
     width: 80%;
   }
+
   &__message {
     border-radius: 5px;
     padding: 2rem;
@@ -107,6 +113,7 @@
     height: 7.5rem;
     width: 80%;
   }
+
   &__button {
     font-family: 'Varela Round';
     border-radius: 5px;
@@ -115,6 +122,7 @@
     font-size: 1.2rem;
     font-weight: bold;
   }
+
   &__button:hover {
     transform: scale(1.05);
     background-color: white;
@@ -146,7 +154,6 @@
 
 // partie texte sur moi
 .about {
-  margin-top: 12rem;
   padding: 2.5rem 1.7rem 2.2rem 1.5rem;
   background-color: v.$light-dark;
   width: 50%;
@@ -262,30 +269,35 @@
   transition: 0.1s;
 }
 
-@media screen and (max-width : 1101px){
+@media screen and (max-width : 1101px) {
 
   .contact {
     width: 80%;
     height: fit-content;
-    input{
-      width:100%
+
+    input {
+      width: 100%
     }
-    textarea{
+
+    textarea {
       width: 100%;
     }
-    &__title{
+
+    &__title {
       width: 200px;
       height: 60px;
-      strong{
+
+      strong {
         position: absolute;
         padding-left: 120px;
         padding-top: 7px;
       }
+
       font-size: 1.2rem;
       padding-top: 10px;
     }
   }
-  
+
   .about {
     padding: 1.5rem;
     background-color: v.$dark;
@@ -294,7 +306,7 @@
     font-size: 1.10rem;
     margin-bottom: 2rem;
   }
-  
+
   .Skill__hard {
     background-color: v.$light-dark;
     padding: 1.5rem;
@@ -303,7 +315,7 @@
     font-size: 1.10rem;
     margin-bottom: 2rem;
   }
-  
+
   .Skill__soft {
     padding: 1.5rem;
     background-color: v.$dark;
@@ -311,6 +323,6 @@
     height: fit-content;
     font-size: 1.10rem;
     margin-bottom: 2rem;
-    
+
   }
 }

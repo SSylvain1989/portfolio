@@ -16,6 +16,8 @@ import javascript from '../images/javascript.webp';
 import css from '../images/css.webp';
 import html from '../images/html.webp';
 import todo from '../images/todo.webp';
+import nextjs from '../images/nextjs.webp';
+import ica2 from '../images/ica2.webp';
 
 const projects = [
   {
@@ -83,6 +85,17 @@ const projects = [
     github: 'https://github.com/SSylvain1989/todoVue',
     website: 'https://vuejs3-todo.netlify.app/',
     image: todo,
+  },
+  {
+    fullName: 'ICA WebFormation',
+    html,
+    react,
+    nextjs,
+    sass,
+    description: 'Client ICA WebFormation : formations en ligne , ATEX , Instrumentation ...',
+    github: 'https://github.com/SSylvain1989/icawebformation',
+    website: 'https://icawebformation.com/',
+    image: ica2,
   },
 ];
 
